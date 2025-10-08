@@ -232,6 +232,7 @@ Stable Diffusion Safety Research
 
         // Randomizer Multiple Cases
         randomizerCount: 10,
+        randomizerRepeats: 1,
         randomizerSeed: '',
         randomizerOutputs: [],
 
@@ -1974,22 +1975,34 @@ Stable Diffusion Safety Research
             const src = String(this.transformInput || '');
             if (!src) { this.randomizerOutputs = []; return; }
             const rnd = this.seededRandomFactory(String(this.randomizerSeed || ''));
-            const out = [];
+            const cases = [];
+            const repeats = Math.max(1, Math.min(50, Number(this.randomizerRepeats) || 1));
+
+            // Generate unique cases
             for (let i = 0; i < Math.max(1, Math.min(100, Number(this.randomizerCount) || 1)); i++) {
                 try {
                     // Use a different seed for each case to ensure variety
-                    const caseOptions = { 
-                        minTransforms: 2, 
+                    const caseOptions = {
+                        minTransforms: 2,
                         maxTransforms: 5,
                         seedOverride: this.randomizerSeed ? `${this.randomizerSeed}_${i}` : `default_${i}`
                     };
                     const result = window.transforms.randomizer.func(src, caseOptions);
-                    out.push(result);
+                    cases.push(result);
                 } catch (e) {
                     console.error('Error generating randomizer case:', e);
-                    out.push(src); // fallback to original
+                    cases.push(src); // fallback to original
                 }
             }
+
+            // Repeat each case N times
+            const out = [];
+            for (let i = 0; i < cases.length; i++) {
+                for (let r = 0; r < repeats; r++) {
+                    out.push(cases[i]);
+                }
+            }
+
             this.randomizerOutputs = out;
         },
         copyAllRandomizer() { 
