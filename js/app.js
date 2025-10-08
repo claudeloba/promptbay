@@ -220,6 +220,7 @@ Stable Diffusion Safety Research
         // Fuzzer
         fuzzerInput: '',
         fuzzerCount: 20,
+        fuzzerRepeats: 1,
         fuzzerSeed: '',
         fuzzUseRandomMix: true,
         fuzzZeroWidth: true,
@@ -1936,7 +1937,10 @@ Stable Diffusion Safety Research
             const src = String(this.fuzzerInput || '');
             if (!src) { this.fuzzerOutputs = []; return; }
             const rnd = this.seededRandomFactory(String(this.fuzzerSeed||''));
-            const out = [];
+            const cases = [];
+            const repeats = Math.max(1, Math.min(50, Number(this.fuzzerRepeats) || 1));
+
+            // Generate unique cases
             for (let i=0;i<Math.max(1,Math.min(500,Number(this.fuzzerCount)||1)); i++) {
                 let s = src;
                 if (this.fuzzUseRandomMix) {
@@ -1948,8 +1952,17 @@ Stable Diffusion Safety Research
                 if (this.fuzzCasing) s = this.casingChaos(s, rnd);
                 if (this.fuzzZalgo) { try { s = window.transforms.zalgo.func(s); } catch(_) {} }
                 if (this.fuzzEncodeShuffle) s = this.encodeShuffle(s, rnd);
-                out.push(s);
+                cases.push(s);
             }
+
+            // Repeat each case N times
+            const out = [];
+            for (let i = 0; i < cases.length; i++) {
+                for (let r = 0; r < repeats; r++) {
+                    out.push(cases[i]);
+                }
+            }
+
             this.fuzzerOutputs = out;
         },
         copyAllFuzz() { this.copyToClipboard(this.fuzzerOutputs.join('\n')); },

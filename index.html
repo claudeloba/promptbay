@@ -463,6 +463,10 @@
                                 <input type="number" v-model.number="fuzzerCount" min="1" max="500" />
                             </label>
                             <label>
+                                Repeats per case
+                                <input type="number" v-model.number="fuzzerRepeats" min="1" max="50" />
+                            </label>
+                            <label>
                                 Seed (optional)
                                 <input type="text" v-model="fuzzerSeed" placeholder="e.g., 1337" />
                             </label>
