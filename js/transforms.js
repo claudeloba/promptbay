@@ -2239,6 +2239,23 @@ const transforms = {
     randomizer: {
         name: 'Random Mix',
         
+        // Simple seeded random number generator
+        createSeededRandom(seed) {
+            let hash = 0;
+            for (let i = 0; i < seed.length; i++) {
+                const char = seed.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash = hash & hash; // Convert to 32bit integer
+            }
+            
+            // Use a simple LCG (Linear Congruential Generator)
+            let state = Math.abs(hash);
+            return function() {
+                state = (state * 1664525 + 1013904223) % 4294967296;
+                return state / 4294967296;
+            };
+        },
+        
         // Get a list of transforms suitable for randomization
         getRandomizableTransforms() {
             const suitable = [
@@ -2262,8 +2279,15 @@ const transforms = {
                 preservePunctuation = true,
                 minTransforms = 2,
                 maxTransforms = 5,
-                allowRepeats = false
+                allowRepeats = false,
+                seedOverride = null
             } = options;
+            
+            // Create seeded random function if seed provided
+            let rng = Math.random;
+            if (seedOverride) {
+                rng = this.createSeededRandom(seedOverride);
+            }
             
             // Split text into words while preserving punctuation
             const words = this.smartWordSplit(text);
@@ -2273,7 +2297,7 @@ const transforms = {
             
             // Select random transforms to use
             const numTransforms = Math.min(
-                Math.max(minTransforms, Math.floor(Math.random() * maxTransforms) + 1),
+                Math.max(minTransforms, Math.floor(rng() * maxTransforms) + 1),
                 availableTransforms.length
             );
             
@@ -2283,7 +2307,7 @@ const transforms = {
             for (let i = 0; i < numTransforms; i++) {
                 let transform;
                 do {
-                    transform = availableTransforms[Math.floor(Math.random() * availableTransforms.length)];
+                    transform = availableTransforms[Math.floor(rng() * availableTransforms.length)];
                 } while (!allowRepeats && usedTransforms.has(transform) && usedTransforms.size < availableTransforms.length);
                 
                 selectedTransforms.push(transform);
@@ -2293,7 +2317,7 @@ const transforms = {
             // Apply random transforms to words
             const transformedWords = words.map(wordObj => {
                 if (wordObj.isWord) {
-                    const randomTransform = selectedTransforms[Math.floor(Math.random() * selectedTransforms.length)];
+                    const randomTransform = selectedTransforms[Math.floor(rng() * selectedTransforms.length)];
                     const transform = window.transforms[randomTransform];
                     
                     try {

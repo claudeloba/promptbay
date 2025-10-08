@@ -187,6 +187,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     gap: 8px;
     margin-bottom: 24px;
+    flex-wrap: wrap;
 }
 
 .tab-buttons button {
@@ -201,6 +202,11 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     gap: 8px;
     transition: all 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex-shrink: 1;
 }
 
 .tab-buttons button i {
@@ -1299,16 +1305,16 @@ button:hover {
 }
 
 .transform-button {
-    padding: 8px;
+    padding: 12px 16px;
     height: auto;
-    border-radius: 4px;
-    font-size: 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
-    min-width: 110px;
+    gap: 6px;
+    min-width: 120px;
     max-width: 100%;
     font-weight: 500;
     text-align: center;
@@ -1317,7 +1323,7 @@ button:hover {
     color: var(--text-color);
     transition: all 0.2s ease;
     overflow: hidden;
-    min-height: 70px;
+    min-height: 80px;
 }
 
 /* Transform category styling */
@@ -2124,6 +2130,737 @@ html {
 /* Reduce extra whitespace at bottom of tab cards */
 .tab-content .transform-layout > *:last-child { margin-bottom: 0; }
 
+/* Tokenade explanation styling */
+.tokenade-explanation {
+    background: rgba(100, 181, 246, 0.1);
+    border: 1px solid rgba(100, 181, 246, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tokenade-explanation p {
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.tokenade-explanation ul {
+    margin: 8px 0 12px 20px;
+    color: var(--text-color);
+}
+
+.tokenade-explanation li {
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+.tokenade-explanation strong {
+    color: var(--accent-color);
+}
+
+/* Carrier explanation styling */
+.carrier-explanation {
+    background: rgba(156, 39, 176, 0.1);
+    border: 1px solid rgba(156, 39, 176, 0.3);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.carrier-explanation p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.carrier-explanation strong {
+    color: var(--randomizer-color);
+}
+
+/* Enhanced slider block styling */
+.slider-block small {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-style: italic;
+}
+
+/* Enhanced switch styling */
+.switch small {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: block;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+/* Enhanced segmented control */
+.segmented small {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+/* Mutation Lab explanation styling */
+.mutation-explanation {
+    background: rgba(255, 107, 157, 0.1);
+    border: 1px solid rgba(255, 107, 157, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.mutation-explanation p {
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.mutation-explanation ul {
+    margin: 8px 0 12px 20px;
+    color: var(--text-color);
+}
+
+.mutation-explanation li {
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.mutation-explanation strong {
+    color: var(--fantasy-color);
+}
+
+.mutation-explanation em {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+/* Bijection Attack Tool Styling */
+.bijection-section {
+    background: var(--main-bg-color);
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid var(--input-border);
+    margin-bottom: 16px;
+}
+
+.bijection-explanation {
+    background: rgba(0, 188, 212, 0.1);
+    border: 1px solid rgba(0, 188, 212, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.bijection-explanation p {
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.bijection-explanation ul {
+    margin: 8px 0 12px 20px;
+    color: var(--text-color);
+}
+
+.bijection-explanation li {
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+.bijection-explanation strong {
+    color: var(--technical-color);
+}
+
+.bijection-explanation a {
+    color: var(--technical-color);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.bijection-explanation a:hover {
+    color: #26c6da;
+    text-decoration: none;
+}
+
+.bijection-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 10px 0 12px 0;
+    padding: 10px 12px;
+    border: 1px solid #1b5e20;
+    background: rgba(27, 94, 32, 0.15);
+    color: #69f0ae;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.35;
+}
+
+.bijection-disclaimer i {
+    color: #69f0ae;
+    margin-top: 2px;
+}
+
+.bijection-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.bijection-type-selector {
+    background: var(--main-bg-color);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bijection-type-selector select {
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 6px 8px;
+    margin-top: 6px;
+}
+
+.bijection-mapping {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.bijection-mapping .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.shuffle-mapping-button {
+    background: linear-gradient(135deg, var(--technical-color), #26c6da);
+    color: white;
+    border: 1px solid var(--technical-color);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.shuffle-mapping-button:hover {
+    background: linear-gradient(135deg, #26c6da, var(--technical-color));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+}
+
+.shuffle-mapping-button:active {
+    transform: translateY(0);
+}
+
+.shuffle-mapping-button i {
+    font-size: 0.9rem;
+}
+
+.mapping-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.mapping-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 6px 8px;
+    background: var(--button-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+}
+
+.mapping-item .original {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.mapping-item .arrow {
+    color: var(--technical-color);
+    font-size: 0.75rem;
+}
+
+.mapping-item .mapped {
+    color: var(--technical-color);
+    font-weight: 600;
+}
+
+.bijection-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 16px 0;
+}
+
+.bijection-outputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.bijection-output-item {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 12px;
+    position: relative;
+}
+
+.output-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--input-border);
+}
+
+.output-number {
+    background: var(--technical-color);
+    color: var(--main-bg-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.output-type {
+    color: var(--text-color);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.bijection-prompt {
+    width: 100%;
+    min-height: 120px;
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+.encoded-preview {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: rgba(0, 188, 212, 0.1);
+    border: 1px solid rgba(0, 188, 212, 0.3);
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.encoded-preview code {
+    background: transparent;
+    color: var(--technical-color);
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    word-break: break-all;
+}
+
+/* Syntactic Anti-Classifier Styling */
+.anticlassifier-section {
+    background: var(--main-bg-color);
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid var(--input-border);
+    margin-bottom: 16px;
+}
+
+.anticlassifier-explanation {
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.anticlassifier-explanation p {
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.anticlassifier-explanation ul {
+    margin: 8px 0 12px 20px;
+    color: var(--text-color);
+}
+
+.anticlassifier-explanation li {
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+
+.anticlassifier-explanation strong {
+    color: var(--encoding-color);
+}
+
+.example-transformation {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+.transformation-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.original-prompt {
+    color: #ff8a80;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    background: rgba(244, 67, 54, 0.1);
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.transformed-prompt {
+    color: var(--encoding-color);
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    background: rgba(76, 175, 80, 0.1);
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.transformation-item .arrow {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* API Key Section */
+.api-key-section {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.api-key-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.api-key-field {
+    flex: 1;
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 8px 40px 8px 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.toggle-visibility {
+    position: absolute;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s ease;
+}
+
+.toggle-visibility:hover {
+    color: var(--text-color);
+}
+
+.api-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    color: var(--encoding-color);
+    font-size: 0.85rem;
+}
+
+.api-status i {
+    color: var(--encoding-color);
+}
+
+.clear-api-key-btn {
+    background: rgba(244, 67, 54, 0.1);
+    color: #ff8a80;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+    margin-left: auto;
+}
+
+.clear-api-key-btn:hover {
+    background: rgba(244, 67, 54, 0.2);
+    border-color: rgba(244, 67, 54, 0.5);
+    color: #ffab91;
+}
+
+/* System Prompt Section */
+.system-prompt-section {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.system-prompt-display {
+    position: relative;
+}
+
+.system-prompt-text {
+    width: 100%;
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+/* User Prompt Section */
+.user-prompt-section {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.user-prompt-input {
+    width: 100%;
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 12px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+/* Model Configuration */
+.model-config-section {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.model-config-section select {
+    background: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+/* Response Section */
+.response-section {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.response-container {
+    background: var(--main-bg-color);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.response-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: var(--secondary-bg);
+    border-bottom: 1px solid var(--input-border);
+}
+
+.model-info {
+    color: var(--encoding-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.response-content {
+    padding: 16px;
+    max-height: 600px;
+    overflow-y: auto;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.response-content p {
+    margin-bottom: 12px;
+}
+
+.response-content strong {
+    color: var(--encoding-color);
+}
+
+.response-content em {
+    color: var(--accent-color);
+}
+
+.response-content code {
+    background: var(--input-bg);
+    color: var(--technical-color);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Fira Code', monospace;
+}
+
+.response-content pre {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 12px;
+    margin: 12px 0;
+    overflow-x: auto;
+}
+
+.response-content pre code {
+    background: transparent;
+    padding: 0;
+}
+
+.response-content h1 {
+    color: var(--encoding-color);
+    font-size: 1.4rem;
+    margin: 16px 0 12px 0;
+    border-bottom: 2px solid var(--input-border);
+    padding-bottom: 8px;
+}
+
+.response-content h2 {
+    color: var(--encoding-color);
+    font-size: 1.25rem;
+    margin: 14px 0 10px 0;
+    border-bottom: 1px solid var(--input-border);
+    padding-bottom: 6px;
+}
+
+.response-content h3 {
+    color: var(--encoding-color);
+    font-size: 1.1rem;
+    margin: 12px 0 8px 0;
+    font-weight: 600;
+}
+
+.response-content ul,
+.response-content ol {
+    margin: 12px 0;
+    padding-left: 24px;
+}
+
+.response-content li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.response-content ul li {
+    list-style-type: disc;
+}
+
+.response-content ol li {
+    list-style-type: decimal;
+}
+
+.response-content a {
+    color: var(--technical-color);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.response-content a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* Error Section */
+.error-section {
+    margin: 16px 0;
+}
+
+.error-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(244, 67, 54, 0.1);
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    border-radius: 6px;
+    color: #ff8a80;
+}
+
+.error-message i {
+    color: #ff8a80;
+    margin-top: 2px;
+}
+
+
 .transform-layout {
     position: relative;
 }
@@ -2141,7 +2878,150 @@ html {
 /* Mutation Lab actions */
 .mutation-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 10px 0 12px 0; }
 .mutation-actions .action-button, .mutation-actions .transform-button { white-space: nowrap; }
+.mutation-actions .transform-button {
+    padding: 10px 20px;
+    min-height: auto;
+    flex-direction: row;
+    gap: 8px;
+    min-width: auto;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent-color), #5a9fd8);
+    color: white;
+    border-color: var(--accent-color);
+    font-weight: 600;
+}
+.mutation-actions .transform-button:hover {
+    background: linear-gradient(135deg, var(--accent-hover), var(--accent-color));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(100, 181, 246, 0.3);
+}
 .mutation-actions .action-button.copy { border-color: #1976d2; color: #90caf9; }
 .mutation-actions .action-button.copy:hover { color: #bbdefb; box-shadow: 0 0 0 1px rgba(144,202,249,.2) inset, 0 0 14px rgba(144,202,249,.18); }
 .mutation-actions .action-button.download { border-color: #2e7d32; color: #69f0ae; }
 .mutation-actions .action-button.download:hover { color: #b9f6ca; box-shadow: 0 0 0 1px rgba(105,240,174,.2) inset, 0 0 14px rgba(105,240,174,.18); }
+
+/* Token bomb actions (similar styling to mutation actions) */
+.token-bomb-actions { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin: 10px 0 12px 0; 
+}
+.token-bomb-actions .transform-button {
+    padding: 10px 20px;
+    min-height: auto;
+    flex-direction: row;
+    gap: 8px;
+    min-width: auto;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent-color), #5a9fd8);
+    color: white;
+    border-color: var(--accent-color);
+    font-weight: 600;
+}
+.token-bomb-actions .transform-button:hover {
+    background: linear-gradient(135deg, var(--accent-hover), var(--accent-color));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(100, 181, 246, 0.3);
+}
+
+/* End Sequences Section Styles */
+.endsequences-section {
+    padding: 20px;
+}
+
+.endsequences-explanation {
+    background: rgba(100, 181, 246, 0.05);
+    border-left: 3px solid var(--accent-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.endsequences-explanation p {
+    margin: 8px 0;
+}
+
+.endsequences-list {
+    margin-top: 30px;
+}
+
+.endsequence-category {
+    background: var(--secondary-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.endsequence-category h4 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--section-divider);
+}
+
+.endsequence-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.endsequence-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    padding: 12px 15px;
+    transition: all 0.2s ease;
+}
+
+.endsequence-item:hover {
+    background: var(--button-hover-bg);
+    border-color: var(--accent-color);
+    box-shadow: 0 2px 8px rgba(100, 181, 246, 0.1);
+}
+
+.endsequence-item code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.95rem;
+    color: var(--success-color);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 15px;
+    word-break: break-all;
+}
+
+.endsequence-item .copy-button {
+    flex-shrink: 0;
+    min-width: auto;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.endsequence-item .copy-button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(100, 181, 246, 0.3);
+}
+
+.endsequence-item .copy-button i {
+    margin-right: 6px;
+}
+/* Cache bust: 1759944840 */
+/* Updated: 1759945041 */
