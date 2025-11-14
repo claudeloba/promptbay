@@ -95,7 +95,72 @@ A powerful web-based text transformation and steganography tool that can encode/
 
 ## 🚀 **Getting Started**
 
-### **Web Version**
+### **Docker (Recommended)** 🐳
+
+The easiest way to run P4RS3LT0NGV3 is using Docker:
+
+#### **Quick Start**
+```bash
+# Build the Docker image
+docker build -t parseltongue .
+
+# Run the container
+docker run -d -p 8080:80 --name parseltongue-app parseltongue
+
+# Open in browser
+# Navigate to http://localhost:8080
+```
+
+#### **Docker Commands**
+
+**Build the image:**
+```bash
+docker build -t parseltongue:latest .
+```
+
+**Run the container:**
+```bash
+# Run on port 8080
+docker run -d -p 8080:80 --name parseltongue-app parseltongue
+
+# Run on a different port (e.g., 3000)
+docker run -d -p 3000:80 --name parseltongue-app parseltongue
+```
+
+**Manage the container:**
+```bash
+# Stop the container
+docker stop parseltongue-app
+
+# Start the container
+docker start parseltongue-app
+
+# Restart the container
+docker restart parseltongue-app
+
+# Remove the container
+docker rm parseltongue-app
+
+# View logs
+docker logs parseltongue-app
+
+# Check container status
+docker ps
+```
+
+**Remove the image:**
+```bash
+docker rmi parseltongue
+```
+
+#### **Docker Hub (if available)**
+```bash
+# Pull and run from Docker Hub
+docker pull yourusername/parseltongue:latest
+docker run -d -p 8080:80 --name parseltongue-app yourusername/parseltongue:latest
+```
+
+### **Web Version (Local)**
 1. Open `index.html` in any modern web browser
 2. Type text in the input field
 3. Choose a transformation from the categorized buttons
