@@ -5,7 +5,6 @@ WORKDIR /app
 
 COPY package.json ./
 COPY scripts/ ./scripts/
-COPY pentest-taxonomy/ ./pentest-taxonomy/
 COPY books/ ./books/
 COPY js/ ./js/
 
@@ -16,8 +15,8 @@ RUN node scripts/generate-payload-assets.js && \
 FROM nginx:1.25-alpine
 
 # Add metadata labels
-LABEL maintainer="P4RS3LT0NGV3"
-LABEL description="Universal Text Translator - P4RS3LT0NGV3 3.1"
+LABEL maintainer="ThePromptBay"
+LABEL description="ThePromptBay — Pentest Prompt Editor"
 LABEL version="3.1"
 
 # Set working directory

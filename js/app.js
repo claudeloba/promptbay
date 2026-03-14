@@ -1,4 +1,4 @@
-// ── Promptbay — Pentest Prompt Editor ──────────────────────────
+// ── ThePromptBay — Pentest Prompt Editor ──────────────────────────
 (function () {
   'use strict';
 

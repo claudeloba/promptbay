@@ -1,4 +1,4 @@
-// Emoji Library for P4RS3LT0NGV3
+// Emoji Library for ThePromptBay
 
 // Create namespace for emoji library
 window.emojiLibrary = {};

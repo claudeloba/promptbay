@@ -219,7 +219,8 @@ function walk(directoryPath, collected) {
 }
 
 if (!fs.existsSync(taxonomyRoot)) {
-    throw new Error(`Missing taxonomy directory: ${taxonomyRoot}`);
+    console.log(`Taxonomy directory not found: ${taxonomyRoot} — skipping generation (using existing payloadAssets.js)`);
+    process.exit(0);
 }
 
 const files = [];
