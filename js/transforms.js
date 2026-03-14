@@ -150,11 +150,44 @@ const transforms = {
             '0': '⠼⠚', '1': '⠼⠁', '2': '⠼⠃', '3': '⠼⠉', '4': '⠼⠙', '5': '⠼⠑',
             '6': '⠼⠋', '7': '⠼⠛', '8': '⠼⠓', '9': '⠼⠊'
         },
+        reverseMap: function() {
+            const revMap = {};
+            for (const [key, value] of Object.entries(this.map)) {
+                revMap[value] = key;
+            }
+            return revMap;
+        },
         func: function(text) {
             return [...text.toLowerCase()].map(c => this.map[c] || c).join('');
         },
         preview: function(text) {
             return this.func(text);
+        },
+        reverse: function(text) {
+            const revMap = this.reverseMap();
+            // Handle multi-char braille sequences (number indicator ⠼ + digit)
+            let result = '';
+            let i = 0;
+            const chars = [...text];
+            while (i < chars.length) {
+                // Try two-char match first (for numbers like ⠼⠚)
+                if (i + 1 < chars.length) {
+                    const twoChar = chars[i] + chars[i + 1];
+                    if (revMap[twoChar]) {
+                        result += revMap[twoChar];
+                        i += 2;
+                        continue;
+                    }
+                }
+                // Single char match
+                if (revMap[chars[i]]) {
+                    result += revMap[chars[i]];
+                } else {
+                    result += chars[i];
+                }
+                i++;
+            }
+            return result;
         }
     },
 
@@ -258,11 +291,11 @@ const transforms = {
             try {
                 return atob(text);
             } catch (e) {
-                return text;
+                return '';
             }
         }
     },
-    
+
     base64url: {
         name: 'Base64 URL',
         func: function(text) {
@@ -279,7 +312,7 @@ const transforms = {
             let std = text.replace(/-/g, '+').replace(/_/g, '/');
             // pad
             while (std.length % 4 !== 0) std += '=';
-            try { return atob(std); } catch (e) { return text; }
+            try { return atob(std); } catch (e) { return ''; }
         }
     },
     
@@ -625,7 +658,7 @@ const transforms = {
         reverse: function(text) {
             // Check if it's a valid ASCII85 string
             if (!text.startsWith('<~') || !text.endsWith('~>')) {
-                return text;
+                return '';
             }
             
             // Remove delimiters and whitespace
@@ -698,11 +731,11 @@ const transforms = {
             try {
                 return decodeURIComponent(text);
             } catch (e) {
-                return text;
+                return '';
             }
         }
     },
-    
+
     html: {
         name: 'HTML Entities',
         func: function(text) {
@@ -2408,6 +2441,61 @@ const transforms = {
         getLastTransformInfo: function() {
             return this.lastTransformMap || [];
         }
+    }
+};
+
+// Unicode/decimal/octal escape transforms
+transforms.unicode_escape = {
+    name: 'Unicode Escape',
+    func: function(text) {
+        return [...text].map(function(c) {
+            return '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0');
+        }).join('');
+    },
+    preview: function(text) {
+        if (!text) return '[unicode]';
+        return this.func(text.slice(0, 2)) + '...';
+    },
+    reverse: function(text) {
+        return text.replace(/\\u([0-9a-fA-F]{4})/g, function(_, hex) {
+            return String.fromCharCode(parseInt(hex, 16));
+        });
+    }
+};
+
+transforms.decimal_escape = {
+    name: 'Decimal Escape',
+    func: function(text) {
+        return [...text].map(function(c) {
+            return '&#' + c.charCodeAt(0) + ';';
+        }).join('');
+    },
+    preview: function(text) {
+        if (!text) return '[decimal]';
+        return this.func(text.slice(0, 2)) + '...';
+    },
+    reverse: function(text) {
+        return text.replace(/&#(\d+);/g, function(_, dec) {
+            return String.fromCharCode(parseInt(dec, 10));
+        });
+    }
+};
+
+transforms.octal_escape = {
+    name: 'Octal Escape',
+    func: function(text) {
+        return [...text].map(function(c) {
+            return '\\' + c.charCodeAt(0).toString(8);
+        }).join('');
+    },
+    preview: function(text) {
+        if (!text) return '[octal]';
+        return this.func(text.slice(0, 2)) + '...';
+    },
+    reverse: function(text) {
+        return text.replace(/\\([0-7]{1,3})/g, function(_, oct) {
+            return String.fromCharCode(parseInt(oct, 8));
+        });
     }
 };
 

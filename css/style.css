@@ -763,6 +763,10 @@ body.dark .bijection-mapping-item .bm-mapped { color: var(--chip-green-text); }
   color: #fff;
   margin-left: 6px;
   vertical-align: middle;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .decoder-alternatives { margin-top: 12px; }
 .decoder-alt-list { display: flex; flex-direction: column; gap: 6px; }

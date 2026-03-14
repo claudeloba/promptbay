@@ -2562,12 +2562,168 @@
     var decoderCopy = document.getElementById('decoder-copy');
 
     var currentResult = null;
+    var debounceTimer = null;
 
-    // Priority order for auto-detect brute-force
-    var DECODE_ORDER = [
-      'invisible_text', 'base64', 'hexadecimal', 'binary', 'morse_code',
-      'braille', 'rot13', 'rot47', 'caesar', 'atbash'
-    ];
+    // Format detectors: return confidence 0-100
+    var FORMAT_DETECTORS = {
+      invisible_text: function(text) {
+        var count = 0;
+        for (var i = 0; i < text.length; i++) {
+          var cp = text.codePointAt(i);
+          if (cp >= 0xE0000 && cp <= 0xE007F) count++;
+          if (cp > 0xFFFF) i++; // skip surrogate pair
+        }
+        return (count / text.length) > 0.5 ? 95 : 0;
+      },
+      base64: function(text) {
+        var trimmed = text.trim();
+        if (trimmed.length < 4) return 0;
+        if (!/^[A-Za-z0-9+\/]+=*$/.test(trimmed)) return 0;
+        if (trimmed.length % 4 !== 0) return 0;
+        return /=+$/.test(trimmed) ? 90 : 80;
+      },
+      hex: function(text) {
+        return /^([0-9a-fA-F]{2}\s)+[0-9a-fA-F]{2}$/.test(text.trim()) ? 90 : 0;
+      },
+      binary: function(text) {
+        return /^([01]{8}\s)+[01]{8}$/.test(text.trim()) ? 90 : 0;
+      },
+      morse: function(text) {
+        var trimmed = text.trim();
+        if (!/^[.\-\/\s]+$/.test(trimmed)) return 0;
+        return (trimmed.indexOf('.') !== -1 && trimmed.indexOf('-') !== -1) ? 90 : 0;
+      },
+      braille: function(text) {
+        var allBraille = true;
+        for (var i = 0; i < text.length; i++) {
+          var cp = text.codePointAt(i);
+          if (cp < 0x2800 || cp > 0x28FF) {
+            if (text[i] !== ' ' && text[i] !== '\n' && text[i] !== '\r') { allBraille = false; break; }
+          }
+        }
+        return allBraille && text.length > 0 ? 95 : 0;
+      },
+      ascii85: function(text) {
+        var trimmed = text.trim();
+        return (trimmed.indexOf('<~') === 0 && trimmed.lastIndexOf('~>') === trimmed.length - 2) ? 95 : 0;
+      },
+      url: function(text) {
+        return /%[0-9A-Fa-f]{2}/.test(text) ? 85 : 0;
+      },
+      html: function(text) {
+        return (/&amp;|&lt;|&gt;|&quot;|&#\d+;/.test(text)) ? 85 : 0;
+      },
+      base32: function(text) {
+        var trimmed = text.trim();
+        if (trimmed.length < 8) return 0;
+        return /^[A-Z2-7]+=*$/i.test(trimmed) ? 80 : 0;
+      },
+      fullwidth: function(text) {
+        var count = 0;
+        for (var i = 0; i < text.length; i++) {
+          var cp = text.charCodeAt(i);
+          if (cp >= 0xFF01 && cp <= 0xFF5E) count++;
+        }
+        return (count / text.length) > 0.5 ? 95 : 0;
+      },
+      unicode_escape: function(text) {
+        return /\\u[0-9a-fA-F]{4}/.test(text) ? 90 : 0;
+      },
+      decimal_escape: function(text) {
+        return /&#\d+;/.test(text) ? 88 : 0;
+      },
+      octal_escape: function(text) {
+        return /\\[0-7]{1,3}/.test(text) ? 85 : 0;
+      },
+      base64url: function(text) {
+        var trimmed = text.trim();
+        if (trimmed.length < 4) return 0;
+        if (!/^[A-Za-z0-9\-_]+=*$/.test(trimmed)) return 0;
+        return (trimmed.indexOf('-') !== -1 || trimmed.indexOf('_') !== -1) ? 82 : 0;
+      },
+      // No-signature transforms get low baseline
+      rot13: function() { return 20; },
+      rot47: function() { return 20; },
+      caesar: function() { return 20; },
+      atbash: function() { return 20; }
+    };
+
+    // Detect character-mapping scripts by Unicode block presence
+    var SCRIPT_BLOCKS = {
+      elder_futhark: [[0x16A0, 0x16FF]],
+      medieval: [[0x1D504, 0x1D537], [0x1D56C, 0x1D59F]],
+      cursive: [[0x1D49C, 0x1D4CF]],
+      upside_down: [[0x0250, 0x02AF]],
+      bubble: [[0x24B6, 0x24E9], [0x2460, 0x2473]]
+    };
+    Object.keys(SCRIPT_BLOCKS).forEach(function(key) {
+      FORMAT_DETECTORS[key] = function(text) {
+        var ranges = SCRIPT_BLOCKS[key];
+        var count = 0;
+        for (var i = 0; i < text.length; i++) {
+          var cp = text.codePointAt(i);
+          if (cp > 0xFFFF) i++;
+          for (var r = 0; r < ranges.length; r++) {
+            if (cp >= ranges[r][0] && cp <= ranges[r][1]) { count++; break; }
+          }
+        }
+        return (count / text.length) > 0.6 ? 90 : 0;
+      };
+    });
+
+    // Output quality scorer (0-100)
+    function scoreOutput(text, inputLen) {
+      if (!text || text.length === 0) return 0;
+
+      // Printable ratio (0-30)
+      var printable = 0;
+      for (var i = 0; i < text.length; i++) {
+        var cp = text.charCodeAt(i);
+        if ((cp >= 32 && cp <= 126) || cp === 9 || cp === 10 || cp === 13 ||
+            (cp >= 0x00C0 && cp <= 0x024F)) printable++;
+      }
+      var printableScore = (printable / text.length) * 30;
+
+      // Word-likeness (0-40)
+      var tokens = text.split(/\s+/).filter(function(t) { return t.length > 0; });
+      if (tokens.length === 0) return printableScore;
+      var wordLike = 0;
+      for (var j = 0; j < tokens.length; j++) {
+        var tok = tokens[j];
+        if (tok.length >= 1 && tok.length <= 20 && /[aeiouAEIOU]/.test(tok) && !/[bcdfghjklmnpqrstvwxyz]{5,}/i.test(tok)) {
+          wordLike++;
+        }
+      }
+      var wordScore = (wordLike / tokens.length) * 40;
+
+      // Entropy (0-15): natural language ~4-5 bits/char
+      var freq = {};
+      for (var k = 0; k < text.length; k++) {
+        var ch = text[k];
+        freq[ch] = (freq[ch] || 0) + 1;
+      }
+      var entropy = 0;
+      var keys = Object.keys(freq);
+      for (var m = 0; m < keys.length; m++) {
+        var p = freq[keys[m]] / text.length;
+        entropy -= p * Math.log2(p);
+      }
+      // Score: 4-5 bits is ideal, 0 or 8+ is bad
+      var entropyScore;
+      if (entropy >= 3.5 && entropy <= 5.5) entropyScore = 15;
+      else if (entropy >= 2.5 && entropy <= 6.5) entropyScore = 10;
+      else if (entropy >= 1.5 && entropy <= 7.5) entropyScore = 5;
+      else entropyScore = 0;
+
+      // Length sanity (0-15)
+      var ratio = text.length / (inputLen || 1);
+      var lengthScore;
+      if (ratio >= 0.1 && ratio <= 10) lengthScore = 15;
+      else if (ratio >= 0.01 && ratio <= 100) lengthScore = 8;
+      else lengthScore = 0;
+
+      return printableScore + wordScore + entropyScore + lengthScore;
+    }
 
     // Populate mode select with all reversible transforms
     function populateModes() {
@@ -2590,36 +2746,41 @@
       var allDecodings = [];
       var seen = {};
 
-      function addDecoding(text, method, priority) {
-        if (text && text !== input && text.length > 0 && !seen[text]) {
-          seen[text] = true;
-          allDecodings.push({ text: text, method: method, priority: priority });
-        }
-      }
-
-      function tryTransform(key, priority) {
+      function tryTransform(key) {
         var t = transforms[key];
         if (!t || typeof t.reverse !== 'function') return;
+
+        // Check format detector confidence
+        var detector = FORMAT_DETECTORS[key];
+        var formatScore = detector ? detector(input) : 50; // 50 = fallback for unlisted transforms
+        if (formatScore === 0) return; // skip if detector says definitely not this format
+
         try {
           var result = t.reverse(input);
-          if (result && result !== input && result.length > 0 && /[a-zA-Z0-9\s]{3,}/.test(result)) {
-            addDecoding(result, t.name || key, priority);
+          if (!result || result === input || result.length === 0) return;
+
+          var outputScore = scoreOutput(result, input.length);
+          if (outputScore < 25) return;
+
+          var finalScore = formatScore * 0.5 + outputScore * 0.5;
+
+          if (!seen[result]) {
+            seen[result] = true;
+            allDecodings.push({
+              text: result,
+              method: t.name || key,
+              score: finalScore,
+              outputLen: result.length
+            });
           }
         } catch (e) {
           // skip
         }
       }
 
-      // Try high-confidence decoders first
-      DECODE_ORDER.forEach(function (key, i) {
-        tryTransform(key, 100 - i);
-      });
-
-      // Try remaining transforms
+      // Try all transforms that have reverse()
       Object.keys(transforms).forEach(function (key) {
-        if (DECODE_ORDER.indexOf(key) === -1) {
-          tryTransform(key, 10);
-        }
+        tryTransform(key);
       });
 
       // Check emoji steganography
@@ -2627,14 +2788,22 @@
         try {
           var decoded = window.steganography.decodeEmoji(input);
           if (decoded && decoded !== input) {
-            addDecoding(decoded, 'Emoji Steganography', 200);
+            var eScore = scoreOutput(decoded, input.length);
+            if (!seen[decoded]) {
+              seen[decoded] = true;
+              allDecodings.push({ text: decoded, method: 'Emoji Steganography', score: 95 * 0.5 + eScore * 0.5, outputLen: decoded.length });
+            }
           }
         } catch (e) {
           // skip
         }
       }
 
-      allDecodings.sort(function (a, b) { return b.priority - a.priority; });
+      // Sort by finalScore descending, tie-break: shorter output preferred
+      allDecodings.sort(function (a, b) {
+        if (b.score !== a.score) return b.score - a.score;
+        return a.outputLen - b.outputLen;
+      });
 
       if (allDecodings.length === 0) return null;
 
@@ -2643,6 +2812,39 @@
         text: primary.text,
         method: primary.method,
         alternatives: allDecodings.slice(1).map(function (d) { return { text: d.text, method: d.method }; })
+      };
+    }
+
+    // Recursive decode: detect chained encodings
+    function recursiveDecode(input, maxDepth) {
+      if (maxDepth === undefined) maxDepth = 3;
+      var totalCalls = { count: 0 };
+      var chain = [];
+      var current = input;
+
+      for (var depth = 0; depth < maxDepth; depth++) {
+        var result = universalDecode(current);
+        if (!result) break;
+
+        totalCalls.count++;
+        if (totalCalls.count > 200) break;
+
+        chain.push(result.method);
+        current = result.text;
+
+        // If output looks like natural language (high score), stop recursion
+        var outScore = scoreOutput(result.text, input.length);
+        if (outScore >= 70) break;
+      }
+
+      if (chain.length === 0) return null;
+
+      var methodLabel = chain.join(' \u2192 '); // → arrow
+      return {
+        text: current,
+        method: methodLabel,
+        alternatives: chain.length === 1 ?
+          (universalDecode(input) || { alternatives: [] }).alternatives || [] : []
       };
     }
 
@@ -2674,7 +2876,7 @@
           }
         }
       } else {
-        result = universalDecode(input);
+        result = recursiveDecode(input);
       }
 
       currentResult = result;
@@ -2732,7 +2934,11 @@
       }).join('');
     });
 
-    decoderInput.addEventListener('input', runDecode);
+    // Debounced input handler (150ms)
+    decoderInput.addEventListener('input', function () {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(runDecode, 150);
+    });
     decoderMode.addEventListener('change', runDecode);
     decoderCopy.addEventListener('click', function () {
       var text = decoderOutput.value;
