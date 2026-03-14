@@ -32,7 +32,7 @@ jobs:
 
       - name: Prepare site
         run: |
-          mkdir -p _site
+          mkdir -p _site/arc_pi_taxonomy/docs
           cp index.html _site/
           cp -r css _site/
           cp -r js _site/
