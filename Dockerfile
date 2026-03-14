@@ -1,4 +1,4 @@
-# Generate payload assets from taxonomy examples at build time
+# Generate payload assets from snippets and collections at build time
 FROM node:22-alpine AS assets
 
 WORKDIR /app
@@ -7,9 +7,12 @@ COPY package.json ./
 COPY scripts/ ./scripts/
 COPY books/ ./books/
 COPY js/ ./js/
+COPY L1B3RT4S/ ./L1B3RT4S/
+COPY CL4R1T4S/ ./CL4R1T4S/
 
 RUN node scripts/generate-payload-assets.js && \
-    node scripts/generate-books-data.js
+    node scripts/generate-books-data.js && \
+    node scripts/generate-collection-assets.js
 
 # Use specific nginx alpine version for better stability and security
 FROM nginx:1.25-alpine
@@ -34,6 +37,7 @@ COPY --chown=appuser:appuser index.html ./
 COPY --chown=appuser:appuser css/ ./css/
 COPY --chown=appuser:appuser --from=assets /app/js/ ./js/
 COPY --chown=appuser:appuser --from=assets /app/books-processed/ ./books-processed/
+COPY --chown=appuser:appuser arc_pi_taxonomy/docs/data/ ./arc_pi_taxonomy/docs/data/
 COPY --chown=appuser:appuser LICENSE ./
 COPY --chown=appuser:appuser README.md ./
 

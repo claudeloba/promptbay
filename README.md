@@ -6,7 +6,9 @@ A web-based toolkit for AI security research and red-teaming. Build, transform, 
 
 ### Payload Editor
 - Rich contenteditable editor with undo/redo
-- Snippet sidebar with searchable pentest taxonomy (affective attacks, authority attacks, framing attacks, etc.)
+- Snippet sidebar with searchable snippets library (affective attacks, authority attacks, framing attacks, etc.)
+- L1B3RT4S tab — browsable jailbreak payload collection organized by target
+- CL4R1T4S tab — leaked system prompts organized by provider and model
 - Inline selection popup for quick transforms (Base64, L33t, Reverse, ROT13, Invisible)
 - Book insertion with word-range slicing and split-around-cursor mode
 - End sequences library
@@ -42,6 +44,9 @@ Split text into multiple copyable messages by character chunks or word splitting
 ### Universal Decoder
 Auto-detect and decode encoded text. Tries all reversible transforms with priority ordering, shows alternatives, and supports manual mode selection.
 
+### PI Attack Taxonomy
+Browsable prompt injection attack classification based on the [Arcanum PI Taxonomy](https://github.com/Arcanum-Sec/arc_pi_taxonomy). Covers techniques, evasions, intents, and input vectors with filterable cards, search, and example prompts you can copy or insert directly into the editor.
+
 ## Getting Started
 
 ### Docker
@@ -58,10 +63,16 @@ Open `index.html` in any modern browser. No build step required — all assets a
 
 ### Regenerating Assets
 
-If you have a `pentest-taxonomy/` directory with markdown payload files:
+If you have a `snippets/` directory with markdown payload files:
 
 ```bash
 node scripts/generate-payload-assets.js
+```
+
+To regenerate L1B3RT4S and CL4R1T4S sidebar assets:
+
+```bash
+node scripts/generate-collection-assets.js
 ```
 
 If you have books in `books/`:

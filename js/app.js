@@ -327,8 +327,33 @@
     snippets: 'Insert snippet',
     transforms: 'Transform text',
     sequences: 'Sequences & Dividers',
-    books: 'Books'
+    books: 'Books',
+    libertas: 'L1B3RT4S',
+    claritas: 'CL4R1T4S'
   };
+
+  // ── Scrollable sidebar tabs ──────────────────────
+  var tabsScroll = document.getElementById('sidebar-tabs-scroll');
+  var tabsWrap = tabsScroll.parentElement;
+  var arrowLeft = document.getElementById('sidebar-tabs-left');
+  var arrowRight = document.getElementById('sidebar-tabs-right');
+
+  function updateTabArrows() {
+    var sl = tabsScroll.scrollLeft;
+    var maxScroll = tabsScroll.scrollWidth - tabsScroll.clientWidth;
+    var canLeft = sl > 1;
+    var canRight = sl < maxScroll - 1;
+    arrowLeft.classList.toggle('visible', canLeft);
+    arrowRight.classList.toggle('visible', canRight);
+    tabsWrap.classList.toggle('fade-left', canLeft);
+    tabsWrap.classList.toggle('fade-right', canRight);
+  }
+  tabsScroll.addEventListener('scroll', updateTabArrows);
+  window.addEventListener('resize', updateTabArrows);
+  setTimeout(updateTabArrows, 50);
+
+  arrowLeft.addEventListener('click', function () { tabsScroll.scrollBy({ left: -80, behavior: 'smooth' }); });
+  arrowRight.addEventListener('click', function () { tabsScroll.scrollBy({ left: 80, behavior: 'smooth' }); });
 
   // Sidebar tab switching
   sidebarTabs.forEach(function (tab) {
@@ -340,9 +365,13 @@
       var panel = document.getElementById('sidebar-panel-' + panelId);
       if (panel) panel.classList.remove('hidden');
       sidebarTitle.textContent = sidebarTabTitles[panelId] || '';
+      // scroll active tab into view
+      tab.scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
       if (panelId === 'snippets') sidebarSearch.focus();
       else if (panelId === 'transforms') { updateTransformHint(); transformSearchInput.focus(); }
       else if (panelId === 'sequences') sequenceSearchInput.focus();
+      else if (panelId === 'libertas') { libertasSearch.focus(); showLibertasList(); }
+      else if (panelId === 'claritas') { claritasSearch.focus(); showClaritasGroups(); }
     });
   });
 
@@ -380,7 +409,16 @@
       editingPill = null;
       buildBookList('');
       bookSearchInput.focus();
+    } else if (tabName === 'libertas') {
+      libertasSearch.value = '';
+      showLibertasList();
+      libertasSearch.focus();
+    } else if (tabName === 'claritas') {
+      claritasSearch.value = '';
+      showClaritasGroups();
+      claritasSearch.focus();
     }
+    setTimeout(updateTabArrows, 50);
   }
 
   function closeSidebar() {
@@ -1262,6 +1300,163 @@
     if (!currentFolder) renderGroupList(q);
     else if (currentTemplate) drillIntoTemplate(currentFolder, currentTemplate, q);
     else if (currentFolder.id !== 'open-source') renderTemplateList(currentFolder, q);
+  });
+
+  // ══════════════════════════════════════════════════
+  // SIDEBAR: L1B3RT4S
+  // ══════════════════════════════════════════════════
+  var libertasData = window.libertasAssets || [];
+  var libertasSearch = document.getElementById('sidebar-libertas-search');
+  var libertasListEl = document.getElementById('libertas-list');
+  var libertasDetailEl = document.getElementById('libertas-detail');
+  var libertasBreadcrumb = document.getElementById('libertas-breadcrumb');
+  var libertasCurrent = null;
+
+  function showLibertasList(query) {
+    libertasCurrent = null;
+    libertasListEl.classList.remove('hidden');
+    libertasDetailEl.classList.add('hidden');
+    libertasBreadcrumb.innerHTML = '<span>All targets</span>';
+    sidebarTitle.textContent = 'L1B3RT4S';
+    var q = (query || '').toLowerCase();
+    var html = '';
+    libertasData.forEach(function (item) {
+      if (q && item.title.toLowerCase().indexOf(q) === -1 && (item.excerpt || '').toLowerCase().indexOf(q) === -1) return;
+      html += '<div class="group-row" data-libertas-id="' + escapeAttr(item.id) + '">' +
+        '<span class="group-icon"><i class="fas fa-skull-crossbones"></i></span>' +
+        '<span class="group-name">' + escapeHtml(item.title) + '</span>' +
+        '<span class="group-arrow">&rsaquo;</span></div>';
+    });
+    libertasListEl.innerHTML = html || '<div style="padding:12px;color:var(--text-3);font-size:13px;">No results.</div>';
+    libertasListEl.querySelectorAll('.group-row').forEach(function (row) {
+      row.addEventListener('click', function () {
+        var id = row.getAttribute('data-libertas-id');
+        var item = libertasData.find(function (x) { return x.id === id; });
+        if (item) showLibertasDetail(item);
+      });
+    });
+  }
+
+  function showLibertasDetail(item) {
+    libertasCurrent = item;
+    libertasListEl.classList.add('hidden');
+    libertasDetailEl.classList.remove('hidden');
+    sidebarTitle.textContent = item.title;
+    libertasBreadcrumb.innerHTML = '<button class="breadcrumb-back">&larr; All targets</button><span style="color:var(--text-3)"> / </span><span>' + escapeHtml(item.title) + '</span>';
+    libertasBreadcrumb.querySelector('.breadcrumb-back').addEventListener('click', function () { showLibertasList(libertasSearch.value); });
+    libertasDetailEl.innerHTML =
+      '<div class="inline-preview" style="animation:none;margin:0;border-radius:0;border:none;">' +
+        '<pre class="inline-preview-text" style="max-height:none;">' + escapeHtml(item.content || '') + '</pre>' +
+        '<div class="inline-preview-actions">' +
+          '<button class="tool-btn tool-btn-primary inline-insert"><i class="fas fa-plus"></i> Insert</button>' +
+          '<button class="tool-btn inline-copy"><i class="fas fa-copy"></i> Copy</button>' +
+        '</div>' +
+      '</div>';
+    libertasDetailEl.querySelector('.inline-insert').addEventListener('click', function () { insertSnippet(item.content || '', item.title); });
+    libertasDetailEl.querySelector('.inline-copy').addEventListener('click', function () { copyText(item.content || ''); });
+  }
+
+  libertasSearch.addEventListener('input', function () {
+    if (libertasCurrent) showLibertasList(libertasSearch.value);
+    else showLibertasList(libertasSearch.value);
+  });
+
+  // ══════════════════════════════════════════════════
+  // SIDEBAR: CL4R1T4S
+  // ══════════════════════════════════════════════════
+  var claritasData = window.claritasAssets || [];
+  var claritasSearch = document.getElementById('sidebar-claritas-search');
+  var claritasGroupsEl = document.getElementById('claritas-groups');
+  var claritasFilesEl = document.getElementById('claritas-files');
+  var claritasDetailEl = document.getElementById('claritas-detail');
+  var claritasBreadcrumb = document.getElementById('claritas-breadcrumb');
+  var claritasCurrentGroup = null;
+  var claritasCurrentFile = null;
+
+  function showClaritasGroups(query) {
+    claritasCurrentGroup = null;
+    claritasCurrentFile = null;
+    claritasGroupsEl.classList.remove('hidden');
+    claritasFilesEl.classList.add('hidden');
+    claritasDetailEl.classList.add('hidden');
+    claritasBreadcrumb.innerHTML = '<span>All providers</span>';
+    sidebarTitle.textContent = 'CL4R1T4S';
+    var q = (query || '').toLowerCase();
+    var html = '';
+    claritasData.forEach(function (group) {
+      if (q && group.title.toLowerCase().indexOf(q) === -1) {
+        var anyMatch = group.files.some(function (f) { return f.title.toLowerCase().indexOf(q) !== -1 || (f.excerpt || '').toLowerCase().indexOf(q) !== -1; });
+        if (!anyMatch) return;
+      }
+      html += '<div class="group-row" data-claritas-id="' + escapeAttr(group.id) + '">' +
+        '<span class="group-icon"><i class="fas fa-building"></i></span>' +
+        '<span class="group-name">' + escapeHtml(group.title) + '</span>' +
+        '<span class="group-count">' + group.files.length + '</span>' +
+        '<span class="group-arrow">&rsaquo;</span></div>';
+    });
+    claritasGroupsEl.innerHTML = html || '<div style="padding:12px;color:var(--text-3);font-size:13px;">No results.</div>';
+    claritasGroupsEl.querySelectorAll('.group-row').forEach(function (row) {
+      row.addEventListener('click', function () {
+        var id = row.getAttribute('data-claritas-id');
+        var group = claritasData.find(function (g) { return g.id === id; });
+        if (group) showClaritasFiles(group);
+      });
+    });
+  }
+
+  function showClaritasFiles(group, query) {
+    claritasCurrentGroup = group;
+    claritasCurrentFile = null;
+    claritasGroupsEl.classList.add('hidden');
+    claritasFilesEl.classList.remove('hidden');
+    claritasDetailEl.classList.add('hidden');
+    sidebarTitle.textContent = group.title;
+    claritasBreadcrumb.innerHTML = '<button class="breadcrumb-back">&larr; All providers</button><span style="color:var(--text-3)"> / </span><span>' + escapeHtml(group.title) + '</span>';
+    claritasBreadcrumb.querySelector('.breadcrumb-back').addEventListener('click', function () { showClaritasGroups(claritasSearch.value); });
+    var q = (query || '').toLowerCase();
+    var html = '';
+    group.files.forEach(function (file) {
+      if (q && file.title.toLowerCase().indexOf(q) === -1 && (file.excerpt || '').toLowerCase().indexOf(q) === -1) return;
+      html += '<div class="snippet-item" data-claritas-file-id="' + escapeAttr(file.id) + '">' +
+        '<div class="snippet-body"><div class="snippet-name">' + escapeHtml(file.title) + '</div>' +
+        '<div class="snippet-desc">' + escapeHtml(file.excerpt || '') + '</div></div>' +
+        '<span class="snippet-insert">view</span></div>';
+    });
+    claritasFilesEl.innerHTML = html || '<div style="padding:12px;color:var(--text-3);font-size:13px;">No files match.</div>';
+    claritasFilesEl.querySelectorAll('.snippet-item').forEach(function (item) {
+      item.addEventListener('click', function () {
+        var fileId = item.getAttribute('data-claritas-file-id');
+        var file = group.files.find(function (f) { return f.id === fileId; });
+        if (file) showClaritasDetail(group, file);
+      });
+    });
+  }
+
+  function showClaritasDetail(group, file) {
+    claritasCurrentFile = file;
+    claritasGroupsEl.classList.add('hidden');
+    claritasFilesEl.classList.add('hidden');
+    claritasDetailEl.classList.remove('hidden');
+    sidebarTitle.textContent = file.title;
+    claritasBreadcrumb.innerHTML = '<button class="breadcrumb-back">&larr; ' + escapeHtml(group.title) + '</button><span style="color:var(--text-3)"> / </span><span>' + escapeHtml(file.title) + '</span>';
+    claritasBreadcrumb.querySelector('.breadcrumb-back').addEventListener('click', function () { showClaritasFiles(group, claritasSearch.value); });
+    claritasDetailEl.innerHTML =
+      '<div class="inline-preview" style="animation:none;margin:0;border-radius:0;border:none;">' +
+        '<pre class="inline-preview-text" style="max-height:none;">' + escapeHtml(file.content || '') + '</pre>' +
+        '<div class="inline-preview-actions">' +
+          '<button class="tool-btn tool-btn-primary inline-insert"><i class="fas fa-plus"></i> Insert</button>' +
+          '<button class="tool-btn inline-copy"><i class="fas fa-copy"></i> Copy</button>' +
+        '</div>' +
+      '</div>';
+    claritasDetailEl.querySelector('.inline-insert').addEventListener('click', function () { insertSnippet(file.content || '', file.title); });
+    claritasDetailEl.querySelector('.inline-copy').addEventListener('click', function () { copyText(file.content || ''); });
+  }
+
+  claritasSearch.addEventListener('input', function () {
+    var q = claritasSearch.value;
+    if (claritasCurrentFile) showClaritasFiles(claritasCurrentGroup, q);
+    else if (claritasCurrentGroup) showClaritasFiles(claritasCurrentGroup, q);
+    else showClaritasGroups(q);
   });
 
   // ══════════════════════════════════════════════════
@@ -2545,6 +2740,174 @@
     });
 
     populateModes();
+  })();
+
+  // ══════════════════════════════════════════════════
+  // TAB: TAXONOMY
+  // ══════════════════════════════════════════════════
+  (function initTaxonomyTab() {
+    var data = typeof taxonomyData !== 'undefined' ? taxonomyData : null;
+    if (!data) return;
+
+    var categories = ['techniques', 'evasions', 'intents', 'inputs'];
+    var catIcons = { techniques: 'fa-gear', evasions: 'fa-shield-halved', intents: 'fa-bullseye', inputs: 'fa-right-to-bracket' };
+    var sectionsEl = document.getElementById('taxonomy-sections');
+    var statsEl = document.getElementById('taxonomy-stats');
+    var searchInput = document.getElementById('taxonomy-search');
+    var filterBtns = document.querySelectorAll('[data-taxonomy-cat]');
+    var overlay = document.getElementById('taxonomy-modal-overlay');
+    var modal = document.getElementById('taxonomy-modal');
+    var modalTitle = document.getElementById('taxonomy-modal-title');
+    var modalBadgeRow = document.getElementById('taxonomy-modal-badge-row');
+    var modalBody = document.getElementById('taxonomy-modal-body');
+    var modalClose = document.getElementById('taxonomy-modal-close');
+    var activeCat = 'all';
+
+    // Build stats
+    var total = 0;
+    categories.forEach(function (cat) { total += (data[cat] || []).length; });
+
+    function renderStats(filtered) {
+      var parts = ['<span><span class="tax-stat-count">' + (filtered !== undefined ? filtered : total) + '</span> items</span>'];
+      categories.forEach(function (cat) {
+        var items = data[cat] || [];
+        var shown = filtered !== undefined ? document.querySelectorAll('.taxonomy-card[data-cat="' + cat + '"]:not(.hidden)').length : items.length;
+        parts.push('<span>' + cat + ': <span class="tax-stat-count">' + shown + '</span></span>');
+      });
+      statsEl.innerHTML = parts.join('');
+    }
+
+    // Build sections
+    categories.forEach(function (cat) {
+      var items = data[cat] || [];
+      if (!items.length) return;
+      var section = document.createElement('div');
+      section.className = 'taxonomy-section';
+      section.setAttribute('data-section-cat', cat);
+      section.innerHTML = '<div class="taxonomy-section-title"><i class="fas ' + (catIcons[cat] || 'fa-tag') + '"></i> ' + cat + ' <span style="font-weight:400;color:var(--text-3)">(' + items.length + ')</span></div>';
+      var grid = document.createElement('div');
+      grid.className = 'taxonomy-grid';
+
+      items.forEach(function (item) {
+        var exCount = (item.examples || []).length;
+        var ideasCount = (item.ideas || []).length;
+        var card = document.createElement('div');
+        card.className = 'taxonomy-card';
+        card.setAttribute('data-cat', cat);
+        card.setAttribute('data-id', item.id);
+        card.innerHTML =
+          '<div class="taxonomy-card-title">' +
+            '<span class="taxonomy-card-badge" data-cat="' + cat + '">' + cat + '</span>' +
+            escapeHtml(item.title) +
+          '</div>' +
+          '<div class="taxonomy-card-desc">' + escapeHtml(item.description) + '</div>' +
+          '<div class="taxonomy-card-footer">' +
+            '<span><i class="fas fa-lightbulb"></i> ' + ideasCount + ' ideas</span>' +
+            (exCount ? '<span><i class="fas fa-code"></i> ' + exCount + ' examples</span>' : '') +
+          '</div>';
+        card.addEventListener('click', function () { openModal(item, cat); });
+        grid.appendChild(card);
+      });
+
+      section.appendChild(grid);
+      sectionsEl.appendChild(section);
+    });
+
+    renderStats();
+
+    // Category filter
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeCat = btn.getAttribute('data-taxonomy-cat');
+        applyFilters();
+      });
+    });
+
+    // Search
+    searchInput.addEventListener('input', function () { applyFilters(); });
+
+    function applyFilters() {
+      var query = searchInput.value.toLowerCase().trim();
+      var visibleCount = 0;
+      var sections = sectionsEl.querySelectorAll('.taxonomy-section');
+      sections.forEach(function (sec) {
+        var cat = sec.getAttribute('data-section-cat');
+        var sectionHidden = activeCat !== 'all' && activeCat !== cat;
+        sec.classList.toggle('hidden', sectionHidden);
+        if (sectionHidden) return;
+        var cards = sec.querySelectorAll('.taxonomy-card');
+        var sectionVisible = 0;
+        cards.forEach(function (card) {
+          var title = card.querySelector('.taxonomy-card-title').textContent.toLowerCase();
+          var desc = card.querySelector('.taxonomy-card-desc').textContent.toLowerCase();
+          var match = !query || title.indexOf(query) !== -1 || desc.indexOf(query) !== -1;
+          card.classList.toggle('hidden', !match);
+          if (match) { visibleCount++; sectionVisible++; }
+        });
+        sec.classList.toggle('hidden', sectionVisible === 0);
+      });
+      renderStats(visibleCount);
+    }
+
+    // Modal
+    function openModal(item, cat) {
+      modalTitle.textContent = item.title;
+      modalBadgeRow.innerHTML = '<span class="taxonomy-card-badge" data-cat="' + cat + '">' + cat + '</span>';
+      var html = '<p>' + escapeHtml(item.description) + '</p>';
+
+      if (item.ideas && item.ideas.length) {
+        html += '<h4><i class="fas fa-lightbulb"></i> Ideas</h4><ul>';
+        item.ideas.forEach(function (idea) { html += '<li>' + escapeHtml(idea) + '</li>'; });
+        html += '</ul>';
+      }
+
+      if (item.examples && item.examples.length) {
+        html += '<h4><i class="fas fa-code"></i> Example Prompts</h4>';
+        item.examples.forEach(function (ex, i) {
+          html += '<div class="taxonomy-example">' + escapeHtml(ex) +
+            '<div class="taxonomy-example-actions">' +
+              '<button data-tax-copy="' + i + '"><i class="fas fa-copy"></i> Copy</button>' +
+              '<button data-tax-insert="' + i + '"><i class="fas fa-plus"></i> Insert</button>' +
+            '</div></div>';
+        });
+      }
+
+      modalBody.innerHTML = html;
+
+      // Wire copy/insert buttons
+      modalBody.querySelectorAll('[data-tax-copy]').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var idx = parseInt(btn.getAttribute('data-tax-copy'), 10);
+          copyText(item.examples[idx]);
+        });
+      });
+      modalBody.querySelectorAll('[data-tax-insert]').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var idx = parseInt(btn.getAttribute('data-tax-insert'), 10);
+          insertSnippet(item.examples[idx], item.title);
+          closeModal();
+          // Switch to editor tab
+          tabBtns.forEach(function (b) { b.classList.remove('active'); });
+          tabContents.forEach(function (c) { c.classList.remove('active'); });
+          document.querySelector('[data-tab="editor"]').classList.add('active');
+          document.getElementById('tab-editor').classList.add('active');
+        });
+      });
+
+      overlay.classList.remove('hidden');
+    }
+
+    function closeModal() { overlay.classList.add('hidden'); }
+
+    modalClose.addEventListener('click', closeModal);
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !overlay.classList.contains('hidden')) closeModal();
+    });
   })();
 
   // ══════════════════════════════════════════════════

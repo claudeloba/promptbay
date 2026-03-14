@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const projectRoot = process.cwd();
-const taxonomyRoot = path.join(projectRoot, 'pentest-taxonomy');
+const taxonomyRoot = path.join(projectRoot, 'snippets');
 const outputPath = path.join(projectRoot, 'js', 'payloadAssets.js');
 const allowedExtensions = new Set(['.md', '.txt']);
 

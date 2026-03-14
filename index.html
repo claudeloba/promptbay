@@ -21,7 +21,7 @@
       <button class="header-btn" id="btn-redo" title="Redo (Ctrl+Y)"><i class="fas fa-redo"></i></button>
       <button class="header-btn" id="btn-clear" title="Clear editor"><i class="fas fa-trash-alt"></i></button>
       <button class="header-btn" id="btn-theme" title="Toggle theme"><i class="fas fa-moon"></i></button>
-      <a class="header-btn" href="https://github.com/pi-2r/ThePromptBay" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a class="header-btn" href="https://github.com/claudeloba/thepromptbay" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
   </header>
 
@@ -38,6 +38,7 @@
     <button class="tab-btn" data-tab="gibberish"><i class="fas fa-comments"></i> Gibberish</button>
     <button class="tab-btn" data-tab="splitter"><i class="fas fa-scissors"></i> Splitter</button>
     <button class="tab-btn" data-tab="decoder"><i class="fas fa-key"></i> Decoder</button>
+    <button class="tab-btn" data-tab="taxonomy"><i class="fas fa-crosshairs"></i> Taxonomy</button>
   </nav>
 
   <!-- ═══════════════ TAB: Payload Editor ═══════════════ -->
@@ -88,11 +89,17 @@
         </div>
 
         <!-- Sidebar tabs -->
-        <div class="sidebar-tabs">
-          <button class="sidebar-tab active" data-sidebar-tab="snippets"><i class="fas fa-puzzle-piece"></i> Snippets</button>
-          <button class="sidebar-tab" data-sidebar-tab="transforms"><i class="fas fa-font"></i> Transform</button>
-          <button class="sidebar-tab" data-sidebar-tab="sequences"><i class="fas fa-terminal"></i> Sequences</button>
-          <button class="sidebar-tab" data-sidebar-tab="books"><i class="fas fa-book"></i> Books</button>
+        <div class="sidebar-tabs-wrap">
+          <button class="sidebar-tabs-arrow sidebar-tabs-arrow-left" id="sidebar-tabs-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+          <div class="sidebar-tabs" id="sidebar-tabs-scroll">
+            <button class="sidebar-tab active" data-sidebar-tab="snippets"><i class="fas fa-puzzle-piece"></i> Snippets</button>
+            <button class="sidebar-tab" data-sidebar-tab="transforms"><i class="fas fa-font"></i> Transform</button>
+            <button class="sidebar-tab" data-sidebar-tab="sequences"><i class="fas fa-terminal"></i> Sequences</button>
+            <button class="sidebar-tab" data-sidebar-tab="books"><i class="fas fa-book"></i> Books</button>
+            <button class="sidebar-tab" data-sidebar-tab="libertas"><i class="fas fa-unlock-alt"></i> L1B3RT4S</button>
+            <button class="sidebar-tab" data-sidebar-tab="claritas"><i class="fas fa-eye"></i> CL4R1T4S</button>
+          </div>
+          <button class="sidebar-tabs-arrow sidebar-tabs-arrow-right" id="sidebar-tabs-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
         </div>
 
         <!-- Snippets panel -->
@@ -171,6 +178,31 @@
             <input type="text" id="sidebar-sequence-search" placeholder="Search sequences..." />
           </div>
           <div class="sidebar-scroll" id="sidebar-sequence-list"></div>
+        </div>
+
+        <!-- L1B3RT4S panel -->
+        <div class="sidebar-panel hidden" id="sidebar-panel-libertas">
+          <div class="sidebar-search">
+            <input type="text" id="sidebar-libertas-search" placeholder="Search jailbreaks..." />
+          </div>
+          <div class="sidebar-breadcrumb" id="libertas-breadcrumb">
+            <span class="breadcrumb-root">All targets</span>
+          </div>
+          <div class="sidebar-scroll" id="libertas-list"></div>
+          <div class="sidebar-scroll hidden" id="libertas-detail"></div>
+        </div>
+
+        <!-- CL4R1T4S panel -->
+        <div class="sidebar-panel hidden" id="sidebar-panel-claritas">
+          <div class="sidebar-search">
+            <input type="text" id="sidebar-claritas-search" placeholder="Search system prompts..." />
+          </div>
+          <div class="sidebar-breadcrumb" id="claritas-breadcrumb">
+            <span class="breadcrumb-root">All providers</span>
+          </div>
+          <div class="sidebar-scroll" id="claritas-groups"></div>
+          <div class="sidebar-scroll hidden" id="claritas-files"></div>
+          <div class="sidebar-scroll hidden" id="claritas-detail"></div>
         </div>
       </aside>
     </div>
@@ -657,15 +689,54 @@
     </div>
   </div>
 
+  <!-- ═══════════════ TAB: Taxonomy ═══════════════ -->
+  <div class="tab-content" id="tab-taxonomy">
+    <div class="tool-panel">
+      <div class="tool-header">
+        <h2><i class="fas fa-crosshairs"></i> PI Attack Taxonomy</h2>
+        <p class="tool-desc">Prompt injection attack classification — techniques, evasions, intents, and input vectors. Based on <a href="https://github.com/Arcanum-Sec/arc_pi_taxonomy" target="_blank" rel="noopener noreferrer">Arcanum PI Taxonomy</a>.</p>
+      </div>
+      <div class="taxonomy-controls">
+        <div class="segmented-row taxonomy-filters" id="taxonomy-filters">
+          <button class="seg-btn active" data-taxonomy-cat="all">All</button>
+          <button class="seg-btn" data-taxonomy-cat="techniques">Techniques</button>
+          <button class="seg-btn" data-taxonomy-cat="evasions">Evasions</button>
+          <button class="seg-btn" data-taxonomy-cat="intents">Intents</button>
+          <button class="seg-btn" data-taxonomy-cat="inputs">Inputs</button>
+        </div>
+        <div class="taxonomy-search-row">
+          <input type="text" class="tool-input taxonomy-search" id="taxonomy-search" placeholder="Search taxonomy..." />
+        </div>
+      </div>
+      <div class="taxonomy-stats" id="taxonomy-stats"></div>
+      <div id="taxonomy-sections"></div>
+    </div>
+
+    <!-- Taxonomy detail modal -->
+    <div class="taxonomy-modal-overlay hidden" id="taxonomy-modal-overlay">
+      <div class="taxonomy-modal" id="taxonomy-modal">
+        <div class="taxonomy-modal-header">
+          <h3 id="taxonomy-modal-title"></h3>
+          <button class="taxonomy-modal-close" id="taxonomy-modal-close">&times;</button>
+        </div>
+        <div class="taxonomy-modal-badge-row" id="taxonomy-modal-badge-row"></div>
+        <div class="taxonomy-modal-body" id="taxonomy-modal-body"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast -->
   <div class="toast" id="toast"></div>
 </div>
 
+<script src="arc_pi_taxonomy/docs/data/taxonomy.js"></script>
 <script src="js/transforms.js"></script>
 <script src="js/steganography.js"></script>
 <script src="js/emojiLibrary.js"></script>
 <script src="js/booksData.js"></script>
 <script src="js/payloadAssets.js"></script>
+<script src="js/libertasAssets.js"></script>
+<script src="js/claritasAssets.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
