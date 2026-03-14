@@ -1,1 +1,5 @@
-{}
+{
+  "scripts": {
+    "generate:payload-assets": "node scripts/generate-payload-assets.js"
+  }
+}

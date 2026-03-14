@@ -1,0 +1,3554 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="utf-8"><style>
+#pg-header div, #pg-footer div {
+    all: initial;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+}
+#pg-footer div.agate {
+    font-size: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+#pg-footer li {
+    all: initial;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-indent: -0.6em;
+}
+#pg-footer div.secthead {
+    font-size: 110%;
+    font-weight: bold;
+}
+#pg-footer #project-gutenberg-license {
+    font-size: 110%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+#pg-header-heading {
+    all: inherit;
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+}
+#pg-footer-heading {
+    all: inherit;
+    text-align: center;
+    font-size: 120%;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pg-header #pg-machine-header p {
+    text-indent: -4em;
+    margin-left: 4em;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-size: medium
+}
+#pg-header #pg-header-authlist {
+    all: initial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#pg-header #pg-machine-header strong {
+    font-weight: normal;
+}
+#pg-header #pg-start-separator, #pg-footer #pg-end-separator {
+    margin-bottom: 3em;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 2em;
+    text-align: center
+}
+
+    .xhtml_center {text-align: center; display: block;}
+    .xhtml_center table {
+        display: table;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        }</style><title>
+      The Project Gutenberg eBook of Buntong Hininga, by Pascual De Leon.
+    </title>
+<style>p {
+    text-indent: 1em;
+    margin-top: 0.75em;
+    text-align: justify;
+    margin-bottom: 0.75em;
+    margin-left: 20%;
+    margin-right: 20%
+    }
+.right {
+    text-align: right
+    }
+.noind {
+    text-indent: 0
+    }
+.floatl {
+    float: left
+    }
+.ind {
+    text-indent: 1em
+    }
+.curs {
+    font-style: italic
+    }
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    clear: both
+    }
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both
+    }
+.narrow {
+    margin-top: 1em;
+    margin-bottom: 1em
+    }
+.coverfont {
+    font-size: 0.5em
+    }
+.pquote {
+    margin-left: 40%;
+    margin-right: 30%;
+    text-align: justify
+    }
+.quote {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify
+    }
+.indexquot {
+    margin-left: 25%;
+    margin-right: 25%
+    }
+ol {
+    text-align: left;
+    margin-left: 40%;
+    font-style: italic;
+    list-style-type: upper-roman
+    }
+ul {
+    list-style-type: none
+    }
+table {
+    margin-left: auto;
+    margin-right: auto
+    }
+body {
+    font-family: Times New Roman, Times, serif
+    }
+@media screen {
+    body {
+        margin-left: 10%;
+        margin-right: 10%
+        }
+    }
+.pagedjs_page_content > div {
+    margin-left: 10%;
+    margin-right: 10%
+    }
+.pagenum {
+    position: absolute;
+    left: 92%;
+    font-size: smaller;
+    text-align: center
+    }
+.center {
+    text-align: center
+    }
+.figcenter {
+    margin: auto;
+    text-align: center
+    }
+a img {
+    border: 0
+    }
+.poem {
+    margin-left: 30%;
+    margin-right: 15%;
+    text-align: left
+    }
+.poem .stanza {
+    margin: 1em 0 1em 0
+    }
+.i2 {
+    display: block;
+    margin-left: 2em
+    }
+.i3 {
+    display: block;
+    margin-left: 3em
+    }
+.verseind {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0
+    }
+.verse {
+    margin: 0;
+    padding-left: 3em;
+    text-indent: -3em;
+    margin-top: 0;
+    margin-bottom: 0
+    }</style>
+<link rel="icon" href="images/cover_thumb.jpg" type="image/x-cover" id="id-4468066953492594010"><link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+<meta name="dc.title" content="Buntong Hininga&amp;#10;Mga Tulang Tagalog">
+<meta name="dc.language" content="tl">
+<meta name="dcterms.source" content="https://www.gutenberg.org/files/16446/16446-h/16446-h.htm">
+<meta name="dcterms.modified" content="2026-03-07T12:18:44.742070+00:00">
+<meta name="dc.rights" content="Public domain in the USA.">
+<link rel="dcterms.isFormatOf" href="http://www.gutenberg.org/ebooks/16446">
+<meta name="dc.creator" content="Leon, Pascual de, 1893-1958">
+<meta name="dc.subject" content="Tagalog poetry">
+<meta name="dcterms.created" content="2005-08-05">
+<meta name="generator" content="Ebookmaker 0.13.9 by Project Gutenberg">
+<meta property="og:title" content="Buntong Hininga&amp;#10;Mga Tulang Tagalog">
+<meta property="og:type" content="Text">
+<meta property="og:url" content="https://www.gutenberg.org/cache/epub/16446/pg16446-images.html">
+<meta property="og:image" content="https://www.gutenberg.org/cache/epub/16446/pg16446.cover.medium.jpg">
+</head>
+<body><section class="pg-boilerplate pgheader" id="pg-header" lang="en"><h2 id="pg-header-heading" title="">The Project Gutenberg eBook of <span lang="tl" id="pg-title-no-subtitle">Buntong Hininga</span></h2>
+    
+<div>This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at <a class="reference external" href="https://www.gutenberg.org">www.gutenberg.org</a>. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.</div>
+
+<div class="container" id="pg-machine-header"><p><strong>Title</strong>: Buntong Hininga</p>
+<div id="pg-header-authlist">
+<p><strong>Author</strong>: Pascual de Leon</p>
+</div>
+<br>
+        
+<p><strong>Release date</strong>: August 5, 2005 [eBook #16446]<br>
+                Most recently updated: December 12, 2020</p>
+
+<p><strong>Language</strong>: Tagalog</p>
+
+<p><strong>Other information and formats</strong>: <a href="https://www.gutenberg.org/ebooks/16446">www.gutenberg.org/ebooks/16446</a></p>
+
+<p><strong>Credits</strong>: Produced by Tamiko I. Camacho, Jerome Espinosa Baladad,<br>
+        Pilar Somoza and PG Distributed Proofreaders from page<br>
+        scans provided by University of Michigan.</p>
+
+</div><div id="pg-start-separator">
+<span>*** START OF THE PROJECT GUTENBERG EBOOK BUNTONG HININGA ***</span>
+</div></section><pre></pre>
+<hr style="width: 30%;">
+<div class="figcenter">
+<a href="images/cover_big.jpg" id="id-8983094481114765821">
+<img alt="" src="images/cover_thumb.jpg" title="Cover" id="img_images_cover_thumb.jpg"></a>
+</div>
+<hr style="width: 30%;">
+<h1>BUNTONG HINING̃A</h1>
+<h3>MGA TULANG TAGALOG</h3>
+<h4>NI</h4>
+<h2>PASCUAL DE LEON <span class="coverfont">(<i>Pasleo</i>)<br>
+<i>Mánunulat sa páhayagang "Ang Mithi"</i> (<i>"El Ideal"</i>)<br>
+<i>at kasapi sa "Aklatang Bayan"</i></span></h2>
+<p><br></p>
+<h4>UNANG PAGKÁPALIMBÁG</h4>
+<p><br></p>
+<h4> <i>Limbagang "LA FRATERNIDAD" Ilaya 672, Tundó</i></h4>
+<h3> <i>MAYNILA, K.P.—1915.</i></h3>
+<hr style="width: 40%;">
+<h2>TALAAN NG NILALAMAN</h2>
+<div class="indexquot">
+<ul>
+<li><a href="#pangbungad" class="pginternal">PANGBUNG̃AD</a></li>
+<li><a href="#buntong" class="pginternal">BUNTONG HINING̃A</a></li>
+<li><a href="#pagsisisi" class="pginternal">PAGSISISI......</a></li>
+<li><a href="#dalaga" class="pginternal">ALBUM NG DALAGA...</a></li>
+<li><a href="#ina" class="pginternal">ANG ALBUM NI INA...</a></li>
+<li><a href="#papurit" class="pginternal">MGA PAPURI'T PARANG̃AL SA KUMATHA NITO</a></li>
+</ul>
+</div>
+<hr style="width: 65%;">
+<h2><a id="pangbungad"></a>PANGBUNG̃AD</h2>
+<hr style="width: 40%;">
+<h3>PANGBUNG̃AD</h3>
+<div class="pquote ind curs">
+Pasleo: Pagdamutan ang
+nakayang handog ng̃ kapatid
+sa kapatid:</div>
+<div class="poem curs">
+<div class="stanza">
+<div class="verseind">Tunay at ang mundó'y maginto't mamutya:</div>
+<div class="verse">may dunong, may pilak, may ganda, may tuwa,</div>
+<div class="verse">may puri, may lahi't may bahay... datapwa,</div>
+<div class="verse">ang lalong marang̃ál sa ami'y: ang tula.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem curs">
+<div class="stanza">
+<div class="verseind">Ako'y hindi siláw sa ningning ng̃ ginto;</div>
+<div class="verse">di takót sa dunong; di gulát sa tayo;</div>
+<div class="verse">sa mutya'y di kimi't sa ganda'y di dung̃o,</div>
+<div class="verse">ng̃uni't sa dakilang tula'y: yukong-yuko.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem curs">
+<div class="stanza">
+<div class="verseind">Pano, sa ang tula sa isáng panulat</div>
+<div class="verse">ay siyang lahat na: dunong, puri, pilak...</div>
+<div class="verse">sa isáng makata ang tula'y: ¡lahát-lahát!...</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem curs">
+<div class="stanza">
+<div class="verseind">Ayán si Pasleo: ayá't ang namana</div>
+<div class="verse">niyáng Diwa't Puso'y ipinababasa...</div>
+<div class="verse">Lahát na'y naritó: apóy, tamís, gandá...</div>
+</div>
+<div class="right"><b><i>Pedro Gatmaitan.</i></b></div>
+</div>
+<div class="quote"><i>Maynila, Sept., 1915.</i></div>
+<hr style="width: 60%;">
+<h2><a id="buntong"></a>I.</h2>
+<h2>BUNTONG HINING̃A</h2>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_9">Páhiná 9</a></span></div>
+<h3>BUNTONG HINING̃A...</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ako'y nagtataka!  Aywan ko kung bakit</div>
+<div class="verse">nagbabago yaring damdamin ko't isip,</div>
+<div class="verse">ganyan na ng̃a yata sa silong ng̃ lang̃it</div>
+<div class="verse">ang gawang mamuhay sa laot ng̃ hapis.</div>
+</div><div class="stanza">
+<div class="verseind">Aywan ko kung bakit!  Sa aki'y pumanaw</div>
+<div class="verse">ang lahat ng̃ tamis nitong kabuhayan,</div>
+<div class="verse">sa aki'y nag-iba ang lahat ng̃ kulay,</div>
+<div class="verse">sa aki'y pag-api ang lahat ng̃ bagay!...</div>
+</div><div class="stanza">
+<div class="verseind">Talaga ng̃a yatang balot ng̃ hiwaga,</div>
+<div class="verse">balot ng̃ pang̃arap at pagdadalita</div>
+<div class="verse">ang palad ng̃ tao kung magkabisala!</div>
+<div class="verse">Pawang agam-agam ang laman ng̃ lupa...!</div>
+</div><div class="stanza">
+<div class="verseind">Walang kilos na di paghamak sa akin,</div>
+<div class="verse">walang bagay na di anyaya ng̃ lagim,</div>
+<div class="verse">walang dulot na di sa aking paning̃i'y</div>
+<div class="verse">aninong malungkot ng̃ mg̃a hilahil.</div>
+</div><div class="stanza">
+<div class="verseind">Aywan ko kung bakit nagbago ang lahat</div>
+<div class="verse">sa kabuhayan ko't matimtimang palad;</div>
+<div class="verse">Samantalang ako'y inaalapaap</div>
+<div class="verse">ay masasabi kong: ¡Lahat ay pang̃arap!...</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_10">Páhiná 10</a></span></div>
+<h3>¡HINAGPIS.....!</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Hindi ka na bago! Dati mo ng̃ alam</div>
+<div class="verse">ang hindi pag-imik kung naguulayaw;</div>
+<div class="verse">ako'y pinipipi ng̃ aking paggalang,</div>
+<div class="verse">ng̃ aking pagsuyong mataos, dalisay.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Pinunit sa harap upang makilala</div>
+<div class="verse">ang alab ng̃ aking sinimpang pag-sinta,</div>
+<div class="verse">diyan masusubok ang mithi ko't pita,</div>
+<div class="verse">diyan masisinag ang luksang pag-asa.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Wala ka ng̃ang sala...!  Ang kurus ng̃ hirap</div>
+<div class="verse">ay dapat matirik sa dusta kong palad!</div>
+<div class="verse">Ako ang pulubing sa tinawag-tawag</div>
+<div class="verse">ay lalong inapi... binigyang bagabag...!</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Di ko akalaing ang lang̃it ng̃ puso</div>
+<div class="verse">ay mang̃ung̃ulimlim... biglang maglalaho,</div>
+<div class="verse">di ko akalaing sa likod ng̃ samyo</div>
+<div class="verse">ng̃ mg̃a sampaga'y may lihim na suro...!</div>
+</div></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Animo'y nagtikom sa gayong sandali</div>
+<div class="verse">ang pintong maramot ng̃ awa't lwalhati,</div>
+<div class="verse">sa aki'y para nang ang kahilihiling</div>
+<div class="verse">sinag ng̃ ligaya'y lumubog, napawi...!</div>
+</div></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ng̃ayo'y pamuli pang umaawit-awit</div>
+<div class="verse">sa dilag mong kimkim, gandang maka-Lang̃it,</div>
+<div class="verse">kung may alinlang̃an sa taghoy, sa hibik,</div>
+<div class="verse">ay maging saksi pa ang aking <i>hinagpis</i>.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_11">Páhiná 11</a></span></div>
+<h3>¡DALAMHATI!...</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Aninong malungkot noong kahirapan</div>
+<div class="verse">ang buhay ng̃ tao sa Sangsinukuban,</div>
+<div class="verse">ang tuwa't ligaya'y hinihiram lamang</div>
+<div class="verse">kaya't ulap waring dagling napaparam.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang mabuhay dito'y kapang̃ápang̃anib</div>
+<div class="verse">sa munting paghakbang ay silo ng̃ sakit,</div>
+<div class="verse">umiibig ka na ng̃ buong pagibig</div>
+<div class="verse">ay ayaw pang dinggin ¡ay himalang lang̃it!</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Hindi ka tatamo ng̃ bahagyang galak</div>
+<div class="verse">kundi pa matulog at saka mang̃arap,</div>
+<div class="verse">gayon man, kung minsa'y paos na nanawag</div>
+<div class="verse">sa pagkakahimbing ang tinig ng̃ hirap.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa paminsanminsan, sa aking gunita</div>
+<div class="verse">mg̃a pagsisisi yaong tumutudla.</div>
+<div class="verse">Bakit pa lumaki't natutong humang̃a't</div>
+<div class="verse">ang paghang̃a pala'y kapatid ng̃ luha?</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_12">Páhiná 12</a></span></div>
+<h3>¡AKO...!</h3>
+<div class="pquote">(... estoy enfermo y pálido
+de tanto no dormir...
+<div class="right">ACUÑA.)</div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Puso ko'y malungkot!  Malungkot na tila</div>
+<div class="verse">Ibong walang laya't lagas na sampaga,</div>
+<div class="verse">Sa pasan-pasan kong mabigat na sala'y</div>
+<div class="verse">Lason at patalim ang magpapabawa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang ayos ng̃ mundo ay isang kabaong,</div>
+<div class="verse">Nagtayong kalansay ang puno ng̃ kahoy,</div>
+<div class="verse">Dila ng̃ halimaw iyang mg̃a dahon</div>
+<div class="verse">At sigaw ng̃ api ang ing̃ay ng̃ alon.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¡Ano't ganito na ang pasan kong hirap!</div>
+<div class="verse">¡Ano't ganito na ang aking pang̃arap!</div>
+<div class="verse">Ang lahat ng̃ bagay ay napatatawad,</div>
+<div class="verse">¿Patawarin kaya ang imbi kong palad?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Gabi-gabi ako'y hindi matahimik</div>
+<div class="verse">Na parang sa aki'y mayrong nagagalit,</div>
+<div class="verse">Ang pasan kong <i>sala'y</i> laging umuusig</div>
+<div class="verse">Sa kabuhayan kong di man managinip.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_13">Páhiná 13</a></span></div>
+<h3>¡ULAP...!</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa aking pagdaing, sa aking pagtawag,</div>
+<div class="verse">sa sinamo-samo ng̃ dusta kong palad</div>
+<div class="verse">ay palaging dilim at libing̃ang ulap</div>
+<div class="verse">ang hangang sa ng̃ayo'y nagiging katapat.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Lahat na'y nabata ng̃ aking pag-ibig,</div>
+<div class="verse">lahat na'y nasukat nitong pagtitiis,</div>
+<div class="verse">lahat na'y napasan sa silong ng̃ Lang̃it</div>
+<div class="verse">maging ang parusang pagkalupit-lupit.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Nagbago ang lahat! Subali't ang sagot</div>
+<div class="verse">ng̃ irog at buhay, sa aking pag-luhog</div>
+<div class="verse">ay sadyang hindi pa binabagong lubos,</div>
+<div class="verse">waring inu-uri ang aking pag-irog...</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ng̃uni't kaylan kaya sa kanya'y papanaw</div>
+<div class="verse">ang ulap ng̃ isang wari'y alinlang̃an?</div>
+<div class="verse">at sa akin kaya'y kaylan mabubuksan</div>
+<div class="verse">ang pintong may susing katumbas ng̃ buhay.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_14">Páhiná 14</a></span></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang nakakatulad ng̃ aking pag-giliw</div>
+<div class="verse">ay isang pulubing dumadaing-daing</div>
+<div class="verse">na sa kanyang taghoy at pananalang̃in</div>
+<div class="verse">ay walang maawang maglimos ng̃ aliw!</div>
+</div></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Kanyang sinusubok ang aking pagsuyo,</div>
+<div class="verse">kanyang tinatarok ang luha ng̃ puso,</div>
+<div class="verse">kanyang binabasa sa pamimintuho</div>
+<div class="verse">yaong katunayan ng̃ sinamo-samo.</div>
+</div></div>
+<h4>VII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Samantalang ako'y tumatawag-tawag,</div>
+<div class="verse">lumuluha-luha sa gitna ng̃ hirap,</div>
+<div class="verse">ay walang kapiling maging sa pang̃arap</div>
+<div class="verse">liban sa anino ng̃ mg̃a bagabag.</div>
+</div></div>
+<h4>VIII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ulap ng̃ hinagpis, ulap ng̃ parusa</div>
+<div class="verse">ang nagpapasasang aking dinadama,</div>
+<div class="verse">ng̃uni't kaylan kaya sa aking pagsinta'y</div>
+<div class="verse">ang ulap na iya'y magiging ligaya.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_15">Páhiná 15</a></span></div>
+<h3>¡ANG LUHA NG HIBANG.....!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ayun, tumatang̃is!  Ayun, lumuluha't</div>
+<div class="verse">tumataghoy-taghoy na nakaaawa.</div>
+<div class="verse">Malasin ang hibang, ang sira ang diwa,</div>
+<div class="verse">ang taong nanang̃is sa gabing payapa</div>
+<div class="verse">na minsa'y maiyak, at minsa'y matuwa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Malasin ang ayos ng̃ kahabaghabag</div>
+<div class="verse">ng̃ pusong dinusta ng̃ kanyang pang̃arap;</div>
+<div class="verse">malasin ang luha, ang luha ng̃ palad,</div>
+<div class="verse">ang luhang nagmula sa kanyang pagliyag</div>
+<div class="verse">na pinagkaitan ng̃ tamis ng̃ ling̃ap.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Tumang̃is na muli!  At saka humibik</div>
+<div class="verse">na mandi'y puputok ang latok na dibdib;</div>
+<div class="verse">kanyang ipinukol ang mata sa lang̃it</div>
+<div class="verse">kasabay ang sabing:—"¿Kailan pa sasapit</div>
+<div class="verse">ang mithing ligaya ng̃ aking pag-ibig"?</div>
+</div>
+<div class="stanza">
+<div class="verseind">"¡Oh! Diosa ng̃ aking yaman ng̃ pag-asa,</div>
+<div class="verse">¿kailan mo tutubsin ang puso sa dusa?</div>
+<div class="verse">¿kailan papalitan ng̃ tunay na saya</div>
+<div class="verse">ang nagluluksa kong ulilang pagsinta</div>
+<div class="verse">na nananambitan...!"—at saka tumawa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ha! ha! ha! oh! irog! Aking paraluman,</div>
+<div class="verse">hantung̃an ng̃ aking buong kabuhayan!</div>
+<div class="verse">kung hinihiling mo'y tulang tula lamang</div>
+<span class="pagenum"><a id="Page_16">Páhiná 16</a></span>
+<div class="verse">ng̃ upang ang dusa'y minsang mabawasan,</div>
+<div class="verse">naito't dinggin mo ang tula ng̃ buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">"Halika! halika! Tangapin mo ng̃ayon</div>
+<div class="verse">ang tula ng̃ aking pusong lumalang̃oy;</div>
+<div class="verse">basahing madali't dingging mahinahon</div>
+<div class="verse">ang hibik ng̃ bawa't talatang nanaghoy,</div>
+<div class="verse">ang awit ng̃ palad, ang sigaw, ang tutol.</div>
+</div>
+<div class="stanza">
+<div class="verseind">"Oh! pusong maramot! Pusong mapang-api,</div>
+<div class="verse">walang awang tala sa pagkaduhagi,</div>
+<div class="verse">halika! ha! ha! ha! ang dilim ng̃ gabi,</div>
+<div class="verse">ang halík ng̃ hang̃in ay pawa kong saksí</div>
+<div class="verse">sa panunumpa kong kita'y kinakasi.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Halika't sinagin sa luha ng̃ puso</div>
+<div class="verse">ang kulay ng̃ aking sinimpang pagsamo,</div>
+<div class="verse">halika't basahin sa pamimintuho</div>
+<div class="verse">ang gintong pang̃arap ng̃ aking pagsuyo</div>
+<div class="verse">na nananawagan hanggang masiphayo",</div>
+</div>
+<div class="stanza">
+<div class="verse">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+<div class="verse">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+<div class="verse">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+</div>
+<div class="stanza">
+<div class="verseind">Dito na natapos yaóng panambitan,</div>
+<div class="verse">dito na naputol ang pananawagan</div>
+<div class="verse">ng̃ sira ang bait, ng̃ ulól, ng̃ hibang,</div>
+<div class="verse">ng̃ pusong ginahís at pinagkaitan</div>
+<div class="verse">niyang luwalhating katumbas ng̃ buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¡Anóng hirap pala ng̃ gawang humibik</div>
+<div class="verse">sa isang ayaw mang tumugo't makiníg!</div>
+<div class="verse">¡Anóng hirap pala ng̃ gawang umibig</div>
+<div class="verse">lalo't aapihín sa silong ng̃ lang̃it</div>
+<div class="verse">ng̃ hiníhibikang pinapanaginip.....!</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_17">Páhiná 17</a></span></div>
+<h3>¡KURUS AT LIBING̃AN..!</h3>
+<h5>(PAMAMANGLAW)</h5>
+<div class="pquote ind">(Irog: Kung ang kalungkutan
+ko'y tinutugon ng̃ iyong
+damdamin ay pamuli't muling
+basahin mo lamang ang
+awit na ito. At ako'y talagang
+may ugali na <i>matapang</i> sa
+likod, at <i>duwag</i> sa harap.)
+</div>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Narito't malasin itong kalagayan</div>
+<div class="verse">At tutop ang noó sa kapighatian,</div>
+<div class="verse">Aking binabakas yaong kasayahang</div>
+<div class="verse">Nasulat sa dahon nitong kabuhayan.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Hindi makakatkat ang mg̃a talata</div>
+<div class="verse">Na tikóm sa guhit ng̃ mg̃a biyaya,</div>
+<div class="verse">At kung mayroon pang tagistis ng̃ luha</div>
+<div class="verse">Ay luhang nanggaling sa pagkariwara.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa aking kalupi, sa aklat ng̃ palad</div>
+<div class="verse">Ay may mg̃a bagay na nang̃asusulat,</div>
+<div class="verse">Diyan makikita ang mukhang may hirap</div>
+<div class="verse">At pusong malaong lunod sa pang̃arap.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_18">Páhiná 18</a></span></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Diyan mamamalas ang isang larawang</div>
+<div class="verse">Sipi sa ulila't payapang libing̃an,</div>
+<div class="verse">Diyan makikita ang dusta kong buhay</div>
+<div class="verse">Na sawang-sawa na sa kawáy ng̃ hukay.</div>
+</div></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Hindi ko matalos itong nangyayari't</div>
+<div class="verse">Ang namamalas ko'y dilím na parati,</div>
+<div class="verse">Bulo sa pagsuyo, bigo sa pagkasi,</div>
+<div class="verse">Kurus sa baunan ng̃ naduduhagi.</div>
+</div></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa pinto ng̃ puso'y nanawag na lagi</div>
+<div class="verse">Ang tinig ng̃ dusang nakaaaglahi,</div>
+<div class="verse">Parang nananadyang sa aki'y bumati</div>
+<div class="verse">Ang labi ng̃ hirap, tinik, dalamhati.</div>
+</div></div>
+<h4>VII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Nais kong umibig. Ng̃uni't natatakot</div>
+<div class="verse">Na ako'y umibig at saka lumuhog,</div>
+<div class="verse">Pagka't nang̃ang̃ambang sa aki'y matapos</div>
+<div class="verse">Ang lahat ng̃ aliw nitong Sangsinukob.</div>
+</div></div>
+<h4>VIII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Wala nang parusang gaya ng̃ tumang̃is</div>
+<div class="verse">Sa harap ng̃ isang hindi umiibig,</div>
+<span class="pagenum"><a id="Page_19">Páhiná 19</a></span>
+<div class="verse">Wala nang parusang gaya ng̃ tumitig</div>
+<div class="verse">Sa sung̃it ng̃ dilím ng̃ gabing tahimik.</div>
+</div></div>
+<h4>IX.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sukat na sa akin ang ako'y malagak</div>
+<div class="verse">Sa pamamangka ko sa ilog ng̃ hirap,</div>
+<div class="verse">Sukat nang masabing lagi kang pang̃arap.</div>
+<div class="verse">At matitiis na ang pasang bagabag.</div>
+</div></div>
+<h4>X.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Walang kailang̃ang mamatay sa dusa</div>
+<div class="verse">Huwag ang bawiin ang pagkikilala,</div>
+<div class="verse">Aking katuwaan kung ikaw'y makita</div>
+<div class="verse">Sa piling ng̃ aliw na di magbabawa.</div>
+</div></div>
+<h4>XI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Aking matitiis na sarilihin ko</div>
+<div class="verse">Ang lahat ng̃ pait sa buhay na ito</div>
+<div class="verse">Kahit ang magtimpi'y halik ng̃ simbuyó</div>
+<div class="verse">Huwag ang abuting ikaw pa'y magtampo.</div>
+</div></div>
+<h4>XII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ipalalagay kong masayang aliwan</div>
+<div class="verse">Ang namamalas kong kurus at libing̃an,</div>
+<div class="verse">Sapagka't sa aki'y darating ang araw</div>
+<div class="verse">At diyan uuwi ang hiram kong buhay.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_20">Páhiná 20</a></span></div>
+<h4>XIII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Di ko pinupukaw ang pagkamapalad</div>
+<div class="verse">Niyang iyong buhay na bagong ninikat,</div>
+<div class="verse">Ikaw ang bituwing takpan man ng̃ ulap</div>
+<div class="verse">Ay maghahari din ang ningning na ing̃at.</div>
+</div></div>
+<h4>XIV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Lamang ang hang̃ad kong iyong mapaglining.</div>
+<div class="verse">Ay ang aking lungkot na di nagmamaliw,</div>
+<div class="verse">Lungkot na aywan ko kung saan nanggaling</div>
+<div class="verse">Kung sa mg̃a aklat ng̃ isang paggiliw.</div>
+</div></div>
+<h4>XV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Matapos mabasa ang awit ng̃ buhay</div>
+<div class="verse">Ay limutin mo na ang aking kundiman,</div>
+<div class="verse">Sapagka't ayokong mahawa kang tunay</div>
+<div class="verse">Sa taglay kong lungkot at kapighatian.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_21">Páhiná 21</a></span></div>
+<h3>KUNG AKO'Y SINO...</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Huwàg nang itanong; iyong akalaing</div>
+<div class="verse">akong naghahayag ng̃ maraming lihim</div>
+<div class="verse">ay isang binihag ng̃ mg̃a hilahil,</div>
+<div class="verse">isang kaluluwang busabos ng̃ lagim,</div>
+<div class="verse">isang nang̃ang̃arap sa ganda mong kimkim,</div>
+<div class="verse">isang tumatang̃is, isang dumadaing,</div>
+<div class="verse">isang nagaalay ng̃ kanyang paggiliw,</div>
+<div class="verse">isang umaasang hindi hahabagin.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">At kung ako'y sino? Sukat na ng̃a sinta!</div>
+<div class="verse">ako ang tutugon sa mithi mo't pita...¡</div>
+<div class="verse">Ninanais mo bang ako'y makilala...?</div>
+<div class="verse">Kung gayo'y makinig:—Akong sumasamba</div>
+<div class="verse">sa iyong larawan sa tuwi-tuwina'y</div>
+<div class="verse">pusong laging bihag ng̃ hirap, ng̃ dusa,</div>
+<div class="verse">ako ang linikhang uhaw sa ginhawa't</div>
+<div class="verse">may ulap na lagi ang aking pag-asa.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">At kung ako'y sino? Isang nang̃ang̃arap</div>
+<div class="verse">magtamong biyaya sa iyong pagling̃ap...</div>
+<div class="verse">Isang umaawit ng̃ lihim at hayag,</div>
+<div class="verse">isang kandong kandong ng̃ mg̃a bagabag,</div>
+<div class="verse">isang nasasabik uminom, lumasap</div>
+<div class="verse">sa saro ng̃ buhay ng̃ tuwa, ng̃ galak,</div>
+<div class="verse">isang binabayo ng̃ mg̃a pahirap,</div>
+<div class="verse">isang umiibig sa iyó ng̃ ganap.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_22">Páhiná 22</a></span></div>
+<h3>Si Puring...!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sabihin na ninyong ako'y nang̃ang̃arap</div>
+<div class="verse">ó nananaginip sa Sangmaliwanag</div>
+<div class="verse">ay di babawiin itong pag-uulat</div>
+<div class="verse">sa isang dalagang may magandang palad.</div>
+</div>
+<div class="stanza">
+<div class="verseind">May tikas-bayani at tindig Sultana,</div>
+<div class="verse">may hinhing kaagaw ng̃ mg̃a sampaga,</div>
+<div class="verse">may samyong kundimang hindi magbabawa</div>
+<div class="verse">datnan ma't panawan ng̃ gabi't umaga.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang matáng katalo ng̃ mayuming tala'y</div>
+<div class="verse">sapat nang bumihis sa pusong naluha,</div>
+<div class="verse">ang ng̃iting animo'y kaban ng̃ biyaya'y</div>
+<div class="verse">makaliligaya sa mg̃a kawawa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Si <i>José Vendido'y</i> subukang buhayi't</div>
+<div class="verse">sa diwatang ito'y pilit na gigiliw,</div>
+<div class="verse">paano'y may gandang batis ng̃ tulain,</div>
+<div class="verse">paano'y may yuming aklat ng̃ damdamin.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_23">Páhiná 23</a></span></div>
+<h3>¡NOON...!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Noon, ikaw'y aking minamalasmalas</div>
+<div class="verse">sa pusod ng̃ gayong tahimik na gubat,</div>
+<div class="verse">ang iyong larawan noo'y nasisinag</div>
+<div class="verse">sa linaw ng̃ batis na awit ng̃ palad.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ikaw'y namimili ng̃ batong mainam</div>
+<div class="verse">at nilalaro mo ang mg̃a halaman,</div>
+<div class="verse">sa damdam ko baga'y ang bawa't hawakan</div>
+<div class="verse">ng̃ mg̃a kamay mo'y nagtataglay buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Yaong "makahiyang" mahinhi't mayumi</div>
+<div class="verse">ng̃ iyong hawaka'y hindi man nang̃imi,</div>
+<div class="verse">paano'y may galing ang iyong daliri't</div>
+<div class="verse">ang mg̃a kamay mo'y banal, tang̃ing tang̃i.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa puso'y tumubo ang isang paghang̃a,</div>
+<div class="verse">naguhit sa pitak ang isang diwata,</div>
+<div class="verse">aywan ko kung ikaw!  At tila ikaw ng̃a!</div>
+<div class="verse">Subali't Mayumi, ¿ikaw'y maaawa?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Magsabi ang aklat na iyong binasa</div>
+<div class="verse">kundi ang buhay ko'y siniklot ng̃ dusa,</div>
+<span class="pagenum"><a id="Page_24">Páhiná 24</a></span>
+<div class="verse">magsabi ang gubat kung hindi natayang</div>
+<div class="verse">ang tulog kong puso'y iyong binalisa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Mayumi, buhayin ang yumaong araw</div>
+<div class="verse">sa tabi ng̃ batis at lilim ng̃ parang,</div>
+<div class="verse">kung magunita na'y dapat mong malamang</div>
+<div class="verse">naririto akong tigib kalumbayan.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_25">Páhiná 25</a></span></div>
+<h3>Bagong Taon...</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Hindi ko matalos kung ang aking puso'y</div>
+<div class="verse">Magbabagong taón sa pagkasiphayo,</div>
+<div class="verse">Ako'y naririto't ikaw ay malayo</div>
+<div class="verse">Na animo'y buwang sa aki'y nagtago.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Inaasahan ko ng̃ buong pagasa</div>
+<div class="verse">Na ikaw sa aki'y sadyang lumimot na,</div>
+<div class="verse">Kung magkakagayo'y iyong makikita</div>
+<div class="verse">Ang maputlang bangkay sa gitna ng̃ dusa.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ako, sakali mang iniwan sa hirap</div>
+<div class="verse">Ay nagsasaya rin kahit sa pang̃arap,</div>
+<div class="verse">Sapagka't nais ko na iyong mamalas</div>
+<div class="verse">Na ako'y marunong magdalá ng̃ palad.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">At sa pagpasok ng̃a ng̃ bagong taon mo</div>
+<div class="verse">Ay pawang ligaya ang hinahang̃ad ko</div>
+<div class="verse">Na iyong tamuhin sa buhay na ito</div>
+<div class="verse">Kahit pang̃arap daw ang lahat sa mundo.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_26">Páhiná 26</a></span></div>
+<h4>KUNDIMAN NG PUSO</h4>
+<h3>¡...............!</h3>
+<div class="poem"><div class="stanza">
+<div class="verseind">Pang̃alang sing-bang̃o ng̃ mg̃a sampaga,</div>
+<div class="verse">laman ng̃ tulain, hamog sa umaga,</div>
+<div class="verse">awitan ng̃ ibong kahalihalina,</div>
+<div class="verse">bulong ng̃ batisang badha ng̃ ligaya.</div>
+<div class="verseind">Sa aki'y sukat na ang ikaw'y mamalas,</div>
+<div class="verse">upang magkadiwa ang aking panulat,</div>
+<div class="verse">sa aki'y sukat na ang bang̃o mong ing̃at</div>
+<div class="verse">upang ikabuhay ng̃ imbi kong palad.</div>
+<div class="verseind">Ikaw ang may sala!  Bulaang makata</div>
+<div class="verse">ang hindi sa iyo'y mahibang na kusa,</div>
+<div class="verse">bulaang damdamin ang di magtiwala</div>
+<div class="verse">sa ganda mong iyan, ng̃ lahat ng̃ nasa.</div>
+<div class="verseind">Yamang ginulo mo ang aking isipan</div>
+<div class="verse">at naging ng̃iti ka sa aking kundiman,</div>
+<div class="verse">bayaan mo ng̃ayong sa iyo'y ialay</div>
+<div class="verse">ang buong palad kong tang̃ing iyo lamang.</div>
+<div class="verseind">Napakatagal nang ikaw'y natatago</div>
+<div class="verse">sa pitak ng̃ aking lumuluhang puso,</div>
+<div class="verse">ang iyong larawa'y talang walang labo</div>
+<div class="verse">at siyang handugan ng̃ aking pagsuyo.</div>
+<div class="verseind">Kung nagbabasa ka'y tapunan ng̃ malay</div>
+<div class="verse">ang kabuhayan kong walang kasayahan,</div>
+<div class="verse">kung masasamid ka'y iyo nang asahan</div>
+<div class="verse">na ikaw ang aking laging gunamgunam.</div>
+<div class="verseind">Sa paminsanminsa'y tapunan ng̃ titig</div>
+<div class="verse">ang isang makatang hibang sa pagibig,</div>
+<div class="verse">bago ka mahiga'y tuming̃in sa lang̃it</div>
+<div class="verse">at mababakas mong ako'y umaawit.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_27">Páhiná 27</a></span></div>
+<h3>¡ALA-ALA....!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Huwág mong isiping kita'y linilimot,</div>
+<div class="verse">huwag mong asahang ang aking pag-irog</div>
+<div class="i3">ay wala't kupas na</div>
+<div class="i3">sa kimkim mong ganda,</div>
+<div class="verse">huwag, aking kasi. Walang pagkatapos</div>
+<div class="verse">ang tibok ng̃ pusong napabubusabos.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ikaw'y nagmalaki!  Ako'y di binati</div>
+<div class="verse">at parang hindi na kakilalang tang̃i,</div>
+<div class="i3">ganyan ng̃ang talaga</div>
+<div class="i3">ang taong maganda,</div>
+<div class="verse">mapagmalakihin sapagka't may uri</div>
+<div class="verse">na lubhang mataas kay sa isang Hari.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ako'y linimot mo. Kahit magkakita'y</div>
+<div class="verse">hindi man ng̃itian, gayong kakilala,</div>
+<div class="i3">hindi ba't diwata</div>
+<div class="i3">ikaw nitong diwa?</div>
+<div class="verse">Hindi ba't batisan ikaw ng̃ pag-asa</div>
+<div class="verse">at ikaw'y may bang̃ong sipi sa sampaga?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Tapunan ng̃ malas ang masayang araw</div>
+<div class="verse">na ako'y busabos niyang kagandahang</div>
+<div class="i3">pumukaw na muli</div>
+<div class="i3">sa aking kudyapi,</div>
+<div class="verse">doo'y mababakas ang isang larawang</div>
+<div class="verse">ako'y nakaluhod at nananambitan.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_28">Páhiná 28</a></span>
+<div class="verse">Iyan ang larawan ng̃ isang makata</div>
+<div class="verse">na uhaw na uhaw sa kimkim mong awa,</div>
+<div class="i3">Iyan ang umawit</div>
+<div class="i3">sa lahat ng̃ sakit</div>
+<div class="verse">na taglay ng̃ pusong laging lumuluha</div>
+<div class="verse">at sabik na sabik sa iyong kaling̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ng̃ayo'y naririto't muling umaawit</div>
+<div class="verse">ang iyong makatang inapi't hinapis,</div>
+<div class="i3">habang inaapi'y</div>
+<div class="i3">lalong lumalaki</div>
+<div class="verse">sa dilag mong iyan, ang aking pag-ibig</div>
+<div class="verse">pagka't ang puso ko'y singlawak ng̃ lang̃it.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_29">Páhiná 29</a></span></div>
+<h3>Saksi...!</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ikaw nga'y dapat kong mahalin nang labis</div>
+<div class="verse">at ukulang tang̃i ng̃ aking pagibig,</div>
+<div class="verse">pagka't natunayang ikaw'y isang lang̃it</div>
+<div class="verse">na di dadalawin ng̃ mg̃a pang̃anib.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Nananalig akong napakadalisay</div>
+<div class="verse">ng̃ iyong pag-ibig sa ating suyuan,</div>
+<div class="verse">kaya't ang puso ko'y nagpapakatibay</div>
+<div class="verse">hanggang sa sumapit ang dakilang araw.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Pagaaralan ko, hanggang makakaya</div>
+<div class="verse">na ikaw'y malagak sa tuwa't ginhawa,</div>
+<div class="verse">pagiing̃atan kong huwag kang magdusa</div>
+<div class="verse">kung na sa sa akin ang iyong ligaya.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Kaya't aking irog:  Ikaw'y pumanatag;</div>
+<div class="verse">at kung sakali mang tayo'y mabagabag</div>
+<div class="verse">ay huwag magtaká sa Sangmaliwanag</div>
+<div class="verse">pagka't ang lang̃it ma'y nagaalapaap..!</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_30">Páhiná 30</a></span></div>
+<h3>Kundiman...!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Dalagang butihin: Huwag kang humang̃a</div>
+<div class="verse">kung iyong makitang ang mata'y may luha,</div>
+<div class="verse">ang kabuhayan ko'y hindi maapula</div>
+<div class="verse">sa ikatatamo ng̃ tang̃ing biyaya.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang luha sa mata'y laging bumabalong,</div>
+<div class="verse">ang aking damdamin ay linilingatong,</div>
+<div class="verse">ang kulay ng̃ madla'y malamlam na hapon,</div>
+<div class="verse">ang ayos ng̃ lahat ay parang kabaong.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa aking paghiga'y laging nakikita</div>
+<div class="verse">ang iyong larawan, dakilang dalaga</div>
+<div class="verse">ikaw'y maniwalang ako'y umaasa</div>
+<div class="verse">na di aabutin ako ng̃ umaga.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kaya't kung sakaling ikaw'y may pagling̃ap</div>
+<div class="verse">kung may pagting̃in ka sa imbi kong palad,</div>
+<div class="verse">ay mangyari mo ng̃ang iligtas sa hirap</div>
+<div class="verse">ang kabuhayan kong sawa sa pang̃arap.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_31">Páhiná 31</a></span></div>
+<h3>Ang iyong pangako</h3>
+<div class="pquote right"><i>Sa iyo, Pitiminí.</i></div>
+<div class="poem">
+<div class="stanza">
+<div class="verse">Bago ka umalis at naglakbay baya'y</div>
+<div class="verse">may naging pang̃akong sa aki'y iniwan</div>
+<div class="verse">pang̃akong sa aki'y naging bagong araw</div>
+<div class="verse">na nikat sa gitna ng̃ katanghalian,</div>
+<div class="verse">paano'y pang̃akong sa katotohana'y</div>
+<div class="verse">nagbukas ng̃ pinto ng̃ kaligayahan.</div>
+</div>
+<div class="stanza">
+<div class="verse">Ikaw'y napalayo.  Ako'y ilinagak</div>
+<div class="verse">sa lang̃it ng̃ isang masung̃it na palad</div>
+<div class="verse">napatulad ako sa kimpal ng̃ ulap</div>
+<div class="verse">na walang bituwing magarang ninikat,</div>
+<div class="verse">ang kabuhayan ko'y naging isang dagat</div>
+<div class="verse">na di matatawid kahit sa pang̃arap.</div>
+</div>
+<div class="stanza">
+<div class="verse">Pinag-aralan kong lumang̃oy sa sakit</div>
+<div class="verse">at buong lakas ko ang siyang ginamit</div>
+<div class="verse">ang iyong pang̃ako sa aking pang̃anib</div>
+<div class="verse">ay siyang timbulang kawáy ng̃ pagibig,</div>
+<div class="verse">noon ko nalamang ang taglay kong hapis</div>
+<div class="verse">ay di magbabawa't singlawak ng̃ lang̃it.</div>
+</div>
+<div class="stanza">
+<div class="verse">Pinagtiisan kong labanan ang aking</div>
+<div class="verse">pasanpasang hirap at mg̃a damdamin,</div>
+<div class="verse">ang kawikaan ko'y ang gabing malalim</div>
+<div class="verse">na napakasung̃it ay natatapos din.</div>
+<div class="verse">Ang taglay kong dusa kung ako'y palarin</div>
+<div class="verse">ay magiging sayáng hindi magmamaliw.</div>
+</div>
+<div class="stanza">
+<div class="verse">Walang saglit na di ang iyong pang̃ako</div>
+<div class="verse">ang napapasulat sa aklat ng̃ puso,</div>
+<div class="verse">walang araw na di ang aking pagsuyo</div>
+<div class="verse">ay sabik sa tuwang kapintupintuho</div>
+<div class="verse">kaya't nangyayaring madalas maligo</div>
+<div class="verse">itong aking palad sa luhang nunulo.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_32">Páhiná 32</a></span>
+<div class="verse">Isinulit mo pang sa iyong pagdating</div>
+<div class="verse">ang iyong pang̃ako'y sadyang tutuparin,</div>
+<div class="verse">ang aking pagasang puyapos ng̃ dilim</div>
+<div class="verse">ay kinabakasan ng̃ bahagyang aliw,</div>
+<div class="verse">paano'y umasang iyong tutubusin</div>
+<div class="verse">ang kunis ng̃ buhay sa guhit ng̃ libing.</div>
+</div>
+<div class="stanza">
+<div class="verse">Magmula na noo'y naging maliwanag</div>
+<div class="verse">ang lang̃it ng̃ pusong nagaalapaap,</div>
+<div class="verse">ang kurus na aking laging namamalas</div>
+<div class="verse">sa mg̃a libing̃an ng̃ nang̃apahamak,</div>
+<div class="verse">sa aking paning̃in ay naging watawat</div>
+<div class="verse">na kulay lungtiang kapang̃apang̃arap!</div>
+</div>
+<div class="stanza">
+<div class="verse">Ikaw'y napabalik, at tayo'y nagkita!</div>
+<div class="verse">ang lamang palagi nitong alaala'y</div>
+<div class="verse">ang iyong pang̃akong hindi magbabawa</div>
+<div class="verse">na ng̃ayo'y ibig kong tuparin mo sana,</div>
+<div class="verse">ng̃unit hinding hindi.  Ang aking pagasa'y</div>
+<div class="verse">iyong ipinako sa kurus ng̃ dusa.</div>
+</div>
+<div class="stanza">
+<div class="verse">Sa ganyang paraa'y di kaya manglambot</div>
+<div class="verse">ang kabuhayan kong puyapos ng̃ lungkot?</div>
+<div class="verse">At sa pagkabigo'y hindi ba himutok</div>
+<div class="verse">ang sa damdamin ko'y minsang maglalagos?</div>
+<div class="verse">Ang mukha ng̃ araw ay biglang lumubog</div>
+<div class="verse">sa likod ng̃ isang mapanglaw na bundok.</div>
+</div>
+<div class="stanza">
+<div class="verse">Sulyapan mo ng̃ayon itong kalagaya't</div>
+<div class="verse">balisang balisa sa kapighatian,</div>
+<div class="verse">at hanggang hindi mo binibigyang tibay</div>
+<div class="verse">ang naging pang̃ako sa dusta kong buhay</div>
+<div class="verse">ang kaluluwa ko'y magiging larawan</div>
+<div class="verse">ng̃ nakalulumong kurus at libing̃an.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_33">Páhiná 33</a></span></div>
+<h3>¡ANG REYNA ELENA.....!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ayu't lumalakad. Magarang magarang</div>
+<div class="verse">animo'y bituing nahulog sa lupa,</div>
+<div class="verse">kung minsa'y nagiging hibang itong diwa</div>
+<div class="verse">at kung magkaminsa'y para akong bata,</div>
+<div class="verse">paano'y hindi ko masukat sa haka</div>
+<div class="verse">ang nararapat kong ihaing paghang̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung kita'y itulad sa dakilang araw</div>
+<div class="verse">at ako ang lupa, ang lupang tuntung̃an,</div>
+<div class="verse">ay masasabi mong ako'y walang galang</div>
+<div class="verse">at ako ay bihag niyong gunam-gunam.</div>
+<div class="verse">Subali't butihin! Ang aking tinuran</div>
+<div class="verse">ay tibok at utos ng̃ katotohanan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung ikaw'y Reyna man sa ganda't ugali,</div>
+<div class="verse">naman sa pang̃arap, ako'y isang Hari;</div>
+<div class="verse">kaya't kung sabihi'y tala kang mayumi,</div>
+<div class="verse">hamog sa umaga, bang̃ong walang pawi,</div>
+<div class="verse">ikaw ay manalig, manalig kang tang̃i</div>
+<div class="verse">at ang nagsasabi'y nabatu-balani.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Hanggang tumataas iyang kalagayan</div>
+<div class="verse">nama'y naiingit itong kapalaran,</div>
+<div class="verse">ang gunitain ko ay baka mawalay</div>
+<div class="verse">sa puso mo't diwa ang aking pang̃alan,</div>
+<div class="verse">kung magkakagayon, irog ay asahang</div>
+<div class="verse">sa aki'y babagsak ang Sangkatauhan.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_34">Páhiná 34</a></span>
+<div class="verse">Sa iyo'y bagay ng̃a yaong pagka-Reyna,</div>
+<div class="verse">pagka't sa ayos mo'y isa kang Zenobia,</div>
+<div class="verse">may puso kang Judith, may ng̃iting Ofelia,</div>
+<div class="verse">may diwang de Arco't may samyo kang Portia,</div>
+<div class="verse">samantalang ako, akong umaasa'y</div>
+<div class="verse">isa lamang kawal na lunód sa dusa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa paminsan-minsa'y maanong kuruing</div>
+<div class="verse">wala nang itagal ang aking damdamin,</div>
+<div class="verse">kung magdaramot ka, Reyna kong butihin</div>
+<div class="verse">at di mahahabag sa pagkahilahil</div>
+<div class="verse">ay iyong asahang ang aking paggiliw</div>
+<div class="verse">ay magkakalbaryong walang págmamaliw.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_35">Páhiná 35</a></span></div>
+<h3>¡Huwag kang manganib...!</h3>
+<h4>(SAGOT SA LIHAM MO)</h4>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Maasahan mo ang aking pag-ibig,</div>
+<div class="verse">ang buong buhay ko hanggang mayrong lang̃it,</div>
+<div class="verse">hanggang mayrong araw, tala, gubat, batis</div>
+<div class="verse">ang iyong pang̃ala'y laging na sa isip.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Huwag kang mang̃anib!  Di ko malilimot</div>
+<div class="verse">ang ganda mong iyang sipi sa kampupot,</div>
+<div class="verse">ang bang̃o at tamis ng̃ isang pag-irog</div>
+<div class="verse">ay na sa sa iyo't hindi mauubos.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Nang matunghayan ko ang padalang liham,</div>
+<div class="verse">luha ko'y tumulo sa kapighatian,</div>
+<div class="verse">paano'y gumuhit sa aking isipan</div>
+<div class="verse">na: <i>ang tagumpáy ko'y iyong kamatayan</i>.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Di ko akalaing iyong ikahapis</div>
+<div class="verse">ang pagtatagumpay ng̃ ating pag-ibig,</div>
+<span class="pagenum"><a id="Page_36">Páhiná 36</a></span>
+<div class="verse">ang mg̃a luha mo'y ulan ng̃ pasakit,</div>
+<div class="verse">ang kalumbayan mo'y pagdilim ng̃ lang̃it.</div>
+</div></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang pagtiwala'y tibay ng̃ pagkasi,</div>
+<div class="verse">timbulan ng̃ puso ng̃ naruruhagi,</div>
+<div class="verse">panilo sa mg̃a tapat na lalaki,</div>
+<div class="verse">pag-asa ng̃ palad na di mapuputi.</div>
+</div></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Huwag mong isiping ako'y magsasawa</div>
+<div class="verse">sa ating suyuang busog sa biyaya,</div>
+<div class="verse">ang iyong larawa'y laging na sa diwa't</div>
+<div class="verse">ang iyong pang̃alan ay aking dambana.</div>
+</div></div>
+<h4>VII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Aking natunghayan sa padalang sulat</div>
+<div class="verse">ang kalungkutan mo't sinisimpang hirap.</div>
+<div class="verse">Kay hirap maghintay ng̃ masayang bukas!</div>
+<div class="verse">Kay hirap sabikin ng̃ isang pang̃arap!</div>
+</div></div>
+<h4>VIII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Magtiis ka irog!  Darating ang araw</div>
+<div class="verse">na ikaw at ako ay magkakapisan,</div>
+<div class="verse">ang ulap sa ati'y biglang mapaparam</div>
+<div class="verse">at magliliwanag ang Sangkatauhan.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_37">Páhiná 37</a></span></div>
+<h4>IX.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Huwag kang mang̃anib!  Darating sa atin</div>
+<div class="verse">ang isang sandaling batis ng̃ paggiliw,</div>
+<div class="verse">diyán matataya ang di magmamaliw</div>
+<div class="verse">na aking pagling̃ap sa pagkabutihin.</div>
+</div></div>
+<h4>X.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">At kung katunayan ng̃ aking pag-ibig</div>
+<div class="verse">ang hinihintay mong sa iyo'y isulit</div>
+<div class="verse">ay narito akong gaya mong may hapis</div>
+<div class="verse">at isinusumpa ang nunung̃ong lang̃it.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_38">Páhiná 38</a></span></div>
+<h3>¡Lihim ng mga titig!...</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ibig kong hulaan sa silong ng̃ Lang̃it</div>
+<div class="verse">ang lihim na saklaw niyang mg̃a titig,</div>
+<div class="verse">isang suliraning nagpapahiwatig,</div>
+<div class="verse">ng̃ maraming bagay, ng̃ luha't pag-ibig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ako'y manghuhula sa bagay na iyan,</div>
+<div class="verse">pagka't nababasa, sa hugis, sa galaw</div>
+<div class="verse">ng̃ mg̃a titig mong halik ng̃ kundiman</div>
+<div class="verse">ang ibig sabihin at pita ng̃ buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ikaw'y nagtatapon nang minsa'y pagsuyo,</div>
+<div class="verse">minsa'y pang-aaba't minsa'y panibugho,</div>
+<div class="verse">minsa'y paanyaya sa tibok ng̃ puso</div>
+<div class="verse">nang upang sumamba't sa iyo'y sumamo.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang mg̃a titig mo'y may saklaw na lihim,</div>
+<div class="verse">at maraming bagay ang ibig sabihin,</div>
+<div class="verse">ng̃uni't sa palad ko'y isang suliraning</div>
+<div class="verse">nagkakahulugang ako'y ginigiliw.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_39">Páhiná 39</a></span></div>
+<h3>¡CHOLENG...!</h3>
+<div class="pquote ind">(Tang̃ing sinulat upang
+ihandog sa kaarawan mo—<br>
+ika 13 ng̃ Nov.)
+</div>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Guhit ng̃ liwanag, kislap ng̃ ligaya,</div>
+<div class="verse">talutot na ginto ng̃ isang sampaga,</div>
+<div class="verse">kalupi ng̃ buhay, hamog sa umaga,</div>
+<div class="verse">Bathalang ang awa'y hindi magbabawa,</div>
+<div class="verse">kaban ng̃ kundimang sa nang̃ung̃ulila'y</div>
+<div class="verse">halik ng̃ biyaya't sugo ng̃ ginhawa,</div>
+<div class="verse">timbulan ng̃ palad sa mg̃a parusa,</div>
+<div class="verse">tinig na mayumi ng̃ mahinhing maya.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Larawang kalasag sa mg̃a pasakit,</div>
+<div class="verse">tulay ng̃ lwalhating patung̃o sa lang̃it,</div>
+<div class="verse">halamang magarang sa paligid-ligid</div>
+<div class="verse">ay mg̃a bulaklak na kaakitakit,</div>
+<div class="verse">bundok na palaging sa libis ay batis</div>
+<div class="verse">na maiinuman ng̃ budhing malinis,</div>
+<div class="verse">dagat na payapang katapat ng̃ lang̃it</div>
+<div class="verse">na minsa'y magbang̃ong kapang̃apang̃anib.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_40">Páhiná 40</a></span></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sultana ng̃ Pasig, mahinhing Makiling,</div>
+<div class="verse">sa ganda'y reyna nang dapat pang̃arapin,</div>
+<div class="verse">isang Sinukuang anang salaysayi'y</div>
+<div class="verse">babaing bumihag sa libong damdamin,</div>
+<div class="verse">usok ng̃ kamanyang na di magmamaliw,</div>
+<div class="verse">Lang̃it na masaya at Buwang butihin,</div>
+<div class="verse">Olimpong mayaman sa mg̃a awitin,</div>
+<div class="verse">buhay na badhaan ng̃ isang paggiliw.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Tahimik na lang̃it na nang̃ang̃aninag</div>
+<div class="verse">ang lamang biyayang tugon sa pang̃arap,</div>
+<div class="verse">mg̃a kayamanang hindi matitinag,</div>
+<div class="verse">sampagang sa bang̃o'y tulang walang kupas,</div>
+<div class="verse">talang nagsasayang may mayuming sinag,</div>
+<div class="verse">aklat na talaan ng̃ aliw ng̃ palad,</div>
+<div class="verse">dahon ng̃ kaluping yaong nasusulat</div>
+<div class="verse">ay kadakilaan ng̃ damdaming ing̃at.</div>
+</div></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Tingkad ng̃ pagasa, tuhog ng̃ kampupot,</div>
+<div class="verse">kudyapi ng̃ palad, tamis ng̃ pagirog,</div>
+<div class="verse">watawat na sipi sa lalong matayog</div>
+<div class="verse">na kaligayahang hindi mauubos,</div>
+<span class="pagenum"><a id="Page_41">Páhiná 41</a></span>
+<div class="verse">haligi ng̃ buhay na di matutupok</div>
+<div class="verse">ng̃ apoy ng̃ samang dito'y nagsianod,</div>
+<div class="verse">bathala ng̃ gandang kung siyang magutos</div>
+<div class="verse">sa matatakuti'y mawawalang takot.</div>
+</div></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Iyan ang si Choleng na sadyang mayumi't</div>
+<div class="verse">laman ng̃ panulat na kahilihili,</div>
+<div class="verse">iyan ang larawang aking binabati</div>
+<div class="verse">at isang dalagang hiyas nitong Lahi,</div>
+<div class="verse">iyan ang diwatang ang paguugali'y</div>
+<div class="verse">mayamang talaan ng̃ saya't lwalhati,</div>
+<div class="verse">iyan ang sampagang ang samyo, ang uri'y</div>
+<div class="verse">pawang kapalarang walang pagkapawi.</div>
+</div></div>
+<h4>VII.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">At ng̃ayo'y araw mo!  Ng̃uni't ano kaya</div>
+<div class="verse">ang maiaalay sa isang himala?</div>
+<div class="verse">Walang wala Choleng! Hindi mg̃a tula,</div>
+<div class="verse">ni hindi pang̃arap sa gitna ng̃ tuwa,</div>
+<div class="verse">kundi mg̃a mithing: <i>buhay</i>, <i>lakás</i>, <i>tyaga</i>,</div>
+<div class="verse">ang sa talaan mo ay mang̃apatala,</div>
+<div class="verse">iyan ang mabuting kalasag na handa</div>
+<div class="verse">upang sapitin mo ang inaadhika.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_42">Páhiná 42</a></span></div>
+<h4>VIII.</h4>
+<div class="poem"><div class="stanza">
+<div class="verseind">Basahin pa Choleng sa aklat ng̃ buhay</div>
+<div class="verse">ang tingkad ng̃ aking dalang̃ing dalisay;</div>
+<div class="verse">"Buhay mo'y maglayag sa kaligayahang</div>
+<div class="verse">pang̃arap ng̃ lahat sa Sangkatauhan.</div>
+<div class="verse">Isang pagtatapat: Sa lupang ibabaw</div>
+<div class="verse">ang palad ng̃ madla ay isang digmaan,</div>
+<div class="verse">ang iyong paglakad ay pakaing̃ata't</div>
+<div class="verse">ang buhay ng̃ tao'y panaginip lamang.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_43">Páhiná 43</a></span></div>
+<h3>TINDING...</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Magsabi ang Lang̃it kundi ikaw'y talang</div>
+<div class="verse">Nagbigay sa akin ng̃ tuwa't biyaya,</div>
+<div class="verse">Magsabi ang lahat kung hindi diwata</div>
+<div class="verse">Ikaw ng̃ lalo mang pihikang makata.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ikaw'y maniwalang ang musmos kong puso'y</div>
+<div class="verse">Natuto sa iyong humag̃a't sumamo,</div>
+<div class="verse">Sisihin ang iyong dikit na nagturo</div>
+<div class="verse">Sa kabuhayan ko, ng̃ pamimintuho.</div>
+</div>
+<div class="stanza">
+<div class="verseind">At sino sa iyo ang hindi hahang̃a?</div>
+<div class="verse">Ikaw'y paralumang batis ng̃ biyaya,</div>
+<div class="verse">Pakpak ng̃ pang̃arap at Reyna ng̃ awa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang dilim ng̃ gabi sa aki'y natapos,</div>
+<div class="verse">Ng̃umiti sa tangkay ang mg̃a kampupot,</div>
+<div class="verse">Gayon ma'y narito't puso ko'y busabos.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_44">Páhiná 44</a></span></div>
+<h3>Noo'y isang hapon...</h3>
+<div class="pquote ind">(Kay......................)</div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Noo'y isáng hapon! Ikaw'y nakadung̃aw</div>
+<div class="verse">At waring inip na sa lagay ng̃ araw,</div>
+<div class="verse">Ang ayos mo noon ay nakalarawan</div>
+<div class="verse">Sa puso kong itong tigíb kalumbayan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Anománg gawin ko'y hindi na mapawi</div>
+<div class="verse">Ang naging anyo mong pagkayumi-yumi,</div>
+<div class="verse">¡Itóng aking pusong nagdadalamhati'y</div>
+<div class="verse">Tinuruan mo pang umibig na tang̃i!</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung nang unang dako'y hindi ko nasabi</div>
+<div class="verse">Sa iyo ang aking tunay na pagkasi</div>
+<div class="verse">Ay pagka't ang aking puso ay napipi</div>
+<div class="verse">Sa haráp ng̃ dikít na kawiliwili.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa ng̃ayo'y naritó at iyong busabos</div>
+<div class="verse">Ang aking panulat at aking pag-irog;</div>
+<div class="verse">Ang aking panitik: walang pagkapagod,</div>
+<div class="verse">Ang aking pag-ibig: walang pagkatapos.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung pang̃arapin ko ang lamlam ng̃ araw</div>
+<div class="verse">At nagíng anyo mo sa pagkakadung̃aw</div>
+<div class="verse">Ay minsang sumagi sa aking isipang</div>
+<div class="verse">"¿Ikaw kaya'y aking magíng Paraluman?"</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_45">Páhiná 45</a></span></div>
+<h3>Daglian...</h3>
+<div class="pquote ind">(Sa iyo rin...)</div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Kung sa iyong pag-iisá</div>
+<div class="verse">O sa iyong pagbabasá</div>
+<div class="verse">Ay may matutunghayan ka</div>
+<div class="verse">Na tunay na sumisintá,</div>
+<div class="verse">Yaón ay wala nang ibá</div>
+<div class="verse">Kungdi akong nagbabatá.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Akin na ng̃ang naiulat</div>
+<div class="verse">sa iyo, ang aking palad,</div>
+<div class="verse">Ng̃uni't ang aking panulat</div>
+<div class="verse">Ay di makapagsisiwalat</div>
+<div class="verse">Ng̃ <i>layon</i> ko at <i>pang̃arap</i>.</div>
+<div class="verse">Kakambal ko kaya'y hirap?</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Tinding: ikaw'y maniwala</div>
+<div class="verse">Na ang aking puso't diwa</div>
+<div class="verse">Sa iyo'y sangla kong pawa;</div>
+<div class="verse">Ang puso ko'y humahang̃a,</div>
+<div class="verse">Ng̃uni't umíd itong dila,</div>
+<div class="verse">Ito kaya'y malikmata?</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang may pagsintang malabis</div>
+<div class="verse">Ay umid at nahahapis,</div>
+<div class="verse">Ligaya na ng̃ang masilip</div>
+<div class="verse">Yaong kanyang nilalang̃it,</div>
+<div class="verse">¿Tubsin mo kaya sa sakit</div>
+<div class="verse">Ang pagkasi kong malinis?</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_46">Páhiná 46</a></span></div>
+<h3>Unang damdamin!</h3>
+<div class="pquote ind">(Sa iyo.....)</div>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Bathala ng̃ ganda!  Hindi kailang̃ang</div>
+<div class="verse">sa aki'y magtaka sakaling alayan</div>
+<div class="verse">ng̃ paos na tinig ng̃ aking kundiman,</div>
+<div class="verse">pagka't alam mo nang diwata kang tunay.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ikaw ang pumukaw sa aking panulat</div>
+<div class="verse">upang maawit ko ang yumi mong ing̃at,</div>
+<div class="verse">ikaw ang sa aking kalupi ng̃ palad</div>
+<div class="verse">ay unang nagtitik ng̃ isang pang̃arap.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ipagpatawad mong sa iyo'y sabihing</div>
+<div class="verse">ikaw ang bathalang pumukaw sa akin,</div>
+<div class="verse">ikaw ang nagbukas sa aking damdamin</div>
+<div class="verse">ng̃ lihim at unang pinto ng̃ paggiliw.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Kundi kasalanan ang gawang tumang̃is</div>
+<div class="verse">ay ibilang mo nang kita'y iniibig</div>
+<div class="verse">at kung ang luhog ko'y iyong ikagalit</div>
+<div class="verse">ay ibibilang kong isang panaginip.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_47">Páhiná 47</a></span></div>
+<h3>¡INFIERNO....!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Tinatakhan mo ba ang aking pag-irog?</div>
+<div class="verse">Dinaramdam mo ba ang aking paglimot?</div>
+<div class="verse">Huwag kang mamangha't di mo masusubok</div>
+<div class="verse">ang kadalisayan ng̃ aking pagluhog.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa aki'y di sukat ang mg̃a babae,</div>
+<div class="verse">sa aki'y di sukat ang iyong pagkasi,</div>
+<div class="verse">ako'y inianak sa pagkaduhagi</div>
+<div class="verse">kaya't magagawa ang minamabuti.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ako'y malilimot kung siya mong nais</div>
+<div class="verse">at pakasumpain sa silong ng̃ lang̃it,</div>
+<div class="verse">ikaw'y may laya pang sa iba'y umibig</div>
+<div class="verse">pagka't may ganda kang hiraman ng̃ awit.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Subali't alaming... ikaw'y masasayang</div>
+<div class="verse">kung mahihilig ka sa ibang kandung̃an,</div>
+<div class="verse">sapagka't ang ating nang̃agdaang araw</div>
+<div class="verse">ay di malalanta sa iyong isipan!</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang lahat sa lupa'y iyong mahahamak</div>
+<div class="verse">at maaari kang magbago ng̃ palad,</div>
+<div class="verse">ng̃uni't susundan ka sa iyong paglakad</div>
+<div class="verse">ng̃ isang anino ng̃ ating lumipas.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Iyong magagawa ang ako'y limutin</div>
+<div class="verse">at matitiis ko ang pagkahilahil,</div>
+<span class="pagenum"><a id="Page_48">Páhiná 48</a></span>
+<div class="verse">iyo mang isangla ang iyong paggiliw</div>
+<div class="verse">sa ibang binata'y... di ko daramdamin!</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung tunay mang <i>lang̃it</i> ang iyong pagkasi'y</div>
+<div class="verse">isang <i>Infierno</i> ring aking masasabi,</div>
+<div class="verse">bihira sa mg̃a magandang babae</div>
+<div class="verse">ang di salawaha't taksil sa lalaki.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Limutin mo ako kung siya mong nasa't</div>
+<div class="verse">saka pa umibig sa ibang binata,</div>
+<div class="verse">ang pagtataksil mo'y di ko iluluha</div>
+<div class="verse">pagka't ang babae'y taong mahiwaga.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang paglilihim mo'y aking kamatayan,</div>
+<div class="verse">ang ginagawa mo'y parusa ng̃ buhay,</div>
+<div class="verse">kundi ka tutupad sa bilin ko't aral</div>
+<div class="verse">ay ako'y walin na sa iyong isipan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Di ko tinatakhan ang palad ng̃ tao</div>
+<div class="verse">sapagka't ang lahat ay mayrong Kalbaryo</div>
+<div class="verse">kung ang aking puso'y iyong <i>Paraiso</i>,</div>
+<div class="verse">ang iyong pag-ibig ay aking <i>Infierno</i>.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_49">Páhiná 49</a></span></div>
+<h3>¡Kamanyang...!</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verse">Ang hapong malamlam ay naging tadhana</div>
+<div class="verse">ng̃ bagong panahon sa aklat ng̃ diwa,</div>
+<div class="verse">ang gabing madilim na di nagsasawa</div>
+<div class="verse">sa pagmamaramot sa mg̃a biyaya</div>
+<div class="verse">ay naging umagang sa aking akala'y</div>
+<div class="verse">batbat ng̃ bulaklak na lubhang sagana,</div>
+<div class="verse">ang buwang mayuming ayaw magmagara</div>
+<div class="verse">ay naging dalagang kaagáw ng̃ tala.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verse">Ang mg̃a aliw-iw ng̃ palalong tubig</div>
+<div class="verse">sa kabuhayan ko'y naging mg̃a tinig</div>
+<div class="verse">ng̃ lalong mapalad sa silong ng̃ lang̃it,</div>
+<div class="verse">ang kulay ng̃ hirap na namimiyapis</div>
+<div class="verse">ay biglang nagmaliw na di ko malirip,</div>
+<div class="verse">ang mundo kong batbat ng̃ luha at sakit</div>
+<div class="verse">ay naging mundo na ng̃ Haring makisig</div>
+<div class="verse">ó isang palásyong malayo sa hapis.</div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verse">Ang tikóm na labi ng̃ mg̃a sampaga'y</div>
+<div class="verse">namukád na bigla't naglabing ligaya,</div>
+<span class="pagenum"><a id="Page_50">Páhiná 50</a></span>
+<div class="verse">ang dilim at ulap ng̃ aking pagasa'y</div>
+<div class="verse">naging bagong araw na di magbabawa,</div>
+<div class="verse">ang kukó ng̃ hirap at, bang̃is ng̃ dusa'y</div>
+<div class="verse">naging mg̃a hamog sa dapit umaga,</div>
+<div class="verse">ang guhit at ulos ng̃ mg̃a parusa'y</div>
+<div class="verse">naging mg̃a ng̃iti ng̃ bagong Ofelia.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verse">Huwag kang magtaka, dalagang mayumi</div>
+<div class="verse">sakaling sabihing sa aki'y napawi</div>
+<div class="verse">ang tinik ng̃ dusa't mg̃a dalamhati,</div>
+<div class="verse">sapagka't sa ng̃ayo'y aking napaglimi</div>
+<div class="verse">na iyong pagsilang nang buong lwalhati</div>
+<div class="verse">ang mg̃a nabagong nadama't nasuri,</div>
+<div class="verse">ang mg̃a nakita't nabakas sa labi'y</div>
+<div class="verse">tanda ng̃ paghang̃a't sa iyo'y pagbati.</div>
+</div></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verse">At ng̃ayo'y araw mo! Darakilang araw</div>
+<div class="verse">ang siyang sumaksi sa iyong pagsilang,</div>
+<div class="verse">at yamang ganito'y aking katungkulang</div>
+<div class="verse">ikaw ay suubin ng̃ aking kundiman</div>
+<div class="verse">bagama't, alam kong ang awit ng̃ buhay</div>
+<div class="verse">ay awit ng̃ mg̃a naaaping tunay</div>
+<div class="verse">bagama't talos kong ang "lira" kong tang̃an</div>
+<div class="verse">ay hamak na "kurus" sa isang libing̃an.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_51">Páhiná 51</a></span></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verse">Walang kailang̃an! At tila ng̃a dapat</div>
+<div class="verse">na ika'w batiin ng̃ aking panulat:</div>
+<div class="verse">Dakilang dalaga, ang Sangmaliwanag</div>
+<div class="verse">ay busog sa silo at mg̃a bagabag,</div>
+<div class="verse">tayo'y isinilang upang makilamas</div>
+<div class="verse">sa ng̃itng̃it ng̃ dilim at sigwa ng̃ palad,</div>
+<div class="verse">matapos batii'y iyong isahagap</div>
+<div class="verse">na ang buhay natin ay isang pang̃arap.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_52">Páhiná 52</a></span></div>
+<h3>Ang abaniko mo...</h3>
+<div class="pquote ind">(<i>Sa isang bulaklak.</i>)</div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Parang isang pilas ng̃ lang̃it na bughaw</div>
+<div class="verse">ang namamalas ko kung ikaw'y magpaypay,</div>
+<div class="verse">parang isang "mundo, ang pinagagalaw</div>
+<div class="verse">ng̃ napakaputi't nilalik mong kamay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Iyan ang pamaymay na iyong ginamit</div>
+<div class="verse">nang ako'y darang̃in ng̃ dila ng̃ init,</div>
+<div class="verse">diyan napasama ang patak ng̃ pawis,</div>
+<div class="verse">diyan napalipat ang pisng̃i ng̃ lang̃it.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Anopa't sa aki'y naging malikmata</div>
+<div class="verse">ang buhay kong iyong binigyang biyaya,</div>
+<div class="verse">nalimot kong minsang ang tao sa lupa</div>
+<div class="verse">ay may kamataya't sariling tadhana.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang sung̃it ng̃ gabi, sa aki'y napawi</div>
+<div class="verse">at bagong umaga ang siyang naghari,</div>
+<div class="verse">ang damdam ko baga'y pawang nanaghili</div>
+<div class="verse">sa akin ang mg̃a taong mapagsurí.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Subukang igawad ang Sangkatauhan</div>
+<div class="verse">at hindi sasaya itong kabuhayan,</div>
+<div class="verse">ng̃uni't kung ang iyong "abanikong tang̃an,</div>
+<div class="verse">patay ma'y babang̃o't ikaw'y aawitan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa aki'y sukat na ang ikaw'y mamalas</div>
+<div class="verse">upang ang lang̃it ko'y mawalan ng̃ ulap,</div>
+<div class="verse">ang iyong pamaypay kung siya mong hawak,</div>
+<div class="verse">ako'y dinaraíg ng̃ mg̃a pang̃arap.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_53">Páhiná 53</a></span></div>
+<h3>Kung ikaw'y umibig</h3>
+<div class="pquote ind">(<i>Sa aking Reyna.</i>)</div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Huwag nang sabihing ang tang̃ing Julieta</div>
+<div class="verse">ng̃ isang Romeo'y batis ng̃ ligaya,</div>
+<div class="verse">huwag nang banggitin ang isang Ofelia't</div>
+<div class="verse">hindi mapapantay sa irog kong Reyna.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Subukang buhayin ang lima mang Venus</div>
+<div class="verse">at di maiinggit ako sa pagluhog,</div>
+<div class="verse">tinatawanan ko si Marteng umirog</div>
+<div class="verse">sa isang babaeng lumitaw sa agos.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang pulá ng̃ labi, ang puti ng̃ bisig,</div>
+<div class="verse">ang kinis ng̃ noong wari'y walang hapis,</div>
+<div class="verse">ang lahat ng̃ samyo sa silong ng̃ lang̃it</div>
+<div class="verse">ay isinangla mo kung ikaw'y umibig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang lahat sa iyo'y kulay ng̃ ligaya,</div>
+<div class="verse">ang lahat sa aki'y ng̃iti ng̃ sampaga,</div>
+<div class="verse">kung magkakapisan ang ating pag-asa</div>
+<div class="verse">ay magiging mundong walang bahid dusa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Hindi mo pansin na ako'y lalaki,</div>
+<div class="verse">hindi mo naisip na ikaw'y babae,</div>
+<div class="verse">paano'y talagang kung ikaw'y kumasi</div>
+<div class="verse">sa tapat na sinta'y nagpapakabuti.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_54">Páhiná 54</a></span>
+<div class="verseind">Gabing maliwanag at batbat ng̃ tala,</div>
+<div class="verse">maligayang Edeng bahay ng̃ biyaya,</div>
+<div class="verse">iyan ang larawang hindi magtitila</div>
+<div class="verse">ng̃ iyong pag-ibig sa balat ng̃ lupa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang buhay ng̃ tao'y hindi panaginip,</div>
+<div class="verse">ang mundo'y di mundo ng̃ hirap at sakit,</div>
+<div class="verse">aking mapapasan ang bigat ng̃ lang̃it</div>
+<div class="verse">kung sasabihin kong: <i>Kung ikaw'y umibig</i>.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_55">Páhiná 55</a></span></div>
+<h3>Tag-ulan...</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">May nang̃agsasabing masama ang ulan,</div>
+<div class="verse">may nang̃agagalit sa lusak na daan,</div>
+<div class="verse">ako ang tanung̃i't... aking isasaysay</div>
+<div class="verse">na ang tang̃ing <i>gloria'y</i> ang pagtatampisaw.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang mg̃a halama'y nang̃ananariwa</div>
+<div class="verse">sa patak ng̃ ulang hindi nagtitila,</div>
+<div class="verse">ang aking pagkasing ibig mamayapa</div>
+<div class="verse">kung ganyang tagula'y nagbabagong diwa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Walang kailang̃ang sa aki'y magtago</div>
+<div class="verse">ang mukha ng̃ araw na di ko makuro,</div>
+<div class="verse">sa aki'y sukat na ang iya'y maglaho</div>
+<div class="verse">upang pasayahin ang kimkim kong puso.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Walang kailang̃ang sa Sangmaliwanag</div>
+<div class="verse">ay laging maghari ang dilim at ulap,</div>
+<div class="verse">ang patak ng̃ ulan sa imbi kong palad</div>
+<div class="verse">ay bang̃ong masansang na di mang̃ung̃upas.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung may mag-uulat na sa kalang̃itan</div>
+<div class="verse">ay may unos, baha, at patak ng̃ ulan,</div>
+<div class="verse">ay kunin na ako't hindi mamamanglaw</div>
+<div class="verse">pagka't masasama sa kawal ng̃ banal.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang patak ng̃ ulan ay awa ng̃ lang̃it,</div>
+<div class="verse">lihim na biyaya sa mg̃a ninibig,</div>
+<div class="verse">laman ng̃ panulat sa mg̃a pag-awit,</div>
+<div class="verse">sariwang bulaklak sa pitak ng̃ isip.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung ang tang̃ing Musa'y may tampo sa akin</div>
+<div class="verse">at ayaw sumunod sa aking paggiliw,</div>
+<div class="verse">ang patak ng̃ ula'y sukat ang malasin</div>
+<div class="verse">upang ang <i>lira</i> ko'y sumuyo't sumaliw.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung sakasakaling ako'y maging bangkay</div>
+<div class="verse">at saka ilagak sa isang mapanglaw</div>
+<div class="verse">na labi ng̃ libing... mangyaring ang ula'y</div>
+<div class="verse">bayaang tumagos sa aking katawán.</div>
+</div></div>
+<hr style="width: 65%;">
+<h2><a id="pagsisisi"></a>II.</h2>
+<h2>PAGSISISI......</h2>
+<hr style="width: 40%;">
+<h4>(TULANG MAY ANIM NA BAHAGI.)</h4>
+<div class="curs">
+<ol>
+<li>—<a href="#pagsisisi_1" class="pginternal">Nasilaw sa dilím.</a></li>
+<li>—<a href="#pagsisisi_2" class="pginternal">Ang hamak na palad.</a></li>
+<li>—<a href="#pagsisisi_3" class="pginternal">Gayon man, gayon ma'y...</a></li>
+<li>—<a href="#pagsisisi_4" class="pginternal">Ang panghihinayang...</a></li>
+<li>—<a href="#pagsisisi_5" class="pginternal">Kung ikaw'y binata...</a></li>
+<li>—<a href="#pagsisisi_6" class="pginternal">Sa abó babang̃on...</a></li>
+</ol>
+</div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_59">Páhiná 59</a></span></div>
+<h3>¡PAGSISISI.....!</h3>
+<div class="pquote ind">Sa iyo...</div>
+<p><a id="pagsisisi_1"></a><b><i>Nasilaw sa dilim...</i></b></p>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Anang mg̃a tao: <i>Ang mg̃a makata'y</i></div>
+<div class="verse"><i>Sadyang isinilang upang magsiluha.</i></div>
+<div class="verse">Nang una'y ayokong dito'y maniwala</div>
+<div class="verse">Subali't sa ng̃ayo'y nakita kong tama.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang luha ng̃ tao ay may mg̃a dahil,</div>
+<div class="verse">May luhang nagmula sa pagkahilahil,</div>
+<div class="verse">May sa pagkaapi sa isang giniliw,</div>
+<div class="verse">May sa pagkalayo sa inang butihin.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang luha ng̃ aking nagsisising puso</div>
+<div class="verse">Ay hindi nanggaling sa pagkasiphayo,</div>
+<div class="verse">Ni sa pagkaapi ng̃ aking pagsuyo,</div>
+<div class="verse">Ni sa pagkagahis ng̃ isang palalo.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang luha ko'y buhat sa di pagkataya</div>
+<div class="verse">Na ang tao'y mayrong <i>balon</i> ng̃ parusa,</div>
+<div class="verse">Ang pagsisisi ko ay bumabalisa't</div>
+<div class="verse">Bumawi sa akin ng̃ aking ligaya.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Talagang ang tao'y sadyang walang tigil,</div>
+<div class="verse">Namali nang minsa'y ibig pang ulitin,</div>
+<div class="verse">Ang tanaw sa <i>mundo'y mundong</i> walang lihim</div>
+<div class="verse">At sa <i>Dios</i> ay <i>Dios</i> na di matandain.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_60">Páhiná 60</a></span>
+<div class="verseind">Ang mundo ng̃a nama'y batbat ng̃ paraya't</div>
+<div class="verse">Nagkalat ang silo sa balat ng̃ lupa,</div>
+<div class="verse">Dito kung mayron mang sampagang dakila</div>
+<div class="verse">Ay may tinik namang pamutol ng̃ nasa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang pagkamasakim sa bang̃o at puri</div>
+<div class="verse">Ang isinasama ng̃ lalong mabuti,</div>
+<div class="verse">Ang pagting̃ing labis sa pagsintang iwi'y</div>
+<div class="verse">Siyang pagkabagsak ng̃ isang lalaki.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Oh! <i>bang̃ong</i> pang̃arap ng̃ uhaw na puso!</div>
+<div class="verse">Oh! <i>puring</i> nagbuwal sa lalong maamo!</div>
+<div class="verse">Kayo ang <i>berdugong</i> may bihis-pagsuyo</div>
+<div class="verse">Ng̃uni't iyang loob ay pagkasiphayo.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang sabik sa bang̃o ng̃ isang sampaga't</div>
+<div class="verse">Ang uhaw sa puri ng̃ isang dalaga'y</div>
+<div class="verse">Siyang sumusunog sa kanyang pagasa't</div>
+<div class="verse">Siyang nagsasabog niyong mg̃a Troya.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Dakilang bulaklak: Ako'y naniwala</div>
+<div class="verse">Na ang nagawa ko'y kahibang̃ang pawa,</div>
+<div class="verse">Ng̃ayon ko natantong <i>birhen</i> kang dakila,</div>
+<div class="verse">May wagas kang puso't banal na akala.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ako'y naririto't pinagsisisihan</div>
+<div class="verse">Ang aking nagawang mg̃a kasalanan,</div>
+<div class="verse">Aking babaunin hanggang sa libing̃an</div>
+<div class="verse">Ang hinanakit mo't magagandang aral.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Talagang nalisya ang aking pang̃arap,</div>
+<div class="verse">Puso ko'y inabot ng̃ bagyo sa dagat,</div>
+<div class="verse">¿Ano't ikaw pa ng̃a yaong binagabag</div>
+<div class="verse">Gayong ikaw'y isang <i>anghel</i> na mapalad?</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_61">Páhiná 61</a></span>
+<div class="verseind">Pawiin sa puso ang mg̃a nangyari</div>
+<div class="verse">At iyong alaming may bang̃o ka't puri,</div>
+<div class="verse">Samantalang gayon, ako'y nagsisisi</div>
+<div class="verse">At binabawi ko ang mg̃a sinabi.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ng̃uni't isang tanong: ¿Kaya ang patawad</div>
+<div class="verse">Sa namaling puso ay iyong igawad?</div>
+<div class="verse">Ang mg̃a <i>luha</i> ko'y siyang ihuhugas</div>
+<div class="verse">Sa napaligaw ko't nagsisising palad.</div>
+</div></div>
+<hr style="width: 20%;">
+<p><a id="pagsisisi_2"></a><b><i>Ang hamak na palad...</i></b></p>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Aywan ko kung ikaw'y magtaglay pang awa</div>
+<div class="verse">sa nagsisi ko nang lakad at akala,</div>
+<div class="verse">aywan ko kung ikaw'y kulang pang tiwala</div>
+<div class="verse">sa mg̃a nasayang at natak kong luha.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung natatalos mo ang luhang nasayang</div>
+<div class="verse">sa mata ko't pusong laging naglalamay,</div>
+<div class="verse">sana'y nasabi mong mayrong katunayan</div>
+<div class="verse">ang dinaranas kong mg̃a kahirapan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang hinanakit mo, sumbat at paglait</div>
+<div class="verse">ay pawang nakintal sa dila ko't isip,</div>
+<div class="verse">at ang ating lihim sa silong ng̃ lang̃it</div>
+<div class="verse">ay siyang sa aki'y nakakaligalig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Pinag-aralan kong ikaw'y kausapin</div>
+<div class="verse">nang upang ihayag ang buo kong lihim,</div>
+<div class="verse">lihim ng̃ sa wari'y nagbigay hilahil</div>
+<div class="verse">sa napakabatang puso mo't paggiliw.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_62">Páhiná 62</a></span>
+<div class="verseind">Ang pagtatapat ko'y di mo minarapat</div>
+<div class="verse">ang kawikaan mo, ako'y isang hamak,</div>
+<div class="verse">ang naging ganti mo sa aking pagling̃ap</div>
+<div class="verse">ay isang <i>libing̃an</i> at <i>kurus</i> ng̃ hirap.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang hamak ng̃a nama'y hindi naaayos</div>
+<div class="verse">umibig sa isang Reyna ng̃ Kampupot,</div>
+<div class="verse">ang <i>hamak</i> na palad ay dapat umirog</div>
+<div class="verse">sa kaisa niyang <i>hamak</i> di't <i>busabos</i>.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿Maaari kayang ang isang <i>granada'y</i></div>
+<div class="verse">maihulog sa di gusto ng̃ <i>princesa?</i></div>
+<div class="verse">¿maaari kayang ang isang sampaga'y</div>
+<div class="verse">makuha at sukat ng̃ taong bala na?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kay laki ng̃ agwat ng̃ palad ta't uri,</div>
+<div class="verse">ikaw'y isang lang̃it na kahilihili</div>
+<div class="verse">at ako ay isang hamak na pusali,</div>
+<div class="verse">ikaw ay sariwa at ako'y unsyami.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang panghihinayang ang siyang nagtulak</div>
+<div class="verse">na kita'y mahalin ng̃ buo kong palad.</div>
+<div class="verse">Ang panghihinayang ang siyang nagatas</div>
+<div class="verse">na kita'y itala sa aking pang̃arap.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung ikaw sa akin ay walang hinayang</div>
+<div class="verse">sa aki'y sayang ka at sayang na tunay,</div>
+<div class="verse">sabihin na akong kasakimsakiman</div>
+<div class="verse">at ikaw sa iba'y di mapapayagan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Lalo pang mabuting kanin ka ng̃ lupa</div>
+<div class="verse">kay sa mahulog ka sa ibang binata,</div>
+<div class="verse">¿Iba pa ang iyong bibigyang biyaya</div>
+<div class="verse">gayong ako'y uhaw sa iyong kaling̃a...?</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_63">Páhiná 63</a></span>
+<div class="verseind">Ipinipilit mong tayo'y pupulaan</div>
+<div class="verse">kung sa lihim nati'y mayrong makamalay,</div>
+<div class="verse">¿at sinong pang̃ahas ang pagsasabihan.</div>
+<div class="verse">nitong ating lihim sa sangkatauhan?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ako'y nagsisisi't nabigyang bagabag</div>
+<div class="verse">na naman ang iyong tahimik na palad,</div>
+<div class="verse">kundang̃a'y ang iyong bang̃ong walang kupas</div>
+<div class="verse">sa pagiisa ko'y siyang nasasagap!</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa kahiling̃an mo, kita'y lilimutin</div>
+<div class="verse">kahit nalalaban sa aking damdamin,</div>
+<div class="verse">ng̃uni't ang samo ko'y iyong idalang̃in</div>
+<div class="verse">ang papanaw ko nang ulilang paggiliw.</div>
+</div></div>
+<hr style="width: 20%;">
+<p><a id="pagsisisi_3"></a><b><i>Gayon man, gayon ma'y...</i></b></p>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Kung may kasayahan ang tao sa lupa</div>
+<div class="verse">naman ay mayron ding pagkabigo't luha.</div>
+<div class="verse">Kaya ng̃a't ang tao, sa aking akala</div>
+<div class="verse">ay laruan lamang ng̃ kanyang tadhana.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Yamang walang taong likas na mabuti't</div>
+<div class="verse">walang nang̃amaling hindi nang̃agsisi.</div>
+<div class="verse">Sa ikasisiya ng̃ iyong sarili'y</div>
+<div class="verse">itatakwil ko na ang aking pagkasi.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Lulunurin ko na sa hukay ng̃ puso</div>
+<div class="verse">ang aking yayaong nasawing pagsuyo,</div>
+<div class="verse">ipagluluksa ko ang pagkasiphayo</div>
+<div class="verse">ng̃ aking pag-ibig na di mo inako.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_64">Páhiná 64</a></span>
+<div class="verseind">Pag-aaralan kong lumang̃oy sa dagat</div>
+<div class="verse">na puno ng̃ aking sariling bagabag,</div>
+<div class="verse">pag-aaralan kong lumaban sa hirap</div>
+<div class="verse">yamang siyang takda ng̃ buhay ko't palad.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Aking natatantong walang pagkasayang</div>
+<div class="verse">sa iyo ang aking maralitang buhay,</div>
+<div class="verse">sa iyo'y ligaya ang aking pagpanaw,</div>
+<div class="verse">sa iyo'y lwalhati ang <i>kurus</i> ko't <i>hukay</i>.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung ikaw ay walang hinayang sa aki't</div>
+<div class="verse">wala pang hinayang sa aking paggiliw,</div>
+<div class="verse">ay iyong asahang aking sasapitin</div>
+<div class="verse">ang ninanasa mong balón ng̃ hilahil.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿Di mo nalalamang itong umi-ibig</div>
+<div class="verse">sa lahat ng̃ bagay ay di nang̃ang̃anib,</div>
+<div class="verse">ang kamatayan ma'y kanyang malalait</div>
+<div class="verse">kundi na makaya ang taglay na hapis?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Gayon man, gayon ma'y hindi masisira</div>
+<div class="verse">sa akin ang iyong hiling at pithaya,</div>
+<div class="verse">gaya ng̃ hiling mo, ako'y magkukusang</div>
+<div class="verse">maghandog ng̃ iyong ikapapayapa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ng̃uni't manumbalik kaya ang pagling̃ap</div>
+<div class="verse">sa aking namali't nagsising pang̃arap?</div>
+<div class="verse">¿manumbalik kaya at hindi kumupas</div>
+<div class="verse">ang iyong pagting̃in sa imbi kong palad?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Iyan ang isa pang di ko ikatulog</div>
+<div class="verse">gayong nagsisi na ang aking pagirog,</div>
+<div class="verse">iyan ang sa aki'y nagbibigay takot,</div>
+<div class="verse">iyan ang sa ng̃ayo'y di ko mapag-abot.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_65">Páhiná 65</a></span>
+<div class="verseind">Hinuhulaan kong ang iyong pagling̃ap</div>
+<div class="verse">ay magbabago na sa imbi kong palad,</div>
+<div class="verse">ang kawikaan mo'y ang isang nabasag</div>
+<div class="verse">mabuo ma'y mayrong natitirang lamat.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa isang gawi ng̃a'y may katotohanan</div>
+<div class="verse">kung ganyan ang iyong magiging isipan,</div>
+<div class="verse">ng̃uni't alamin mong malinis na tunay</div>
+<div class="verse">ang isang maruming nagbago ng̃ buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Magpahangga ng̃ayo'y iyong mawiwika</div>
+<div class="verse">na ikaw'y akin pang <i>sinisintang kusa</i>,</div>
+<div class="verse">magiging totoo ang iyong hinala</div>
+<div class="verse">kung ang puso'y muling hagkan ng̃ paghang̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung muling gumiit ang panghihinayang</div>
+<div class="verse">ikaw ay muli kong sisintahing tunay,</div>
+<div class="verse">ang isa pa'y iyo namang nalalamang</div>
+<div class="verse">ang <i>pagsisisi</i> ko'y <i>pagbibigay</i> lamang!</div>
+</div></div>
+<hr style="width: 20%;">
+<p><a id="pagsisisi_4"></a><b><i>Ang panghihinayang...</i></b></p>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">May ilang araw nang ako'y kalung kalong</div>
+<div class="verse">ng̃ bisig ng̃ dusa't kamay ng̃ linggatong</div>
+<div class="verse">may ilang araw nang sa mata'y nanalong</div>
+<div class="verse">ang pait ng̃ luhang usbong ng̃ paglung̃oy.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Nakikita, mo mang ako'y tumatawa</div>
+<div class="verse">nama'y tawang pilit at busog sa dusa,</div>
+<div class="verse">di lahat ng̃ ng̃iti'y lagda ng̃ ligaya,</div>
+<div class="verse">may ng̃iting singpait ng̃ luha't parusa.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_66">Páhiná 66</a></span>
+<div class="verseind">Ang nakakatulad nitong aking buhay</div>
+<div class="verse">ay mundong ulila sa sikat ng̃ araw,</div>
+<div class="verse">katulad ko'y isang <i>prinsipeng</i> mayaman</div>
+<div class="verse">na uhaw at salat sa aliw at layaw.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Upang pumanatag ang aking pagluha'y</div>
+<div class="verse">aking kailang̃an ang ling̃ap mo't awa,</div>
+<div class="verse">awang magbibigay ng̃ yutang biyaya,</div>
+<div class="verse">awang sa lungkot ko'y tang̃ing papayapa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Nasabi ko na ng̃ang nagsisi ang buhay</div>
+<div class="verse">sa nais na kita'y mapagbigyan lamang,</div>
+<div class="verse">kung susunurin ko itong kalagaya'y</div>
+<div class="verse">di ka malilimot hanggang kamatayan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿Paano ang aking gagawing paglimot</div>
+<div class="verse">sa iyong ang bang̃o'y higit sa kampupot?</div>
+<div class="verse">Sa ganda ng̃ iyong dibdib, baywang, batok,</div>
+<div class="verse">ay sinong banal pa ang hindi iirog?</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿Sa puti ng̃ iyong kamay na nilalik,</div>
+<div class="verse">sa mg̃a labi mong may pulot at init,</div>
+<div class="verse">sa mg̃a paa mo't binting makikinis</div>
+<div class="verse">ay sinong pihikan ang hindi iibig?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung sinusukat ko ang ganda mong ari,</div>
+<div class="verse">puso ko'y ninibok at nananaghili,</div>
+<div class="verse">aking nasasabing <i>Talo ko ang Hari</i></div>
+<div class="verse"><i>kung ako ang iyong mamahál na tang̃i</i>!</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang panghihinayang ang siyang sa aking</div>
+<div class="verse">puso'y bumabayo't sumusupilsupil,</div>
+<div class="verse">kung ikaw'y bigla ko't buong makakai'y</div>
+<div class="verse">kinain na kita nang ikaw'y malihim.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_67">Páhiná 67</a></span>
+<div class="verseind">Huwag mong sabihin na ako'y gahaman</div>
+<div class="verse">kung kagahaman ng̃a ang layon ko't pakay,</div>
+<div class="verse">para ko sabihin ang katotohana'y</div>
+<div class="verse">walang taong hindi may <i>imbot</i> sa buhay...</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sakaling sa aki'y ayaw kang manalig</div>
+<div class="verse">ang lahat ng̃ sumbat sa aki'y ikapit,</div>
+<div class="verse">ang mg̃a sumbat mo nama'y itititik</div>
+<div class="verse">sa dahon ng̃ aking lagás na pagibig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ikaw'y maniniwalang ang aking pagasa</div>
+<div class="verse">sa iyo, kaylan ma'y hindi magbabawa,</div>
+<div class="verse">sa iyo sisikat ang isang umaga</div>
+<div class="verse">na dala ang aking magiging ligaya.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung walang tiwala sa aking pang̃ako'y</div>
+<div class="verse">saksi ang halik kong iyong itinago.</div>
+<div class="verse">halik na sa iyong pisng̃ing maaamo'y</div>
+<div class="verse">nakintal na tanda ng̃ aking pagsuyo.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung kulang ka pa ring tiwala buhay,</div>
+<div class="verse">ako'y magtitiis sa kapighatian,</div>
+<div class="verse">magtitiis ako, kahit nalalamang</div>
+<div class="verse">ang <i>lungkot</i> ng̃ tao'y isang <i>karamdaman</i>.</div>
+</div></div>
+<hr style="width: 20%;">
+<p><a id="pagsisisi_5"></a><b><i>Kung ikaw'y binata...</i></b></p>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Gaya nang hula ko: ikaw'y untiunting</div>
+<div class="verse">nalayo sa aki't nagtatampong wari,</div>
+<div class="verse">ikaw'y umilap at nabibighaning</div>
+<div class="verse">ako'y pakanin mo ng̃ dusa't aglahi.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_68">Páhiná 68</a></span>
+<div class="verseind">Panibagong lungkot na naman ang aking</div>
+<div class="verse">naragdag sa iyong pihikang damdamin,</div>
+<div class="verse">talaga na yatang ang aking paggiliw</div>
+<div class="verse">ay di matutubos sa <i>sala't hilahil</i>.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ninanais ko nang ako'y makaguhit</div>
+<div class="verse">ng̃ bagong palad kong walang bahid dung̃is</div>
+<div class="verse">ay kung bakit ako'y lalong nabibing̃it</div>
+<div class="verse">sa pagkakasala at ikatatang̃is...!</div>
+</div>
+<div class="stanza">
+<div class="verseind">Hanggang nagiing̃at itong kabuhaya'y</div>
+<div class="verse">lalong nabubulid sa kapighatian,</div>
+<div class="verse">hanggang ninanais yaong kalinisa'y</div>
+<div class="verse">lalong dumurung̃is itong kapalaran...</div>
+</div>
+<div class="stanza">
+<div class="verseind">Hindi ko malaman itong nangyayari</div>
+<div class="verse">sa kabuhayan kong bihag mong parati,</div>
+<div class="verse">ang Aklat ng̃ aking tunay na Pagkasi'y</div>
+<div class="verse">puno na ng̃ aking mg̃a pagsisisi.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Aking nalalamang hindi makukuha</div>
+<div class="verse">ng̃ pagsisisi ko itong mg̃a sala,</div>
+<div class="verse">ng̃uni't bayaan mong ang aking pag-asa'y</div>
+<div class="verse">mag-abang sa iyo, ng̃ awa't ligaya.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung ikaw'y hindi ko makatkat sa diwa'y</div>
+<div class="verse">sapagka't <i>lunas</i> ka sa aking pagluha,</div>
+<div class="verse">ikaw sa <i>lungkot</i> ko'y kamay ng̃ biyaya,</div>
+<div class="verse">ikaw sa <i>uhaw</i> ko'y hamog na mabisa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Para ka mawaglit sa aking isipa'y</div>
+<div class="verse">kailang̃an ko pa ang isang libing̃an,</div>
+<div class="verse">at para maubos ang aking kundima'y</div>
+<div class="verse">magbalik ka muna sa pinanggaling̃an.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_69">Páhiná 69</a></span>
+<div class="verseind">Gaya ng̃ alam mo: kita'y iniibig</div>
+<div class="verse">ng̃ isang pagsintang singlawak ng̃ lang̃it</div>
+<div class="verse">ng̃uni... ano't ikaw'y tila nahahapis</div>
+<div class="verse">sa pagmamahal kong wagas at malinis?</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿Nalulungkot ka ba? Di ko akalaing</div>
+<div class="verse">iyong ikalungkot ang aking paggiliw,</div>
+<div class="verse">di ko inasahang <i>dung̃is</i> na ituring</div>
+<div class="verse">ang pagmamahal kong may wastong layunin.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿At kung ikaw kaya ang naging lalaki't</div>
+<div class="verse">ako ang pinalad na maging babae,</div>
+<div class="verse">kung hinahamak ko ang iyong pagkasi</div>
+<div class="verse">ay ilang puso mo ang di maruhagi?</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sana'y nalaman mo, kung ikaw'y binata</div>
+<div class="verse">ang hirap sa mundo nang lumuhaluha,</div>
+<div class="verse">sana'y natalos mong ang lalong dakila</div>
+<div class="verse">ay nagiging taksil sa laki ng̃ nasa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Huwag kang malungkot! Busugin sa layaw</div>
+<div class="verse">ang uhaw sa iyong aking kabuhayan,</div>
+<div class="verse">sa mg̃a labi mo, ako'y nauuhaw,</div>
+<div class="verse">sa mg̃a pisng̃i mo, ako'y mabubuhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung marung̃isan ka ng̃ aking pagibig</div>
+<div class="verse">ay pagibig ko rin ang siyang lilinis,</div>
+<div class="verse">at kung nahawa ka sa taglay kong hapis,</div>
+<div class="verse">hapis mo't hapis ko ay magiging lang̃it.</div>
+</div></div>
+<hr style="width: 20%;">
+<div><span class="pagenum"><a id="Page_70">Páhiná 70</a></span></div>
+<p><a id="pagsisisi_6"></a><b><i>Sa abo babangon...</i></b></p>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa huli'y natumpak itong aking puso't</div>
+<div class="verse">natutong tumupad sa aral mo't samo</div>
+<div class="verse">titiisin ko nang ang aking pagsuyo'y</div>
+<div class="verse">malibing sa hukay ng̃ pagkasiphayo.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ng̃ayon ko nalamang ang aking landasi'y</div>
+<div class="verse">singdilim ng̃ iyong tinamong damdamin,</div>
+<div class="verse">ng̃ayon ko natalos na ako'y sinupil</div>
+<div class="verse">ng̃ matinding udyok ng̃ isang paggiliw.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Yamang sumikat na sa puso ko't isip</div>
+<div class="verse">ang kaliwanagang bumihis sa hapis,</div>
+<div class="verse">ay masasabi kong ang aking pagibig</div>
+<div class="verse">ay handang lumagak sa pananahimik.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Magmula sa ng̃ayon, kita'y igagalang</div>
+<div class="verse">sa ng̃alan ng̃ ating pagkakapatiran,</div>
+<div class="verse">kinikilala ko itong kamalian</div>
+<div class="verse">na siyang naglagpak sa aking pang̃alan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ituring sa wala ang mg̃a nangyari't</div>
+<div class="verse">iguhit sa tubig ang mg̃a nasabi,</div>
+<div class="verse">ang laki at alab ng̃ aking pagkasi,</div>
+<div class="verse">ng̃ayo'y gawing abo nitong pagsisisi.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Hindi pagkang̃alay ng̃ aking panitik</div>
+<div class="verse">ang naging dahilan ng̃ pananahimik,</div>
+<div class="verse">kung hindi sa nasang huwag maligalig</div>
+<div class="verse">ikaw pa ng̃ aking bulag na pagibig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Napagaralan kong ikaw'y isang talang</div>
+<div class="verse">kakambal ng̃ aking damdamin at diwa,</div>
+<div class="verse">aking natutuhang tumpak ng̃a at tama</div>
+<div class="verse">ang mg̃a aral mong mahalagang pawa.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_71">Páhiná 71</a></span>
+<div class="verseind">Ang mg̃a lungkot mo ay aking damdamin</div>
+<div class="verse">at ang damdaming ko ay damdamin mo rin,</div>
+<div class="verse">ang <i>akin</i> ay <i>iyo't</i> ang <i>iyo</i> ay <i>akin</i></div>
+<div class="verse">at tayong dalawa'y may isang layunin.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Huwag nang ituring na ako'y kalaban</div>
+<div class="verse">pagka't nagbago na ang aking isipan,</div>
+<div class="verse">ang puso ko ng̃ayon ay naliwanagan</div>
+<div class="verse">pa kislap ng̃ iyong mahalagang aral.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Dapat nang lumaki ang iyong pagasa</div>
+<div class="verse">sa pagliliwayway ng̃ bagong umaga,</div>
+<div class="verse">ang daan mo ng̃ayo'y puno ng̃ sampaga't</div>
+<div class="verse">ang daan ko'y puno ng̃ tinik at dusa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Magkakahiwalay itong ating palad</div>
+<div class="verse">na gaya ng̃ Dilim at Haring Liwanag,</div>
+<div class="verse">ikaw'y magtatago't... sa pamamanang</div>
+<div class="verse">at may ibayo kang gayuma't pang̃arap.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Samantalang ako'y tang̃ing magtatago</div>
+<div class="verse">sa utos sa akin ng̃ Hukóm na Puso,</div>
+<div class="verse">sa pagliliwayway ay talang malabo</div>
+<div class="verse">ang makakatulad ng̃ aking pagsuyo.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Napakapait man sa aking pagibig,</div>
+<div class="verse">kita'y iwawalay sa pitak ng̃ isip,</div>
+<div class="verse">sa abo ng̃ aking papanaw na awit</div>
+<div class="verse">ay babang̃on itong buhay kong malinis.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung walang tiwala sa aking sinabi'y</div>
+<div class="verse">saksi ko ang bagu't bagong mangyayari,</div>
+<div class="verse">kung muling malisya ang aking pagkasi'y</div>
+<div class="verse">tugunin ng̃ <i>sumpa</i> itong pagsisisi.</div>
+</div></div>
+<hr style="width: 65%;">
+<h2><a id="dalaga"></a>III.</h2>
+<h2>ALBUM NG DALAGA...</h2>
+<hr style="width: 40%;">
+<div class="quote"><h3>HANDOG:</h3>
+<h4> <i>Kay Bb. Concepcion T. Garcia.</i></h4>
+<div class="right"><i>San Nikolas, Maynila.</i></div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_75">Páhiná 75</a></span></div>
+<h3>Album ng Dalaga...</h3>
+<h4>I.</h4>
+<h4> <i>Simula.</i></h4>
+<div class="pquote"><i>La princesita está bella.</i>
+<div class="right"><b>Ruben Dario.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ipahintulot mo, dalagang mayumi,</div>
+<div class="verse">Na ilarawan ko ang ganda mong ari,</div>
+<div class="verse">Ipahintulot mong awitin kong lagi</div>
+<div class="verse">Ang kagandahan mong makahibang-pari.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Bulaan ang madlang balitang <i>Prinsesa</i></div>
+<div class="verse">Kung sa ganda mo ng̃a'y makahihigit pa,</div>
+<div class="verse">At para sa akin, ikaw'y siyang <i>Reyna</i></div>
+<div class="verse">Ng̃ mg̃a kapwa mong masamyong sampaga.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang kaharian mo'y iyang kagandahan,</div>
+<div class="verse">Ang mg̃a buhok mo't matang mapupung̃ay,</div>
+<div class="verse">Ang paa't pisng̃i mo ay siya mong yaman.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa dalang ugali, ikaw'y isang birhen,</div>
+<div class="verse">Kamia ka sa bang̃o't sa pagkabutihin,</div>
+<div class="verse">Sa hinhi'y sampaga't sa ganda'y... tulain.</div>
+</div></div>
+<hr style="width: 20%;">
+<h4>II.</h4>
+<h4> <i>Ang mga buhok mo...</i></h4>
+<div class="pquote">
+<div class="stanza">
+<div class="verseind"><i>Tu pelo es una</i></div>
+<div class="verse"><i>nube del Oriente.</i></div>
+</div>
+<div class="right"><b>Salvador Rueda.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang mg̃a buhok mo'y mahahabang ahas</div>
+<div class="verse">Kung nakasalalay sa iyong balikat,</div>
+<div class="verse">Mg̃a ulang waring di lupa ang hanap</div>
+<div class="verse">Kundi sampagitang humahalimuyak.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_76">Páhiná 76</a></span>
+<div class="verse">Sa itim ay gabing walang buwa't tala,</div>
+<div class="verse">Sa haba ay halos humalik sa lupa,</div>
+<div class="verse">Sa lago'y halamang malago't sariwa,</div>
+<div class="verse">Sa sinsi'y masinsin at nakahahang̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Naging katulad ka niyong Penelopeng</div>
+<div class="verse">may timtimang pusong miminsang kumasi't</div>
+<div class="verse">Ang naging aliwa'y luha't paghahabi.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa haba ng̃ iyong buhok nakilala</div>
+<div class="verse">Ang kadalisayan ng̃ pagkadalaga</div>
+<div class="verse">At ang kahabaan ng̃ isang pag-asa.</div>
+</div></div>
+<hr style="width: 20%;">
+<h4>III.</h4>
+<h4> <i>Ang mga mata mo...</i></h4>
+<div class="pquote"><i>Cantar quise tus ojos.</i>
+<div class="right"><b>Campoamor.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Nang ikaw ay bago sumipot sa lupa'y</div>
+<div class="verse">Ipinanghiram ka ng̃ mata sa tala,</div>
+<div class="verse">Dalawang bituing sa hinhi'y sagana</div>
+<div class="verse">Ang naging mata mong mayaman sa awa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa mg̃a mata mo'y aking nasisilip</div>
+<div class="verse">Ang bughaw na pilas ng̃ nunung̃ong lang̃it,</div>
+<div class="verse">Mababaw na dagat ang nasa sa gilid</div>
+<div class="verse">Na ang naglalayag ay pusong malinis.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Di ayos matalim, ni hugis matapang,</div>
+<div class="verse">Ni hindi maliit, ni di kalakihan,</div>
+<div class="verse">Ang mg̃a mata mo'y maamo't mapung̃ay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kahinhina't amo ang nang̃ang̃aninag,</div>
+<div class="verse">Kalinisa't puri ang namamanaag,</div>
+<div class="verse">Umaga ang laging handog mo sa palad.</div>
+</div></div>
+<hr style="width: 20%;">
+<div><span class="pagenum"><a id="Page_77">Páhiná 77</a></span></div>
+<h4>IV.</h4>
+<h4> <i>Ang mga pisngi mo.</i></h4>
+<div class="pquote"><i>Naciente luz te corona.</i>
+<div class="right"><b>Espronceda.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang lahat ng̃ buti'y natipon na yata</div>
+<div class="verse">Sa kabataan mong ilag sa paraya,</div>
+<div class="verse">Pati ng̃ pisng̃i mong pisng̃i niyong saga</div>
+<div class="verse">Ay nakahihibang at nakahahang̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang mg̃a pisng̃i mo'y malambot, maamo,</div>
+<div class="verse">Mayumi, manipis at hindi palalo,</div>
+<div class="verse">Ang sang̃ahang ugat kahit humahalo,</div>
+<div class="verse">Ay napapabadha't... di makapagtago.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung ikaw'y hindi ko dating kakilala</div>
+<div class="verse">Ako'y mamamangha kung aking makita</div>
+<div class="verse">Ang mg̃a pisng̃i mong wari'y gumamela.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Naiinggit ako sa paminsanminsan</div>
+<div class="verse">Sa dampi ng̃ hang̃ing walang-walang malay,</div>
+<div class="verse">Pano'y kanyang-kanya ang lahat ng̃ bagay..!</div>
+</div></div>
+<hr style="width: 20%;">
+<h4>V.</h4>
+<h4> <i>Ang mga labi mo.</i></h4>
+<div class="pquote">
+<div class="stanza">
+<div class="verseind"><i>Los labios del arcangel</i></div>
+<div class="verse"><i>en sus labios...</i></div>
+</div>
+<div class="right"><b>Menendez Pelayo.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang mg̃a labi mo ay dalawang lang̃it,</div>
+<div class="verse">Lang̃it-na di bughaw, ni lang̃it ng̃ hapis,</div>
+<div class="verse">Labi ng̃ bulaklak na kapwa ninibig</div>
+<div class="verse">Labing mababang̃o, sariwa't malinis.</div>
+</div><div class="stanza">
+<span class="pagenum"><a id="Page_78">Páhiná 78</a></span>
+<div class="verse">Labi ng̃ sampagang may pait at awa,</div>
+<div class="verse">Tipunan ng̃ pulót, tamis at biyaya,</div>
+<div class="verse">Sisidlang ang lama'y kabang̃uhang pawa,</div>
+<div class="verse">Pook na tipanan ng̃ hamog at diwa.</div>
+</div><div class="stanza">
+<div class="verseind">Tagapamalita ng̃ lihim ng̃ puso,</div>
+<div class="verse">May <i>oo</i> at <i>hindi</i>, may <i>tutol</i> at <i>samo</i>,</div>
+<div class="verse">May buhay at palad, may tula't pagsuyo.</div>
+</div><div class="stanza">
+<div class="verseind">Ang̃ mg̃a labi mo'y may pulót na tang̃i</div>
+<div class="verse">Kung iyan ang aking pagkaing palagi'y</div>
+<div class="verse">Talo ko ang lahat, talo ko ang Hari.</div>
+</div></div>
+<hr style="width: 20%;">
+<h4>VI.</h4>
+<h4> <i>Ang mga kamay mo.</i></h4>
+<div class="pquote">
+<div class="stanza">
+<div class="verse"><i>Pudiera yo tu mano de azucena</i></div>
+<div class="verseind"><i>Besar solo una vez..!</i></div>
+</div>
+<div class="right"><b>Heine.</b></div></div>
+<div class="poem"><div class="stanza">
+<div class="verseind">Aywan kung mayron pang hihigit sa kinis</div>
+<div class="verse">Sa mg̃a kamay mong biluga't nilalik,</div>
+<div class="verse">Garing na mistula sa puti at linis,</div>
+<div class="verse">Sa lambot ay bulak, sa ganda'y pagibig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang mg̃a daliring yaman mo't biyaya</div>
+<div class="verse">Ay di hugis tikin, ni hubog kandila;</div>
+<div class="verse">Ang ayos at hugis ay bagay at tama</div>
+<div class="verse">Sa sutla mong palad na laman ng̃ diwa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang makakandong mo't maaalagaan,</div>
+<div class="verse">Ang mahahaplos mo't mahihiranghirang,</div>
+<div class="verse">Ang kahit patay na'y muling mabubuhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Mahagkan ko lamang ang iyong daliri,</div>
+<div class="verse">Sa kapwa makata, ako'y matatang̃i</div>
+<div class="verse">At marahil ako'y isa na ring Hari.</div>
+</div></div>
+<hr style="width: 20%;">
+<div><span class="pagenum"><a id="Page_79">Páhiná 79</a></span></div>
+<h4>VII.</h4>
+<h4> <i>¡Ang mga paa mo..!</i></h4>
+<div class="pquote">
+<div class="stanza">
+<div class="verseind"><i>Tus pequeños pies</i></div>
+<div class="verse"><i>Son tropos</i></div>
+<div class="verse"><i>Para mis piropos.</i></div>
+</div>
+<div class="right"><b>Machado.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Takpan ma't ipikit ang mg̃a mata ko</div>
+<div class="verse">Ay naguguhit din ang mg̃a paá mo,</div>
+<div class="verse">Paang mapuputing nakababalino</div>
+<div class="verse">Sa isip at buhay ng̃ payapang tao.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Paáng makikinis at makaulul-palad,</div>
+<div class="verse">Ang hubog ay bagay sa laki mo't sukat,</div>
+<div class="verse">Ang mg̃a sakong mo'y may pulang banayad,</div>
+<div class="verse">Ang mg̃a paá mo'y singlambot ng̃ bulak.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Parang mg̃a paá ng̃ nababalitang</div>
+<div class="verse">Cleopatra at Leda ng̃ panahong luma,</div>
+<div class="verse">Pano'y mg̃a paáng sa ganda'y bihira.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Naiinggit ako sa bawa't yapaka't</div>
+<div class="verse">siyang nagsasawa sa paá mong hirang,</div>
+<div class="verse">¿Ano't di pa ako ang maging tuntung̃an?</div>
+</div></div>
+<hr style="width: 20%;">
+<h4>VIII.</h4>
+<h4> <i>Wakas...</i></h4>
+<div class="pquote">
+<div class="stanza">
+<div class="verseind"><i>Tan dulce, tan bella,</i></div>
+<div class="verse"><i>tan tierna, tan pura.</i></div>
+</div>
+<div class="right"><b>J. de Dios Peza.</b></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Talagang natipon ang lahat ng̃ buti</div>
+<div class="verse">Sa kabataan mong di pa kumakasi,</div>
+<span class="pagenum"><a id="Page_80">Páhiná 80</a></span>
+<div class="verse">Ang lahat ng̃ yaman ng̃ isang babae</div>
+<div class="verse">Ay nasa sa iyong sariwang parati.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Nasa sa iyo ng̃a ang lahat ng̃ bagay,</div>
+<div class="verse">Ang bang̃o, ang tamis, ang kasariwaan,</div>
+<div class="verse">Ang yumi, ang awit, ang uri, ang kulay</div>
+<div class="verse">Ang hamog, ang sinag, ang tuwa't ang buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ikaw'y pagpalain, dalagang mapalad,</div>
+<div class="verse">Ang kagandahan mo'y aking ikakalat</div>
+<div class="verse">Sa silong ng̃ lang̃it, sa Sangmaliwanag.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung may naghahanap sa bukang liwayway</div>
+<div class="verse">Sa kabataan mo ay matatagpuan,</div>
+<div class="verse">¡Di ko malilimot ang ganda mong iyan!</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_81">Páhiná 81</a></span></div>
+<h3>ANG PANYO...</h3>
+<h4>I.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Pamahid ng̃ luha kung ginigiyagis</div>
+<div class="i2">ng̃ masidhing panglaw,</div>
+<div class="verse">pamawi ng̃ luhang sadyang tumitigis</div>
+<div class="i2">sa pusong luhaan,</div>
+<div class="verse">isáng kasangkapang ipinananakíp</div>
+<div class="i2">sa mukhang may lumbay,</div>
+<div class="verse">isáng mahiwagang tagapaghiwatig</div>
+<div class="i2">ng̃ lihim na saklaw</div>
+<div class="verse">ng̃ pusong sapupo ng̃ isáng pag-ibig</div>
+<div class="i2">sa gitna ng̃ buhay.</div>
+</div></div>
+<h4>II.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Panakíp sa bibig kung may simpang hiya</div>
+<div class="i2">sa kinákaharáp,</div>
+<div class="verse">isáng kagamitáng kung walang tiwala'y</div>
+<div class="i2">pangbalot ng̃ sulat,</div>
+<div class="verse">at páunang saksing minsang lumilikha</div>
+<div class="i2">ng̃ lúbusang galák,</div>
+<div class="verse">na mandi'y nánabi ng̃ masuyong wikang</div>
+<div class="i2">tugon sa pang̃arap:—</div>
+<div class="verse"><i>Sa inyong ibiga'y ang unang magdaya'y</i></div>
+<div class="i2"><i>pang̃ang̃anlang sukáb.</i></div>
+</div></div>
+<h4>III.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Isáng kasangkapang ang nagkakalayo'y</div>
+<div class="i2">pinapaglalapít</div>
+<div class="verse">kung binabalaan at sinisiphayo</div>
+<div class="i2">ng̃ <i>isáng</i> may galit;</div>
+<div class="verse">tagapamalitang may giliw at suyo</div>
+<div class="i2">kung naghihiwatig</div>
+<div class="verse">sa nagkakalayo't nagtitipáng puso</div>
+<div class="i2">dahil sa pag-ibig.</div>
+<div class="verse">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+<div class="verse">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+<span class="pagenum"><a id="Page_82">Páhiná 82</a></span>
+<div class="verse">Iyán ang halagá at bisa ng̃ panyo</div>
+<div class="i2">sa silong ng̃ Lang̃it.</div>
+</div></div>
+<h4>IV.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang panyo'y pamahid sa luhaáng matá</div>
+<div class="i2">ng̃ lahát at lahát,</div>
+<div class="verse">ang panyó ay piping nakapagbabadya</div>
+<div class="i2">ng̃ bawa't máhang̃ád,</div>
+<div class="verse">ang lahat ng̃ galáw na inyong makita'y</div>
+<div class="i2">may lihim na sangkap,</div>
+<div class="verse">katugón ng̃ mithi ng̃ mg̃a ninintang</div>
+<div class="i2">hindi magkáusap;</div>
+<div class="verse">may lihim na uring kalakip ang dusa</div>
+<div class="i2">at maging ng̃ galák.</div>
+</div></div>
+<h4>V.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang panyong idampi sa labi, sa bibíg,</div>
+<div class="i2">ay may kahulugáng:—</div>
+<div class="verse"><i>kitá'y sinisinta, kitá'y iniibig</i></div>
+<div class="i2"><i>hanggang sa libing̃an;</i></div>
+<div class="verse">at sakasakaling sa matá ipahid:—</div>
+<div class="i2"><i>ako'y namamanglaw</i></div>
+<div class="verse"><i>kung di ka makita, kung di ka masilip</i></div>
+<div class="i2"><i>ng̃ dusta kong buhay;</i></div>
+<div class="verse">at sakasakaling ihaplos sa dibdib:—</div>
+<div class="i2"><i>ako'y mamamatáy</i>.</div>
+</div></div>
+<h4>VI.</h4>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">May tang̃ing halagá at tagláy na galíng</div>
+<div class="i2">ang lahat ng̃ panyo,</div>
+<div class="verse">kaya't minimithing halos na agawin</div>
+<div class="i2">ng̃ mg̃a nunuyo,</div>
+<div class="verse">minsang magpatibók sa mg̃a damdaming</div>
+<div class="i2">patáy sa pagsamo,</div>
+<div class="verse">malimit lumikha ng̃ isang paggiliw</div>
+<div class="i2">at pamimintuho't</div>
+<div class="verse">madalas tumubos sa piping pagdaing</div>
+<div class="i2">ng̃ luhaáng puso.</div>
+</div></div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_83">Páhiná 83</a></span></div>
+<h3>¡Ang Pamaypay!</h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang lahat at lahat sa Sangkatauhan</div>
+<div class="verse">ay may kanya-kanyang uri't kalagayan,</div>
+<div class="verse">may ibig sabihin ang lahat ng̃ bagay</div>
+<div class="verse">na abot ó hindi ng̃ damdam at malay,</div>
+<div class="verse">ang panyo'y may lihim sa nagiibigan</div>
+<div class="verse">gaya ng̃ bulaklak at mg̃a halaman,</div>
+<div class="verse">itong abaniko'y isang kasangkapang</div>
+<div class="verse">pangdagdag sa puso ng̃ init at buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa Aklat ng̃ Puso't Aklat ng̃ Paggiliw</div>
+<div class="verse">yaong abaniko'y may ibig sabihin,</div>
+<div class="verse">may sariling uri't sariling tuntunin</div>
+<div class="verse">may sariling layon at sariling lihim,</div>
+<div class="verse">sa Talating̃igan ng̃ mg̃a Damdamin</div>
+<div class="verse">ang wikang Pamaypay ay tuwa't hilahil,</div>
+<div class="verse">palad at tagumpay, at kung kukurui'y</div>
+<div class="verse">taga pamalita niyong bukas natin.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kalihim ng̃ Puso't Patnubay ng̃ Palad,</div>
+<div class="verse">ng̃iti ng̃ liwayway sa likod ng̃ ulap,</div>
+<div class="verse">sa gitna ng̃ buhay ay "isang watawat</div>
+<div class="verse">na kulay lungtiang pakpak ng̃ pang̃arap,</div>
+<div class="verse">sagisag ng̃ hinhin ng̃ mg̃a mapalad,</div>
+<div class="verse">baluti ng̃ mg̃a babaeng banayad,</div>
+<div class="verse">kublihan ng̃ mukhang maramot maglagak</div>
+<div class="verse">ng̃ masayang ng̃iting yaman ng̃ panulat.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Isang kasangkapang gamit ng̃ babae</div>
+<div class="verse">at kung magkaminsa'y pati ng̃ lalaki,</div>
+<div class="verse">bibig na malayang nakapagsasabi</div>
+<div class="verse">ng̃ <i>oo</i> at <i>hindi</i> ng̃ <i>sama</i> at <i>buti</i>,</div>
+<div class="verse">isang kasangkapang sa nagsisikasi'y</div>
+<div class="verse">papel at panulat, gayuma't buhawi,</div>
+<div class="verse">sangla ng̃ pag-ibig, na namamayani</div>
+<div class="verse">sa lahat ng̃ pusong bihag na parati.</div>
+</div>
+<div class="stanza">
+<span class="pagenum"><a id="Page_84">Páhiná 84</a></span>
+<div class="verseind">Ang bawa't ikilos ng̃ isang pamaypay</div>
+<div class="verse">ay may isang wika, uri t kahulugan,</div>
+<div class="verse">parang isang aklat na nagsasalaysay</div>
+<div class="verse">ng̃ hirap at tuwa, ng̃ aliw at panglaw;</div>
+<div class="verse">kung iyong dalasin ang mg̃a paggalaw</div>
+<div class="verse">ang ibig sabihin: <i>Kita'y minamahal</i>;</div>
+<div class="verse">kung biglang isara: <i>Ako'y nasusuklam,</i></div>
+<div class="verse"><i>huwag nang lumapit at nang di magdamdam</i>.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Yaong abanikong idampi sa labi,</div>
+<div class="verse">ang ibig sabihi'y <i>Ikaw ang lwalhati</i>,</div>
+<div class="verse">kung minsang itago'y <i>Hindi maaari</i></div>
+<div class="verse"><i>ang iyong pagkasi't ang sa pusong susi'y</i></div>
+<div class="verse"><i>hawak na ng̃ isang pang̃arap kong lagi</i>,</div>
+<div class="verse">at kung pisil-pisil ng̃ mg̃a daliri'y:</div>
+<div class="verse"><i>inaantay kita't ang ama kong Hari'y</i></div>
+<div class="verse"><i>wala at sa monte'y nagbakasakali</i>.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Kung kagat ang borlas—<i>Ako'y nahahapis</i></div>
+<div class="verse"><i>dahil sa ginawang sa ati'y paglait</i>,</div>
+<div class="verse">kung buksang marahan—<i>Huwag kang mang̃anib</i></div>
+<div class="verse"><i>at ang ating ulap ay magiging lang̃it</i>,</div>
+<div class="verse">kung buksang pabigla—<i>Sila'y nagagalit</i></div>
+<div class="verse"><i>dahil sa sulat mong kanilang nalirip</i>,</div>
+<div class="verse">kung biglang ilaglag—<i>Si Kulasa'y bwisit</i></div>
+<div class="verse"><i>at siyang nagsumbong nang tayo'y magniig</i>.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Idampi sa pisng̃i—<i>Huwág kang matulog</i></div>
+<div class="verse"><i>at sa sine Luna, kami ay papasok</i>,</div>
+<div class="verse">idampi sa dibdib—<i>Ako'y nagseselos</i></div>
+<div class="verse"><i>dahil sa kasamang tila lumuluhog</i>,</div>
+<div class="verse">kung biglang ipukol—<i>Sa iba ibuhos</i></div>
+<div class="verse"><i>ang iyong pagsinta. Ikaw'y pahinuhod</i>!</div>
+<div class="verse">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</div>
+<div class="verse">Itong abaniko'y Dila sa Pag-irog,</div>
+<div class="verse">Talatang may dusa, kamanyang, kampupot.</div>
+</div></div>
+<hr style="width: 65%;">
+<h2><a id="ina"></a>IV.</h2>
+<h2>ANG ALBUM NI INA...</h2>
+<hr style="width: 40%;">
+<div class="quote ind">(<i>Ala-ala sa aking inang pumanaw: Rosa San
+Miguel ni de Leon, tagá Samal, Bataan at namatáy
+sa Tundo, Maynila, noong taong 1902.</i>)</div>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_87">Páhiná 87</a></span></div>
+<h3>I.</h3>
+<h3> <i>Ang aking Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Gaya rin ng̃ iba, ang ina kong giliw</div>
+<div class="verse">Ay inang mayumi't lubhang maramdamin,</div>
+<div class="verse">Inang hindi yuko sa mg̃a hilahil,</div>
+<div class="verse">Inang mapagbata at siya kong virgen.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Mayrong isang Diyos na kinikilala,</div>
+<div class="verse">May isang dakilang pananampalataya,</div>
+<div class="verse">Sa kanya ang madla'y kulay ng̃ umaga,</div>
+<div class="verse">Ang galit ay awa't sa poot ay tawa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Siya ang dakilang Batas sa tahanan,</div>
+<div class="verse">Kamay na masipag, Kampana ng̃ buhay,</div>
+<div class="verse">Susi ng̃ pag-ibig na kagalanggalang.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa kanya ang lahat ay pawang mabuti,</div>
+<div class="verse">Ang dukha't mayaman ay kapuripuri</div>
+<div class="verse">Palibhasa'y inang may puso't pagkasi.</div>
+</div></div>
+<h3>II.</h3>
+<h3> <i>Pag-ibig ni Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang puso ni ina'y kaban ng̃ pagling̃ap,</div>
+<div class="verse">May dalawang tibok na karapat-dapat,</div>
+<div class="verse">Ang isa'y kay ama, kay amang mapalad</div>
+<div class="verse">At ang isa nama'y sa amin nalagak.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Noong nabubuhay ang ina kong irog</div>
+<div class="verse">Ang kanyang pagkasi'y samyo ng̃ kampupot,</div>
+<div class="verse">Ang lakas ng̃ puso'y parang nag-uutos</div>
+<div class="verse">Na ako, kaylan ma'y huwag matatakot...</div>
+</div>
+<div class="stanza">
+<div class="verseind">Pagibig ni ina ang siyang yumari</div>
+<div class="verse">Ng̃ magandang bahay na kahilihili,</div>
+<div class="verse">At nawag sa palad na katang̃itang̃i.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Timtimang umirog! Hanggang sa libing̃a'y</div>
+<div class="verse">Dala ang pagkasing malinis, dalisay,</div>
+<div class="verse">Dala ang damdaming kabanalbanalan.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_88">Páhiná 88</a></span></div>
+<h3>III.</h3>
+<h3> <i>Ang halik ni Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang mata ni ina'y bukalan ng̃ luha</div>
+<div class="verse">Kung may dala-dalang damdamin at awa,</div>
+<div class="verse">Ang lahi ni ina'y sampagang sariwa</div>
+<div class="verse">Na may laging laang halik at kaling̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa halik ni Ina ay doon nalagas</div>
+<div class="verse">Ang tinik at bulo ng̃ musmos kong palad,</div>
+<div class="verse">Sa halik ni ina'y aking napagmalas</div>
+<div class="verse">Na ako'y <i>tao</i> na't dapat makilamas.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang bibig ni inang bibig ng̃ sampaga'y</div>
+<div class="verse">Bibig na sinipi kina Clara't Sisa</div>
+<div class="verse">Kaya't mayrong bisang kahalihalina.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang halik ng̃ ina'y apoy sa pagsuyo,</div>
+<div class="verse">Hamog sa bulaklak, Pag-asa sa puso't</div>
+<div class="verse">Liwanag sa mg̃a isipang malabo.</div>
+</div></div>
+<h3>IV.</h3>
+<h3> <i>Ugali ni Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Kung mamamana ko lamang ang ugali</div>
+<div class="verse">Ni inang sa aki'y nagpala't nag-ari'y</div>
+<div class="verse">Marami sa akin ang mananaghili't</div>
+<div class="verse">Sa aki'y tatang̃a lamang yaong Hari.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang asal ni ina'y aklat ng̃ pagling̃ap,</div>
+<div class="verse">Salaming malinaw, bang̃ong walang kupas,</div>
+<div class="verse">Suhay ng̃ mahinhin, sulo ng̃ mapalad,</div>
+<div class="verse">Mundong walang gabi, gabi ng̃ walang ulap.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang salitang damot ay di kakilala,</div>
+<div class="verse">Ang kamay ay lahad, hanggang nakakaya't</div>
+<div class="verse">Tang̃ing kayamanan ang pakikisama.</div>
+<div class="verse">Sa kanya ay Diyos ang mg̃a pulubi,</div>
+<div class="verse">Ang dukha ay Hari't Kristo ang duhagi,</div>
+<div class="verse">Iyan ang ugali ng̃ ina kong kasi.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_89">Páhiná 89</a></span></div>
+<h3>V.</h3>
+<h3> <i>Ang awit ni Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Nang buhay si ina't ako'y kilik-kilik</div>
+<div class="verse">ako'y pinagsawa sa alo at awit,</div>
+<div class="verse">malaki na ako't may sapat ng̃ isip</div>
+<div class="verse">ay inaalo pa nang buong pag-ibig.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang musmos na patak ng̃ nulo kong luha</div>
+<div class="verse">sa kanya'y kundima't awiting dakila,</div>
+<div class="verse">makarinig lamang ng̃ iyak ng̃ bata</div>
+<div class="verse">sa aki'y lalapit at maguusisa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ako'y kakalung̃in at ipaghehele,</div>
+<div class="verse">ang awit-tagalog ay mamamayani</div>
+<div class="verse">hanggang sa magsawa't ako'y mapabuti.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang awit ni ina'y laging yumayakap,</div>
+<div class="verse">sa mg̃a awitin ng̃ aking panulat</div>
+<div class="verse">kaya't ang awit ko'y mayumi't banayad.</div>
+</div></div>
+<h3>VI.</h3>
+<h3> <i>Libingan ni Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang buhay ng̃ tao'y parang isang araw</div>
+<div class="verse">Na kung mayrong bago'y mayrong nang̃ang̃alay,</div>
+<div class="verse">Ang palad ni ina'y di na nakalaban</div>
+<div class="verse">Kaya't napatalo sa tawag ng̃ hukay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang buhay ni inang inutang sa lupa'y</div>
+<div class="verse">Sa lupa rin namang nabayad na kusa,</div>
+<div class="verse">Ang mg̃a mata kong maramot sa luha</div>
+<div class="verse">Noo'y naging dagat na kahang̃ahang̃a.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¡Wala na si ina! Ang lahat sa amin</div>
+<div class="verse">Ay ng̃iti ng̃ dusa't kaway ng̃ hilahil,</div>
+<div class="verse">Lubog na ang araw na kagiliwgiliw.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Nagtaglay si ina ng̃ dalawang hukay:</div>
+<div class="verse">Ang isa'y sa lupang sanglaan ng̃ buhay,</div>
+<div class="verse">Ang isa'y sa aking pusong gumagalang.</div>
+</div></div>
+<div><span class="pagenum"><a id="Page_90">Páhiná 90</a></span></div>
+<h3>VII.</h3>
+<h3> <i>Ang aral ni Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Ang tang̃ing pamanang sa aki'y naiwan</div>
+<div class="verse">Ay malaking gusi ng̃ mayamang aral:</div>
+<div class="verse">—Anak ko: hanapin iyang karunung̃an,</div>
+<div class="verse">Ang dunong ay pilak, ang aklat ay buhay.</div>
+<div class="verse">—Sa harap ng̃ bait, ay silaw ang lakas,</div>
+<div class="verse">Sa harap ng̃ matwid ay yuko ang lahat,</div>
+<div class="verse">Ang mundo'y niyari ng̃ paham at pantas,</div>
+<div class="verse">Ang babae'y tinik ng̃ isang bulaklak.</div>
+<div class="verse">—Ang palalong tao'y halakhak ng̃ hang̃in,</div>
+<div class="verse">Ang aping mabait ay dapat ling̃apin</div>
+<div class="verse">At pagkailagan iyang sinung̃aling.</div>
+<div class="verse">—Huwag kakayahin ang hindi mo kaya,</div>
+<div class="verse">Nang ikaw'y malayo sa pula at tawa,</div>
+<div class="verse">Umibig sa baya't magpakabait ka".</div>
+</div></div>
+<h3>VIII.</h3>
+<h3> <i>Bulaklak kay Ina.</i></h3>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Wala na si ina! Gayon ma'y naiwan</div>
+<div class="verse">sa akin ang kanyang mahalagang aral,</div>
+<div class="verse">aral na sa ningning ay ningning ng̃ araw,</div>
+<div class="verse">aral na sa buti'y palad, diwa't yaman.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Larawang larawan lamang ang nalagak</div>
+<div class="verse">sa akin ng̃ siya'y pumanaw at sukat,</div>
+<div class="verse">larawan ni inang yaman ng̃ panulat,</div>
+<div class="verse">larawang kakambal ng̃ aking pang̃arap.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Darakilang ina: ang iyong libing̃a'y</div>
+<div class="verse">sinasabugan ko ng̃ tala't kundiman,</div>
+<div class="verse">ng̃ awit na siyang bulaklak ng̃ buhay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa harap ng̃ iyong larawang dakila</div>
+<div class="verse">ay may nagnining̃as na isang kandila</div>
+<div class="verse">panulat ng̃ iyong anak na naluha.</div>
+</div></div>
+<hr style="width: 65%;">
+<h2><a id="papurit"></a>MGA PAPURI'T PARANG̃AL</h2>
+<h3>SA KUMATHA NITO</h3>
+<hr style="width: 65%;">
+<div><span class="pagenum"><a id="Page_93">Páhiná 93</a></span></div>
+<h3>Pagkatapos tunghayan...</h3>
+<div class="pquote"><i>Sa makatang</i>
+<div class="right"><i>Pascual de León</i></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Bulaklak, bulaklak, bulaklak sa bung̃ad,</div>
+<div class="verse">Bulaklak sa gitna't sa dulo'y bulaklak,</div>
+<div class="verse">Ito'y halamanang mayaman sa lahat,</div>
+<div class="verse">Mayaman sa tamís, sa tuwa't pang̃arap.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa mg̃a talulot nito'y sumusung̃aw</div>
+<div class="verse">Ang diwa ng̃ isang apó ni Baltazar,</div>
+<div class="verse">At sa mg̃a dahong sariwa't makulay</div>
+<div class="verse">Ay napapatitik ang kanyang tagumpáy.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Malungkot kung minsan, kung minsa'y masayá,</div>
+<div class="verse">Ng̃uni't kadalasa'y uhaw sa pag-asa;</div>
+<div class="verse">Sa hang̃ad ay labis, at labis sa kaya,</div>
+<div class="verse">Subali't sa tuwa'y ulilang-ulila.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Makatang Pasleo: Ang aking <i>Bulaklak</i></div>
+<div class="verse">Ay narito't handog sa una mong aklát.</div>
+</div>
+<div class="right">BENIGNO R. RAMOS (<i>Ben Ruben</i>)</div>
+</div>
+<p>Bulakan, Bul., 1915.</p>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_94">Páhiná 94</a></span></div>
+<h3>Ramo de Laurel</h3>
+<div class="pquote"><i>Para el poeta vernacular</i>,
+<div class="right"><i><b>Pascual de Leon.</b></i></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Para tu jóven frente de tagalo poeta,</div>
+<div class="verse">De poeta que entona sus versos de pasión,</div>
+<div class="verse">Ofrezco una corona de flores de violeta</div>
+<div class="verse">Y entónate mi lira su mágica canción.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Es tu canto armonioso inspiración de ondinas,</div>
+<div class="verse">Es tu verbo potente como el brillo del sol,</div>
+<div class="verse">Y tus musas son todas dalagas filipinas</div>
+<div class="verse">Que habitan en las ondas azules del pansol.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Tu lira multiforme con sus cuerdas de oro</div>
+<div class="verse">Tiene cantos dolientes, tiene ayes de lloro,</div>
+<div class="verse">Tiene dulces lamentos y suspiros de miel.</div>
+</div></div>
+<hr class="narrow" style="width: 10%;">
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Tiene versos de rosa que disipan tristezas</div>
+<div class="verse">De las bellas morenas filipinas princesas</div>
+<div class="verse">Que te ofrecen sonrientes un <i>ramo de laurel</i>.</div>
+</div>
+<div class="right"><b><i>Octavio C. Madrid.</i></b></div>
+</div>
+<p>Septiembre 18, 1915.</p>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_95">Páhiná 95</a></span></div>
+<h3>PANUOB...</h3>
+<div class="pquote"><i>Sa katotong makatang</i>
+<div class="right"><i><b>Pascual de Leon.</b></i></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Hayan ang makata. Haya't umaawit</div>
+<div class="verse">ng̃ mg̃a kundimang pang-lupa't pang-lang̃it,</div>
+<div class="verse">hawak ang kudyaping malambing ang tinig</div>
+<div class="verse">at pinangsasaliw sa ligaya't sakit.</div>
+</div>
+<div class="stanza">
+<div class="verseind">¿Kung siya ay sino? Iyan ang makatang</div>
+<div class="verse">ang tula't tulain ay matalinghaga,</div>
+<div class="verse">mg̃a lungkot, dusa, daing, hirap, luha,</div>
+<div class="verse">Galit, sumpa't lambing ang puso at diwa.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Ang kanyang tulai'y sing-lambot, sing-linaw</div>
+<div class="verse">ng̃ tubig sa wawa, sa sapa't batisang</div>
+<div class="verse">Balana'y sumimsim sa tamis na taglay.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Hayan ang makata. Kayó ang magsabi</div>
+<div class="verse">Kundi siya'y dapat na <i>Dang̃al at Puri</i></div>
+<div class="verse">at maging <i>putong</i> pa ng̃ Wikang sarili.</div>
+</div>
+<div class="right">HERMÓGENES T. REYES.<br>
+(Sa <i>Ilaw at Panitik</i>)</div>
+</div>
+<p>Tundó, Set., 1915.</p>
+<hr style="width: 40%;">
+<div><span class="pagenum"><a id="Page_96">Páhiná 96</a></span></div>
+<h3>¡Bulalakaw...!</h3>
+<div class="pquote"><i>Sa Katotong</i>
+<div class="right"><i><b>Pascual de Leon.</b></i></div></div>
+<div class="poem">
+<div class="stanza">
+<div class="verseind">Sa harap ng̃ iyong magarang pagsikat</div>
+<div class="verse">ay pinaglaho mo ang aking liwanag.</div>
+<div class="verse">Araw kang nagbang̃on sa himlayang palad</div>
+<div class="verse">at kinasilawan ng̃ aking banaag.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa lang̃it mo, ako ay balang̃áw lamang,</div>
+<div class="verse">sa ilaw mo, akó ang aninong tunay...</div>
+<div class="verse">Diwa mo sa aking diwa ay isilay</div>
+<div class="verse">at aawitin ko ang iyong pang̃alan.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Tulóy!... Hanggang ako'y di pa nagsasawang</div>
+<div class="verse">umawit sa lihim ng̃ mg̃a hiwaga,</div>
+<div class="verse">ako'y kasama mong hahanap ng̃ pala.</div>
+</div>
+<div class="stanza">
+<div class="verseind">Sa iyong hantung̃ang lang̃it ng̃ pagasa</div>
+<div class="verse">ay doón nároon ang mg̃a sampaga...</div>
+<div class="verse">Pupulin mo't yao'y sa WIKA mong mana!</div>
+</div>
+<div class="right">CIRIO H. PAÑGANIBAN.<br>
+(Sa <i>Ilaw at Panitik</i>)</div>
+</div>
+<p>Bukawe, Bul., 1915.</p>
+<hr style="width: 65%;">
+<h2>Mga mali sa pagkakalimbag</h2>
+<div class="center">
+<table style="border-spacing: 2px;padding: 4px;border-width: 0px;" data-summary="errata">
+<tbody><tr><td style="text-align: center;">Nababasa</td><td style="text-align: center;">Dapat basahin</td><td style="text-align: center;">Dahon</td></tr>
+<tr><td style="text-align: left;">luwalhati</td><td style="text-align: left;"><i>lwahati</i></td><td style="text-align: left;">10</td></tr>
+<tr><td style="text-align: left;">mayroong</td><td style="text-align: left;"><i>mayrong</i></td><td style="text-align: left;">12</td></tr>
+<tr><td style="text-align: left;">liyaga</td><td style="text-align: left;"><i>ligaya</i></td><td style="text-align: left;">15</td></tr>
+<tr><td style="text-align: left;">hangtung̃an</td><td style="text-align: left;"><i>hantung̃an</i></td><td style="text-align: left;">15</td></tr>
+<tr><td style="text-align: left;">kalika't</td><td style="text-align: left;"><i>halika't</i></td><td style="text-align: left;">16</td></tr>
+<tr><td style="text-align: left;">magalak</td><td style="text-align: left;"><i>malagak</i></td><td style="text-align: left;">19</td></tr>
+<tr><td style="text-align: left;">Sukat na sinta!</td><td style="text-align: left;"><i>Sukat na ng̃a sinta!</i></td><td style="text-align: left;">21</td></tr>
+<tr><td style="text-align: left;">sigaw</td><td style="text-align: left;"><i>sigwa</i></td><td style="text-align: left;">51</td></tr>
+<tr><td style="text-align: left;">maamo</td><td style="text-align: left;"><i>maaamo</i></td><td style="text-align: left;">67</td></tr>
+<tr><td style="text-align: left;">virgen</td><td style="text-align: left;"><i>birhen</i></td><td style="text-align: left;">75</td></tr>
+<tr><td style="text-align: left;">pagkabutihin</td><td style="text-align: left;"><i>sa pagkabutihin</i></td><td style="text-align: left;">75</td></tr>
+<tr><td style="text-align: left;">nu ve</td><td style="text-align: left;"><i>nube</i></td><td style="text-align: left;">75</td></tr>
+<tr><td style="text-align: left;">Paano</td><td style="text-align: left;"><i>Pano</i></td><td style="text-align: left;">77</td></tr>
+<tr><td style="text-align: left;">Besarlo</td><td style="text-align: left;"><i>Besar solo</i></td><td style="text-align: left;">78</td></tr>
+<tr><td style="text-align: left;">Tagpan</td><td style="text-align: left;"><i>Takpan</i></td><td style="text-align: left;">79</td></tr>
+<tr><td style="text-align: left;">Naiingit</td><td style="text-align: left;"><i>Naiinggit</i></td><td style="text-align: left;">79</td></tr>
+<tr><td style="text-align: left;">Paano'y</td><td style="text-align: left;"><i>Pano'y</i></td><td style="text-align: left;">79</td></tr>
+<tr><td style="text-align: left;">Tu dulce</td><td style="text-align: left;"><i>Tan dulce</i></td><td style="text-align: left;">79</td></tr>
+<tr><td style="text-align: left;">magpatibook</td><td style="text-align: left;"><i>magpatibok</i></td><td style="text-align: left;">82</td></tr>
+<tr><td style="text-align: left;">nagbabakasakali</td><td style="text-align: left;"><i>nagbakasakali</i></td><td style="text-align: left;">84</td></tr>
+<tr><td style="text-align: left;"></td></tr>
+</tbody></table></div>
+<p><i>Basahin ang <b>Martir del Golgota</b>, isang mainam
+na aklat na nahahati sa dalawang toma.</i></p>
+<div class="quote"><i>Ipinagbibili sa lahat ng̃ Aklatan.</i></div>
+<hr style="width: 30%;">
+<div class="figcenter">
+<img alt="Advertisement" src="images/adds1.jpg" title="Advertisement" id="img_images_adds1.jpg">
+</div>
+<hr style="width: 30%;">
+<div class="figcenter">
+<img alt="Advertisement" src="images/adds2.jpg" title="Advertisement" id="img_images_adds2.jpg">
+</div>
+<pre></pre><section class="pg-boilerplate pgheader" id="pg-footer" lang="en">
+<div id="pg-end-separator">
+<span>*** END OF THE PROJECT GUTENBERG EBOOK BUNTONG HININGA ***</span>
+</div>
+
+    
+<div>
+Updated editions will replace the previous one—the old editions will
+be renamed.
+</div><div>
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg™ electronic works to protect the PROJECT GUTENBERG™
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for an eBook, except by following
+the terms of the trademark license, including paying royalties for use
+of the Project Gutenberg trademark. If you do not charge anything for
+copies of this eBook, complying with the trademark license is very
+easy. You may use this eBook for nearly any purpose such as creation
+of derivative works, reports, performances and research. Project
+Gutenberg eBooks may be modified and printed and given away—you may
+do practically ANYTHING in the United States with eBooks not protected
+by U.S. copyright law. Redistribution is subject to the trademark
+license, especially commercial redistribution.
+</div>
+
+<div id="project-gutenberg-license">START: FULL LICENSE</div>
+
+<h2 id="pg-footer-heading">THE FULL PROJECT GUTENBERG™ LICENSE</h2>
+
+<div class="agate">PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+</div><div>
+To protect the Project Gutenberg™ mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase “Project
+Gutenberg”), you agree to comply with all the terms of the Full
+Project Gutenberg License available with this file or online at
+www.gutenberg.org/license.
+</div><div class="secthead">
+Section 1. General Terms of Use and Redistributing Project Gutenberg
+electronic works
+</div><div>
+1.A. By reading or using any part of this Project Gutenberg
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.
+</div><div>
+1.B. “Project Gutenberg” is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg
+electronic works. See paragraph 1.E below.
+</div><div>
+1.C. The Project Gutenberg Literary Archive Foundation (“the
+Foundation” or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg mission of promoting
+free access to electronic works by freely sharing Project Gutenberg
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg License when
+you share it without charge with others.
+</div><div>
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country other than the United States.
+</div><div>
+1.E. Unless you have removed all references to Project Gutenberg:
+</div><div>
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg License must appear
+prominently whenever any copy of a Project Gutenberg work (any work
+on which the phrase “Project Gutenberg” appears, or with which the
+phrase “Project Gutenberg” is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+</div><blockquote><div>
+    This eBook is for the use of anyone anywhere in the United States and most
+    other parts of the world at no cost and with almost no restrictions
+    whatsoever. You may copy it, give it away or re-use it under the terms
+    of the Project Gutenberg™ License included with this eBook or online
+    at <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you
+    are not located in the United States, you will have to check the laws
+    of the country where you are located before using this eBook.
+  </div></blockquote><div>
+1.E.2. If an individual Project Gutenberg electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase “Project
+Gutenberg” associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+</div><div>
+1.E.3. If an individual Project Gutenberg electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+</div><div>
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg.
+</div><div>
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg License.
+</div><div>
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg work in a format
+other than “Plain Vanilla ASCII” or other format used in the official
+version posted on the official Project Gutenberg website
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original “Plain
+Vanilla ASCII” or other form. Any alternate format must include the
+full Project Gutenberg License as specified in paragraph 1.E.1.
+</div><div>
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+</div><div>
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg electronic works
+provided that:
+</div><ul>
+    <li>• You pay a royalty fee of 20% of the gross profits you derive from
+        the use of Project Gutenberg works calculated using the method
+        you already use to calculate your applicable taxes. The fee is owed
+        to the owner of the Project Gutenberg trademark, but he has
+        agreed to donate royalties under this paragraph to the Project
+        Gutenberg Literary Archive Foundation. Royalty payments must be paid
+        within 60 days following each date on which you prepare (or are
+        legally required to prepare) your periodic tax returns. Royalty
+        payments should be clearly marked as such and sent to the Project
+        Gutenberg Literary Archive Foundation at the address specified in
+        Section 4, “Information about donations to the Project Gutenberg
+        Literary Archive Foundation.”
+    </li>
+    <li>• You provide a full refund of any money paid by a user who notifies
+        you in writing (or by e-mail) within 30 days of receipt that s/he
+        does not agree to the terms of the full Project Gutenberg™
+        License. You must require such a user to return or destroy all
+        copies of the works possessed in a physical medium and discontinue
+        all use of and all access to other copies of Project Gutenberg™
+        works.
+    </li>
+    <li>• You provide, in accordance with paragraph 1.F.3, a full refund of
+        any money paid for a work or a replacement copy, if a defect in the
+        electronic work is discovered and reported to you within 90 days of
+        receipt of the work.
+    </li>
+    <li>• You comply with all other terms of this agreement for free
+        distribution of Project Gutenberg™ works.
+    </li>
+</ul><div>
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg™ electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from the Project Gutenberg Literary Archive Foundation, the manager of
+the Project Gutenberg™ trademark. Contact the Foundation as set
+forth in Section 3 below.
+</div><div>
+1.F.
+</div><div>
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg™ collection. Despite these efforts, Project Gutenberg™
+electronic works, and the medium on which they may be stored, may
+contain “Defects,” such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+</div><div>
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the “Right
+of Replacement or Refund” described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg™ trademark, and any other party distributing a Project
+Gutenberg™ electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+</div><div>
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+</div><div>
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you ‘AS-IS’, WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+</div><div>
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+</div><div>
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg™ electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg™
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg work, and (c) any
+Defect you cause.
+</div><div class="secthead">
+Section 2. Information about the Mission of Project Gutenberg
+</div><div>
+Project Gutenberg is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+</div><div>
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg’s
+goals and ensuring that the Project Gutenberg collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at www.gutenberg.org.
+</div><div class="secthead">
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+</div><div>
+The Project Gutenberg Literary Archive Foundation is a non-profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation’s EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state’s laws.
+</div><div>
+The Foundation’s business office is located at 41 Watchung Plaza #516,
+Montclair NJ 07042, USA, +1 (862) 621-9288. Email contact links and up
+to date contact information can be found at the Foundation’s website
+and official page at www.gutenberg.org/contact
+</div><div class="secthead">
+Section 4. Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+</div><div>
+Project Gutenberg™ depends upon and cannot survive without widespread
+public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine-readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+</div><div>
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular state
+visit <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+</div><div>
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+</div><div>
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+</div><div>
+Please check the Project Gutenberg web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate.
+</div><div class="secthead">
+Section 5. General Information About Project Gutenberg electronic works
+</div><div>
+Professor Michael S. Hart was the originator of the Project
+Gutenberg concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg eBooks with only a loose network of
+volunteer support.
+</div><div>
+Project Gutenberg eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+</div><div>
+Most people start at our website which has the main PG search
+facility: <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+</div><div>
+This website includes information about Project Gutenberg,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+</div>
+
+</section></body>
+</html>

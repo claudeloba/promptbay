@@ -1,5 +1,16 @@
-# Multi-stage build for optimized final image
-FROM nginx:alpine AS builder
+# Generate payload assets from taxonomy examples at build time
+FROM node:22-alpine AS assets
+
+WORKDIR /app
+
+COPY package.json ./
+COPY scripts/ ./scripts/
+COPY pentest-taxonomy/ ./pentest-taxonomy/
+COPY books/ ./books/
+COPY js/ ./js/
+
+RUN node scripts/generate-payload-assets.js && \
+    node scripts/generate-books-data.js
 
 # Use specific nginx alpine version for better stability and security
 FROM nginx:1.25-alpine
@@ -22,7 +33,8 @@ RUN addgroup -g 1000 appuser && \
 # Copy application files with correct ownership
 COPY --chown=appuser:appuser index.html ./
 COPY --chown=appuser:appuser css/ ./css/
-COPY --chown=appuser:appuser js/ ./js/
+COPY --chown=appuser:appuser --from=assets /app/js/ ./js/
+COPY --chown=appuser:appuser --from=assets /app/books-processed/ ./books-processed/
 COPY --chown=appuser:appuser LICENSE ./
 COPY --chown=appuser:appuser README.md ./
 
@@ -84,4 +96,3 @@ USER appuser
 
 # Start nginx in foreground
 CMD ["nginx", "-g", "daemon off;"]
-
