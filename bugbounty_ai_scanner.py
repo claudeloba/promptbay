@@ -34,6 +34,7 @@ Usage:
     python3 bb_ai_scope_scanner.py --max-pages 3 --platforms h1,ywh
     python3 bb_ai_scope_scanner.py --h1-handle shopify
     python3 bb_ai_scope_scanner.py --output results.csv --verbose
+    python3 bb_ai_scope_scanner.py --creds-file creds.txt
 """
 
 import os
@@ -42,6 +43,7 @@ import csv
 import sys
 import time
 import logging
+import pathlib
 import argparse
 from abc import ABC, abstractmethod
 from collections import defaultdict
@@ -790,9 +792,31 @@ def main():
                         help="Comma-separated platforms: h1,bc,ywh,inti (default: all)")
     parser.add_argument("--h1-handle", type=str, default=None,
                         help="Scan only this single HackerOne program handle")
+    parser.add_argument("--creds-file", type=str, default=None,
+                        help="Path to credentials file (KEY=VALUE per line, e.g. H1_USERNAME=alice)")
     parser.add_argument("--verbose", action="store_true",
                         help="Enable debug-level logging")
     args = parser.parse_args()
+
+    # Load credentials from file into os.environ (if provided)
+    if args.creds_file:
+        creds_path = pathlib.Path(args.creds_file)
+        if not creds_path.is_file():
+            log.error("Credentials file not found: %s", args.creds_file)
+            sys.exit(1)
+        loaded = 0
+        for line_no, raw in enumerate(creds_path.read_text().splitlines(), 1):
+            line = raw.strip()
+            if not line or line.startswith("#"):
+                continue
+            if "=" not in line:
+                log.warning("Skipping malformed line %d in %s: %s", line_no, args.creds_file, line)
+                continue
+            key, _, val = line.partition("=")
+            key, val = key.strip(), val.strip()
+            os.environ[key] = val
+            loaded += 1
+        log.info("Loaded %d credential(s) from %s", loaded, args.creds_file)
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)

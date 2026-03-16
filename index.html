@@ -800,7 +800,7 @@
         <div class="bb-controls-row">
           <div class="bb-proxy-row">
             <label class="tool-label" style="margin:0">CORS Proxy</label>
-            <input type="text" class="tool-input" id="bb-proxy-url" value="https://corsproxy.io/?" placeholder="https://corsproxy.io/?" style="flex:1;max-width:320px" />
+            <input type="text" class="tool-input" id="bb-proxy-url" value="https://api.allorigins.win/raw?url=" placeholder="https://api.allorigins.win/raw?url=" style="flex:1;max-width:320px" />
           </div>
           <div class="bb-scan-actions">
             <button class="tool-btn tool-btn-primary" id="bb-scan-btn"><i class="fas fa-play"></i> Start Scan</button>
@@ -808,6 +808,7 @@
             <button class="tool-btn" id="bb-export-btn" disabled><i class="fas fa-download"></i> Export CSV</button>
           </div>
         </div>
+        <p style="font-size:11px;color:var(--text-3);margin-top:2px"><i class="fas fa-info-circle"></i> Direct requests are tried first. The proxy is used as fallback for CORS-blocked APIs. Note: public proxies cannot forward auth headers — authenticated platforms may need a self-hosted <a href="https://github.com/nicbarker/allorigins" target="_blank" style="color:var(--accent)">allorigins</a> or <a href="https://github.com/Rob--W/cors-anywhere" target="_blank" style="color:var(--accent)">cors-anywhere</a> proxy, or use the Python script directly.</p>
       </div>
 
       <!-- Progress / Log -->

@@ -143,16 +143,26 @@
   }
 
   // ─── Fetch with CORS proxy, retries, rate-limit handling ──────
+  //
+  // Public CORS proxies (allorigins, corsproxy.io, etc.) fetch the target
+  // URL server-side and return the body. They do NOT forward custom
+  // request headers like Authorization to the target API.
+  //
+  // Strategy:
+  //   1. Try the request DIRECTLY first (works if the API allows CORS).
+  //   2. If that fails and a proxy URL is configured, retry through the
+  //      proxy WITHOUT auth headers (works for unauthenticated endpoints).
+  //   3. Return null if both fail.
 
   async function apiFetch(url, options, proxyUrl, retries) {
     retries = retries || 3;
     var backoff = 5000;
+    var hasAuth = options && options.headers && (options.headers['Authorization'] || options.headers['authorization']);
 
     for (var attempt = 1; attempt <= retries; attempt++) {
+      // ── Attempt 1: direct request with full headers ──
       try {
-        var fetchUrl = proxyUrl ? proxyUrl + encodeURIComponent(url) : url;
-        var resp = await fetch(fetchUrl, options);
-
+        var resp = await fetch(url, options);
         if (resp.status === 429) {
           var wait = parseInt(resp.headers.get('Retry-After') || String(backoff * attempt / 1000), 10) * 1000;
           await sleep(wait);
@@ -160,12 +170,43 @@
         }
         if (resp.status === 401) return null;
         if (resp.status === 404) return {};
-        if (!resp.ok) return null;
-
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
         return await resp.json();
-      } catch (e) {
-        if (attempt < retries) {
-          await sleep(backoff * attempt);
+      } catch (directErr) {
+        // Direct request failed (likely CORS). Try proxy if available.
+        if (proxyUrl) {
+          try {
+            // Proxy fetches the URL server-side. It cannot forward our
+            // Authorization header, so this only works for public endpoints
+            // or APIs that use URL-based auth.
+            var proxyOpts = { headers: {} };
+            // Copy non-auth headers
+            if (options && options.headers) {
+              Object.keys(options.headers).forEach(function (k) {
+                if (k.toLowerCase() !== 'authorization') {
+                  proxyOpts.headers[k] = options.headers[k];
+                }
+              });
+            }
+            var fetchUrl = proxyUrl + encodeURIComponent(url);
+            var resp2 = await fetch(fetchUrl, proxyOpts);
+            if (resp2.status === 429) {
+              await sleep(backoff * attempt);
+              continue;
+            }
+            if (resp2.status === 401) return null;
+            if (resp2.status === 404) return {};
+            if (!resp2.ok) throw new Error('Proxy HTTP ' + resp2.status);
+            return await resp2.json();
+          } catch (proxyErr) {
+            if (attempt < retries) {
+              await sleep(backoff * attempt);
+            }
+          }
+        } else {
+          if (attempt < retries) {
+            await sleep(backoff * attempt);
+          }
         }
       }
     }
