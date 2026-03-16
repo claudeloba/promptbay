@@ -3129,4 +3129,320 @@
   // ── Init ─────────────────────────────────────────
   updateMetrics();
 
+  // ══════════════════════════════════════════════════
+  // BB SCANNER TAB
+  // ══════════════════════════════════════════════════
+  (function () {
+    if (!window.BBScanner) return;
+
+    // ── DOM refs ──
+    var credStatus     = document.getElementById('bb-cred-status');
+    var saveCredsBtn   = document.getElementById('bb-save-creds');
+    var clearCredsBtn  = document.getElementById('bb-clear-creds');
+    var scanBtn        = document.getElementById('bb-scan-btn');
+    var stopBtn        = document.getElementById('bb-stop-btn');
+    var exportBtn      = document.getElementById('bb-export-btn');
+    var logWrap        = document.getElementById('bb-log-wrap');
+    var logEl          = document.getElementById('bb-log');
+    var progressFill   = document.getElementById('bb-progress-fill');
+    var filtersEl      = document.getElementById('bb-filters');
+    var searchEl       = document.getElementById('bb-search');
+    var statsEl        = document.getElementById('bb-stats');
+    var resultsWrap    = document.getElementById('bb-results-wrap');
+    var resultsBody    = document.getElementById('bb-results-body');
+    var emptyEl        = document.getElementById('bb-empty');
+    var maxPagesSlider = document.getElementById('bb-maxpages');
+    var maxPagesVal    = document.getElementById('bb-maxpages-val');
+
+    // Credential input IDs mapped to localStorage keys
+    var CRED_MAP = {
+      'bb-h1-username': 'bb_h1_username',
+      'bb-h1-token':    'bb_h1_token',
+      'bb-bc-username': 'bb_bc_username',
+      'bb-bc-token':    'bb_bc_token',
+      'bb-ywh-token':   'bb_ywh_token',
+      'bb-inti-token':  'bb_inti_token',
+    };
+
+    // ── State ──
+    var bbFindings = [];
+    var abortController = null;
+    var sortKey = null;
+    var sortDir = 'asc';
+
+    // ── Credential management ──
+    function loadCredentials() {
+      var configured = 0;
+      Object.keys(CRED_MAP).forEach(function (inputId) {
+        var el = document.getElementById(inputId);
+        var val = localStorage.getItem(CRED_MAP[inputId]) || '';
+        if (el) el.value = val;
+        if (val) configured++;
+      });
+      credStatus.textContent = configured + ' configured';
+    }
+
+    function saveCredentials() {
+      Object.keys(CRED_MAP).forEach(function (inputId) {
+        var el = document.getElementById(inputId);
+        if (el && el.value) {
+          localStorage.setItem(CRED_MAP[inputId], el.value);
+        } else {
+          localStorage.removeItem(CRED_MAP[inputId]);
+        }
+      });
+      loadCredentials();
+      toast('Credentials saved');
+    }
+
+    function clearCredentials() {
+      if (!confirm('Clear all bug bounty API credentials from browser storage?')) return;
+      Object.keys(CRED_MAP).forEach(function (inputId) {
+        localStorage.removeItem(CRED_MAP[inputId]);
+        var el = document.getElementById(inputId);
+        if (el) el.value = '';
+      });
+      loadCredentials();
+      toast('Credentials cleared');
+    }
+
+    saveCredsBtn.addEventListener('click', saveCredentials);
+    clearCredsBtn.addEventListener('click', clearCredentials);
+
+    // Toggle show/hide credential fields
+    document.querySelectorAll('.bb-cred-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var targetId = btn.getAttribute('data-target');
+        var input = document.getElementById(targetId);
+        if (!input) return;
+        var wasPassword = input.type === 'password';
+        input.type = wasPassword ? 'text' : 'password';
+        btn.querySelector('i').className = wasPassword ? 'fas fa-eye-slash' : 'fas fa-eye';
+      });
+    });
+
+    // Max pages slider
+    maxPagesSlider.addEventListener('input', function () {
+      maxPagesVal.textContent = maxPagesSlider.value;
+    });
+
+    // ── Scan execution ──
+    function appendLog(msg) {
+      logEl.textContent += msg + '\n';
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    scanBtn.addEventListener('click', async function () {
+      // Gather enabled platforms
+      var platforms = [];
+      if (document.getElementById('bb-en-h1').checked)   platforms.push('h1');
+      if (document.getElementById('bb-en-bc').checked)   platforms.push('bc');
+      if (document.getElementById('bb-en-ywh').checked)  platforms.push('ywh');
+      if (document.getElementById('bb-en-inti').checked)  platforms.push('inti');
+
+      if (!platforms.length) { toast('Select at least one platform'); return; }
+
+      var proxyUrl = document.getElementById('bb-proxy-url').value.trim();
+      var maxPages = parseInt(maxPagesSlider.value) || 0;
+
+      // Reset UI
+      bbFindings = [];
+      logEl.textContent = '';
+      logWrap.classList.remove('hidden');
+      progressFill.style.width = '0%';
+      progressFill.classList.add('indeterminate');
+      scanBtn.classList.add('hidden');
+      stopBtn.classList.remove('hidden');
+      exportBtn.disabled = true;
+      emptyEl.classList.add('hidden');
+      resultsWrap.classList.add('hidden');
+      filtersEl.classList.add('hidden');
+      statsEl.classList.add('hidden');
+
+      abortController = new AbortController();
+
+      appendLog('Starting scan — platforms: ' + platforms.join(', ') +
+        ', max pages: ' + (maxPages || 'all') +
+        ', proxy: ' + (proxyUrl || 'none'));
+
+      try {
+        bbFindings = await window.BBScanner.scan({
+          platforms: platforms,
+          maxPages: maxPages,
+          proxyUrl: proxyUrl,
+          signal: abortController.signal,
+          onProgress: appendLog,
+          onFindings: function (platformName, findings) {
+            appendLog('[' + platformName + '] Accumulated ' + findings.length + ' finding(s).');
+          },
+        });
+      } catch (e) {
+        appendLog('Error: ' + (e.message || e));
+      }
+
+      // Done
+      progressFill.classList.remove('indeterminate');
+      progressFill.style.width = '100%';
+      scanBtn.classList.remove('hidden');
+      stopBtn.classList.add('hidden');
+      abortController = null;
+
+      appendLog('Scan complete — total findings: ' + bbFindings.length);
+
+      if (bbFindings.length) {
+        exportBtn.disabled = false;
+        filtersEl.classList.remove('hidden');
+        statsEl.classList.remove('hidden');
+        resultsWrap.classList.remove('hidden');
+        renderStats();
+        renderResults();
+      } else {
+        emptyEl.classList.remove('hidden');
+        emptyEl.querySelector('p').textContent = 'No AI/LLM signals found. Try adjusting platforms or max pages.';
+      }
+    });
+
+    stopBtn.addEventListener('click', function () {
+      if (abortController) {
+        abortController.abort();
+        appendLog('Scan stopped by user.');
+      }
+    });
+
+    exportBtn.addEventListener('click', function () {
+      if (bbFindings.length) {
+        window.BBScanner.exportCSV(bbFindings);
+        toast('CSV exported');
+      }
+    });
+
+    // ── Stats rendering ──
+    function renderStats() {
+      var programs = {};
+      var platformCounts = {};
+      bbFindings.forEach(function (f) {
+        programs[f.platform + ':' + f.handle] = true;
+        platformCounts[f.platform] = (platformCounts[f.platform] || 0) + 1;
+      });
+      var totalPrograms = Object.keys(programs).length;
+
+      var html = '<span class="bb-stat-badge"><strong>' + bbFindings.length + '</strong> findings</span>' +
+        '<span class="bb-stat-badge"><strong>' + totalPrograms + '</strong> programs</span>';
+      Object.keys(platformCounts).sort().forEach(function (p) {
+        html += '<span class="bb-stat-badge"><span class="bb-platform-tag" data-platform="' + p + '">' + p + '</span> ' + platformCounts[p] + '</span>';
+      });
+      statsEl.innerHTML = html;
+    }
+
+    // ── Results rendering ──
+    function getFilteredResults() {
+      var query = searchEl.value.toLowerCase().trim();
+      var platformFilter = document.querySelector('#bb-platform-filter .seg-btn.active');
+      var scopeFilter = document.querySelector('#bb-scope-filter .seg-btn.active');
+      var pf = platformFilter ? platformFilter.getAttribute('data-bb-platform') : 'all';
+      var sf = scopeFilter ? scopeFilter.getAttribute('data-bb-scope') : 'all';
+
+      return bbFindings.filter(function (f) {
+        if (pf !== 'all' && f.platform !== pf) return false;
+        if (sf === 'scope' && f.where.toLowerCase().indexOf('policy') !== -1) return false;
+        if (sf === 'policy' && f.where.toLowerCase().indexOf('policy') === -1) return false;
+        if (query) {
+          var searchable = (f.program_name + ' ' + f.handle + ' ' + f.keyword_matched + ' ' + f.scope_identifier).toLowerCase();
+          if (searchable.indexOf(query) === -1) return false;
+        }
+        return true;
+      });
+    }
+
+    function escH(s) {
+      var d = document.createElement('div');
+      d.textContent = s || '';
+      return d.innerHTML;
+    }
+
+    function renderResults() {
+      var filtered = getFilteredResults();
+
+      // Sort
+      if (sortKey) {
+        filtered.sort(function (a, b) {
+          var va = String(a[sortKey] || '').toLowerCase();
+          var vb = String(b[sortKey] || '').toLowerCase();
+          if (va < vb) return sortDir === 'asc' ? -1 : 1;
+          if (va > vb) return sortDir === 'asc' ? 1 : -1;
+          return 0;
+        });
+      }
+
+      var html = '';
+      filtered.forEach(function (f) {
+        var keywords = f.keyword_matched.split('; ').map(function (kw) {
+          return '<span class="bb-kw-tag">' + escH(kw) + '</span>';
+        }).join('');
+
+        var bountyStr = '';
+        if (f.eligible_for_bounty === true || f.eligible_for_bounty === 'true' || f.eligible_for_bounty === 'True') {
+          bountyStr = '<span class="bb-bounty-yes">✓ Yes</span>';
+        } else if (f.eligible_for_bounty === false || f.eligible_for_bounty === 'false' || f.eligible_for_bounty === 'False') {
+          bountyStr = '<span class="bb-bounty-no">✗ No</span>';
+        } else {
+          bountyStr = '<span style="color:var(--text-3)">—</span>';
+        }
+
+        html += '<tr>' +
+          '<td><span class="bb-platform-tag" data-platform="' + escH(f.platform) + '">' + escH(f.platform) + '</span></td>' +
+          '<td title="' + escH(f.program_name) + '">' + escH(f.program_name) + '</td>' +
+          '<td class="bb-kw-cell">' + keywords + '</td>' +
+          '<td>' + escH(f.where) + '</td>' +
+          '<td>' + bountyStr + '</td>' +
+          '<td>' + escH(f.date_introduced) + '</td>' +
+          '<td title="' + escH(f.scope_identifier) + '">' + escH(f.scope_identifier) + '</td>' +
+          '</tr>';
+      });
+
+      resultsBody.innerHTML = html || '<tr><td colspan="7" style="text-align:center;color:var(--text-3);padding:20px">No results match your filters.</td></tr>';
+    }
+
+    // ── Filter events ──
+    searchEl.addEventListener('input', renderResults);
+
+    document.querySelectorAll('#bb-platform-filter .seg-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('#bb-platform-filter .seg-btn').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        renderResults();
+      });
+    });
+
+    document.querySelectorAll('#bb-scope-filter .seg-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('#bb-scope-filter .seg-btn').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        renderResults();
+      });
+    });
+
+    // ── Sortable headers ──
+    document.querySelectorAll('#bb-results-table thead th[data-sort]').forEach(function (th) {
+      th.addEventListener('click', function () {
+        var key = th.getAttribute('data-sort');
+        if (sortKey === key) {
+          sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortKey = key;
+          sortDir = 'asc';
+        }
+        // Visual feedback
+        document.querySelectorAll('#bb-results-table thead th').forEach(function (t) {
+          t.classList.remove('sorted-asc', 'sorted-desc');
+        });
+        th.classList.add(sortDir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+        renderResults();
+      });
+    });
+
+    // ── Load saved credentials on init ──
+    loadCredentials();
+  })();
+
 })();

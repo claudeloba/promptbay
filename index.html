@@ -39,6 +39,7 @@
     <button class="tab-btn" data-tab="splitter"><i class="fas fa-scissors"></i> Splitter</button>
     <button class="tab-btn" data-tab="decoder"><i class="fas fa-key"></i> Decoder</button>
     <button class="tab-btn" data-tab="taxonomy"><i class="fas fa-crosshairs"></i> Taxonomy</button>
+    <button class="tab-btn" data-tab="bbscanner"><i class="fas fa-satellite-dish"></i> BB Scanner</button>
   </nav>
 
   <!-- ═══════════════ TAB: Payload Editor ═══════════════ -->
@@ -725,11 +726,148 @@
     </div>
   </div>
 
+  <!-- ═══════════════ TAB: BB Scanner ═══════════════ -->
+  <div class="tab-content" id="tab-bbscanner">
+    <div class="tool-panel">
+      <div class="tool-header">
+        <h2><i class="fas fa-satellite-dish"></i> Bug Bounty AI Scanner</h2>
+        <p class="tool-desc">Scan bug bounty programs across HackerOne, Bugcrowd, YesWeHack, and Intigriti for AI/LLM scope entries. Based on <a href="https://github.com/claudeloba/thepromptbay" target="_blank" rel="noopener noreferrer">bb_ai_scope_scanner.py</a>.</p>
+      </div>
+
+      <!-- API Keys -->
+      <details class="bb-credentials" id="bb-credentials">
+        <summary class="bb-credentials-summary"><i class="fas fa-key"></i> API Credentials <span class="bb-cred-status" id="bb-cred-status">0 configured</span></summary>
+        <p style="font-size:12px;color:var(--text-3);margin:8px 0 12px">Stored locally in your browser (localStorage). Never sent to our servers.</p>
+
+        <div class="bb-cred-grid">
+          <!-- HackerOne -->
+          <div class="bb-cred-block">
+            <div class="bb-cred-label">HackerOne</div>
+            <input type="text" class="tool-input" id="bb-h1-username" placeholder="Username" />
+            <div class="api-key-row">
+              <input type="password" class="tool-input" id="bb-h1-token" placeholder="API Token" style="flex:1" />
+              <button class="tool-btn bb-cred-toggle" data-target="bb-h1-token" title="Show/hide"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <!-- Bugcrowd -->
+          <div class="bb-cred-block">
+            <div class="bb-cred-label">Bugcrowd</div>
+            <input type="text" class="tool-input" id="bb-bc-username" placeholder="Username" />
+            <div class="api-key-row">
+              <input type="password" class="tool-input" id="bb-bc-token" placeholder="API Token" style="flex:1" />
+              <button class="tool-btn bb-cred-toggle" data-target="bb-bc-token" title="Show/hide"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <!-- YesWeHack -->
+          <div class="bb-cred-block">
+            <div class="bb-cred-label">YesWeHack</div>
+            <div class="api-key-row">
+              <input type="password" class="tool-input" id="bb-ywh-token" placeholder="Bearer Token" style="flex:1" />
+              <button class="tool-btn bb-cred-toggle" data-target="bb-ywh-token" title="Show/hide"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <!-- Intigriti -->
+          <div class="bb-cred-block">
+            <div class="bb-cred-label">Intigriti</div>
+            <div class="api-key-row">
+              <input type="password" class="tool-input" id="bb-inti-token" placeholder="Personal Access Token" style="flex:1" />
+              <button class="tool-btn bb-cred-toggle" data-target="bb-inti-token" title="Show/hide"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bb-cred-actions">
+          <button class="tool-btn tool-btn-primary" id="bb-save-creds"><i class="fas fa-save"></i> Save All</button>
+          <button class="tool-btn" id="bb-clear-creds"><i class="fas fa-trash"></i> Clear All</button>
+        </div>
+      </details>
+
+      <!-- Scan Controls -->
+      <div class="bb-controls">
+        <div class="bb-controls-row">
+          <div class="bb-platform-checks">
+            <label class="tool-switch"><input type="checkbox" id="bb-en-h1" checked /><span>HackerOne</span></label>
+            <label class="tool-switch"><input type="checkbox" id="bb-en-bc" checked /><span>Bugcrowd</span></label>
+            <label class="tool-switch"><input type="checkbox" id="bb-en-ywh" checked /><span>YesWeHack</span></label>
+            <label class="tool-switch"><input type="checkbox" id="bb-en-inti" checked /><span>Intigriti</span></label>
+          </div>
+          <div class="bb-controls-right">
+            <label class="tool-label">Max pages <span id="bb-maxpages-val">0</span></label>
+            <input type="range" class="tool-range" id="bb-maxpages" min="0" max="20" value="0" style="width:100px" />
+            <span style="font-size:11px;color:var(--text-3)">0 = all</span>
+          </div>
+        </div>
+        <div class="bb-controls-row">
+          <div class="bb-proxy-row">
+            <label class="tool-label" style="margin:0">CORS Proxy</label>
+            <input type="text" class="tool-input" id="bb-proxy-url" value="https://corsproxy.io/?" placeholder="https://corsproxy.io/?" style="flex:1;max-width:320px" />
+          </div>
+          <div class="bb-scan-actions">
+            <button class="tool-btn tool-btn-primary" id="bb-scan-btn"><i class="fas fa-play"></i> Start Scan</button>
+            <button class="tool-btn hidden" id="bb-stop-btn"><i class="fas fa-stop"></i> Stop</button>
+            <button class="tool-btn" id="bb-export-btn" disabled><i class="fas fa-download"></i> Export CSV</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress / Log -->
+      <div class="bb-log-wrap hidden" id="bb-log-wrap">
+        <div class="bb-progress-bar" id="bb-progress-bar"><div class="bb-progress-fill" id="bb-progress-fill"></div></div>
+        <pre class="bb-log" id="bb-log"></pre>
+      </div>
+
+      <!-- Filters -->
+      <div class="bb-filters hidden" id="bb-filters">
+        <input type="text" class="tool-input bb-search" id="bb-search" placeholder="Search programs, keywords..." />
+        <div class="segmented-row bb-platform-filter" id="bb-platform-filter">
+          <button class="seg-btn active" data-bb-platform="all">All</button>
+          <button class="seg-btn" data-bb-platform="HackerOne">H1</button>
+          <button class="seg-btn" data-bb-platform="Bugcrowd">BC</button>
+          <button class="seg-btn" data-bb-platform="YesWeHack">YWH</button>
+          <button class="seg-btn" data-bb-platform="Intigriti">INTI</button>
+        </div>
+        <div class="segmented-row bb-scope-filter" id="bb-scope-filter">
+          <button class="seg-btn active" data-bb-scope="all">All</button>
+          <button class="seg-btn" data-bb-scope="scope">Scope</button>
+          <button class="seg-btn" data-bb-scope="policy">Policy</button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="bb-stats hidden" id="bb-stats"></div>
+
+      <!-- Results Table -->
+      <div class="bb-results-wrap hidden" id="bb-results-wrap">
+        <table class="bb-results-table" id="bb-results-table">
+          <thead>
+            <tr>
+              <th data-sort="platform">Platform</th>
+              <th data-sort="program_name">Program</th>
+              <th data-sort="keyword_matched">AI Keywords</th>
+              <th data-sort="where">Where</th>
+              <th data-sort="eligible_for_bounty">Bounty</th>
+              <th data-sort="date_introduced">Date</th>
+              <th data-sort="scope_identifier">Scope ID</th>
+            </tr>
+          </thead>
+          <tbody id="bb-results-body"></tbody>
+        </table>
+      </div>
+
+      <!-- Empty state -->
+      <div class="bb-empty" id="bb-empty">
+        <i class="fas fa-satellite-dish" style="font-size:48px;opacity:0.15;margin-bottom:12px"></i>
+        <p>Configure your API credentials above and start a scan to discover AI/LLM scope entries across bug bounty platforms.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast -->
   <div class="toast" id="toast"></div>
 </div>
 
 <script src="arc_pi_taxonomy/docs/data/taxonomy.js"></script>
+<script src="js/bbScanner.js"></script>
 <script src="js/transforms.js"></script>
 <script src="js/steganography.js"></script>
 <script src="js/emojiLibrary.js"></script>

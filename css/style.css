@@ -890,6 +890,153 @@ body.dark .bijection-mapping-item .bm-mapped { color: var(--chip-green-text); }
 }
 .taxonomy-example-actions button:hover { background: var(--accent-bg); color: var(--accent); }
 
+/* ── BB Scanner tab ────────────────────────────── */
+.bb-credentials {
+  border: 0.5px solid var(--border-1); border-radius: var(--radius-md);
+  background: var(--bg-secondary); overflow: hidden;
+}
+.bb-credentials-summary {
+  padding: 10px 14px; font-size: 13px; font-weight: 600; color: var(--text-1);
+  cursor: pointer; display: flex; align-items: center; gap: 8px;
+  user-select: none; list-style: none;
+}
+.bb-credentials-summary::-webkit-details-marker { display: none; }
+.bb-credentials-summary::before {
+  content: '▶'; font-size: 10px; color: var(--text-3);
+  transition: transform .15s;
+}
+.bb-credentials[open] > .bb-credentials-summary::before { transform: rotate(90deg); }
+.bb-credentials-summary i { color: var(--text-3); }
+.bb-cred-status {
+  font-size: 11px; font-weight: 500; color: var(--text-3);
+  margin-left: auto;
+}
+.bb-cred-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  padding: 0 14px 14px;
+}
+.bb-cred-block { display: flex; flex-direction: column; gap: 6px; }
+.bb-cred-label { font-size: 12px; font-weight: 600; color: var(--accent); }
+.bb-cred-actions {
+  display: flex; gap: 6px; padding: 0 14px 14px;
+}
+.bb-controls {
+  display: flex; flex-direction: column; gap: 8px;
+}
+.bb-controls-row {
+  display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+}
+.bb-platform-checks { display: flex; gap: 12px; flex-wrap: wrap; }
+.bb-controls-right {
+  display: flex; gap: 8px; align-items: center; margin-left: auto;
+}
+.bb-proxy-row {
+  display: flex; gap: 8px; align-items: center; flex: 1;
+}
+.bb-scan-actions {
+  display: flex; gap: 6px; margin-left: auto;
+}
+.bb-log-wrap {
+  border: 0.5px solid var(--border-1); border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.bb-progress-bar {
+  height: 3px; background: var(--bg-secondary); overflow: hidden;
+}
+.bb-progress-fill {
+  height: 100%; width: 0%; background: var(--accent);
+  transition: width .3s ease;
+}
+.bb-progress-fill.indeterminate {
+  width: 30%;
+  animation: bbIndeterminate 1.5s ease-in-out infinite;
+}
+@keyframes bbIndeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+.bb-log {
+  max-height: 160px; overflow-y: auto; padding: 8px 12px;
+  font-size: 11px; line-height: 1.5; color: var(--text-3);
+  background: var(--bg-secondary); margin: 0;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+.bb-filters {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.bb-search { flex: 1; min-width: 180px; }
+.bb-stats {
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.bb-stat-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: 100px; font-size: 12px;
+  background: var(--bg-secondary); border: 0.5px solid var(--border-1);
+  color: var(--text-2);
+}
+.bb-stat-badge strong { color: var(--text-1); }
+.bb-results-wrap {
+  overflow-x: auto; border: 0.5px solid var(--border-1);
+  border-radius: var(--radius-md);
+}
+.bb-results-table {
+  width: 100%; border-collapse: collapse; font-size: 12px;
+}
+.bb-results-table thead th {
+  position: sticky; top: 0; z-index: 1;
+  padding: 8px 10px; text-align: left; font-size: 11px;
+  font-weight: 600; text-transform: uppercase; letter-spacing: .3px;
+  color: var(--text-3); background: var(--bg-secondary);
+  border-bottom: 0.5px solid var(--border-1); cursor: pointer;
+  user-select: none; white-space: nowrap;
+}
+.bb-results-table thead th:hover { color: var(--text-1); }
+.bb-results-table thead th.sorted-asc::after { content: ' ▲'; font-size: 9px; }
+.bb-results-table thead th.sorted-desc::after { content: ' ▼'; font-size: 9px; }
+.bb-results-table tbody tr {
+  border-bottom: 0.5px solid var(--border-1);
+  transition: background .12s;
+}
+.bb-results-table tbody tr:hover { background: var(--bg-hover); }
+.bb-results-table tbody td {
+  padding: 7px 10px; color: var(--text-1); vertical-align: top;
+  max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.bb-results-table .bb-kw-cell {
+  max-width: 240px;
+}
+.bb-results-table .bb-kw-tag {
+  display: inline-block; padding: 1px 6px; margin: 1px 2px;
+  border-radius: var(--radius-sm); font-size: 10px;
+  background: var(--chip-blue); color: var(--chip-blue-text);
+  border: 0.5px solid var(--chip-blue-border);
+  white-space: nowrap;
+}
+.bb-platform-tag {
+  display: inline-block; padding: 1px 6px;
+  border-radius: var(--radius-sm); font-size: 10px; font-weight: 600;
+  white-space: nowrap;
+}
+.bb-platform-tag[data-platform="HackerOne"] { background: var(--chip-purple); color: var(--chip-purple-text); border: 0.5px solid var(--chip-purple-border); }
+.bb-platform-tag[data-platform="Bugcrowd"] { background: var(--chip-orange); color: var(--chip-orange-text); border: 0.5px solid var(--chip-orange-border); }
+.bb-platform-tag[data-platform="YesWeHack"] { background: var(--chip-green); color: var(--chip-green-text); border: 0.5px solid var(--chip-green-border); }
+.bb-platform-tag[data-platform="Intigriti"] { background: var(--chip-blue); color: var(--chip-blue-text); border: 0.5px solid var(--chip-blue-border); }
+.bb-bounty-yes { color: var(--chip-green-text); }
+.bb-bounty-no { color: var(--chip-red-text); }
+.bb-empty {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; padding: 48px 20px; text-align: center;
+  color: var(--text-3); font-size: 13px;
+}
+
+@media (max-width: 720px) {
+  .bb-cred-grid { grid-template-columns: 1fr; }
+  .bb-controls-row { flex-direction: column; align-items: stretch; }
+  .bb-controls-right { margin-left: 0; }
+  .bb-scan-actions { margin-left: 0; }
+  .bb-filters { flex-direction: column; }
+}
+
 .hidden { display: none !important; }
 
 @media (max-width: 720px) {
